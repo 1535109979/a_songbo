@@ -1,0 +1,25 @@
+# docker run -itd --name vnpy_xtp -v ~/byt_pub/:/byt_pub -v ~/byt_config/config-FT2.json:/byt_config/config.json -p 9910:9910 -p 9920:9920 -p 9930:9930 -e BYT_ROOT_DIR='/' vnpy:req44
+version: '1'
+
+services:
+  vnpy_base1:
+    image: vnpy:req44
+    container_name: vnpy_req44port
+    volumes:
+      - ~/byt_pub:/byt_pub
+      - ~/byt_config/config-FT2.json:/byt_config/config.json
+    ports:
+      - 50051:50051
+      - 9920:9920  # XTP 交易
+      - 9910:9910  # XTP 行情
+      - 9930:9930  # XTP 策略
+    environment:
+      BYT_DATACENTER_ID: 0
+      BYT_WORKER_ID: 0
+      BYT_ROOT_DIR: '/'
+#    command:
+#      - touch ~/.bashrc && echo 'export PYTHONPATH=$PYTHONPATH:/byt_pub' >> ~/.bashrc && source ~/.bashrc
+    restart: unless-stopped
+    tty: true
+
+
