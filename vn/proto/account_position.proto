@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package account_position;
+
+import "google/protobuf/timestamp.proto";
+
+message AccountBook {
+  string account_id = 1;
+  repeated Position positions = 2;
+  repeated InstrumentBook instrument_books = 3;
+  double avail = 4;
+  google.protobuf.Timestamp create_ts = 5;
+}
+
+message Position {
+  string direction = 1;
+  string instrument = 2;
+  double avg = 3;
+  double volume = 4;
+  double yd = 5;
+  double locked = 6;
+  bool default = 7;
+  double margin = 8;
+  double cost = 9;
+  double open_avg = 10;
+  string exchange = 11;
+  double sellable = 12;
+}
+
+message InstrumentBook {
+  string instrument = 1;
+  double contract_multiplier = 2;
+  double long_margin_ratio = 3;
+  double short_margin_ratio = 4;
+  double price_tick = 5;
+  string product_class = 6;
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package strategy_server;
+
+import "account_position.proto";
+
+service Strategy {
+    rpc on_account_update(account_position.AccountBook) returns (FlagReply);
+    rpc on_order_rtn(RtnRecord) returns (FlagReply);
+    rpc on_trade_rtn(RtnRecord) returns (FlagReply);
+}
+
+message RtnRecord {
+    map<string, string> rtn = 1;
+    account_position.AccountBook account_book = 2;
+}
+
+message FlagReply {
+    bool flag = 1;
+}

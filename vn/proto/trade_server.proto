@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package trade_server;
+
+import "account_position.proto";
+
+service Trade {
+    rpc sub_account(SubAccountRequest) returns (account_position.AccountBook);
+    rpc get_account_book(GetAccountBookRequest) returns (account_position.AccountBook);
+    rpc insert_order(InsertOrderRequest) returns (InsertOrderReply);
+    rpc cancel_order(CancelOrderRequest) returns (CancelOrderReply);
+}
+
+// ========================================================== sub_account
+message SubAccountRequest {
+  string account_id = 1;
+}
+
+// ========================================================== get_account_book
+message GetAccountBookRequest {
+  string account_id = 1;
+  repeated string instruments = 2;
+  bool need_instrument_books = 3;
+}
+
+// ========================================================== insert_order
+message InsertOrderRequest {
+  string account_id = 1;
+  string instrument = 2;
+  string exchange_type = 3;
+  string offset_flag = 4;
+  string direction =5;
+  string order_price_type = 6;
+  string price = 7;
+  string volume = 8;
+  string source_type = 9;
+  string order_info_id = 10;
+}
+
+message InsertOrderReply {
+  string order_id = 1;
+  string error_code = 2;
+  string error_msg = 3;
+}
+
+message CancelOrderRequest {
+  string account_id = 1;
+  string order_id = 2;
+}
+
+message CancelOrderReply {
+  string action_id = 1;
+  string error_code = 2;
+  string error_msg = 3;
+}
