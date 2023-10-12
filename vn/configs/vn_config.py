@@ -3,10 +3,10 @@ import os
 ctp_setting = {
             "vn_config_home": os.path.join(os.path.expanduser('~'), ".vntrader"),
             'account_id': '210380', 'password': 'Songbo@1997', 'brokerid': '9999',
-            # 'md_address': 'tcp://180.168.146.187:10212',
-            # 'td_address': 'tcp://180.168.146.187:10202',
-            'md_address': 'tcp://180.168.146.187:10131',
-            'td_address': 'tcp://180.168.146.187:10130',
+            'md_address': 'tcp://180.168.146.187:10212',
+            'td_address': 'tcp://180.168.146.187:10202',
+            # 'md_address': 'tcp://180.168.146.187:10131',
+            # 'td_address': 'tcp://180.168.146.187:10130',
             'appid': 'simnow_client_test', 'auth_code': '0000000000000000', }
 
 strategy_config = {
