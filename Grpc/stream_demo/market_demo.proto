@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+service DataService {
+  rpc SubscribeData (DataRequest) returns (stream DataResponse) {};
+  rpc TestClietSendStream (stream StreamRequest) returns (StreamResponse) {};
+  rpc TwoWayStream (stream TwoWayStreamRequest) returns (stream TwoWayStreamResponse) {};
+}
+
+message DataRequest {
+  string request_id = 1;
+}
+
+message DataResponse {
+  string data = 1;
+}
+
+message StreamRequest {
+    string data = 1;
+}
+
+message StreamResponse {
+    string result = 1;
+}
+
+message TwoWayStreamRequest {
+    string data = 1;
+}
+
+message TwoWayStreamResponse {
+    string result = 1;
+}
