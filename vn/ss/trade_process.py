@@ -23,11 +23,11 @@ class TradeProcess:
         if not exchange_type:
             exchange_type = ExchangeType.get_by_value(self.gateway.left_day_map[instrument]['exchange'])
 
-        self.gateway.logger.info(f'<send_order> instrument={instrument} exchange_type={exchange_type} '
+        self.gateway.logger.info(f'<trade_process send_order> instrument={instrument} exchange_type={exchange_type} '
                                  f'offset_flag={offset_flag} direction={direction} order_price_type={order_price_type} '
                                  f'order_price_type={order_price_type} price={price} volume={volume}')
         order_id = self.td_stub.insert_order(instrument, exchange_type, offset_flag, direction, order_price_type, price, volume)
-        Dingding.send_msg(f'下单成功  \ninstrument:{instrument}  \norder_id:{order_id.order_id}')
+        # Dingding.send_msg(f'下单成功  \ninstrument:{instrument}  \norder_id:{order_id.order_id}')
         self.gateway.logger.info(f'下单成功 instrument:{instrument} order_id:{order_id.order_id}')
         self.in_trading[instrument] = TradingOrder.create_by_order_data(instrument, exchange_type, offset_flag,
                                                                         direction, order_price_type, price, volume)

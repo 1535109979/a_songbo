@@ -61,10 +61,11 @@ class SellStrategy:
 
             # print('SellStrategy send order:', instrument, imp,offset_flag, direction, order_price_type,
             #                                price, volume)
-            Dingding.send_msg(f'SellStrategy 下单:   \n {instrument}  \n'
-                              f'offset_flag={offset_flag}  \ndirection={direction}  \n'
-                              f'order_price_type={order_price_type}  \n'
-                              f'price={price}  \nvolume={volume}')
+
+            # Dingding.send_msg(f'SellStrategy 下单:   \n {instrument}  \n'
+            #                   f'offset_flag={offset_flag}  \ndirection={direction}  \n'
+            #                   f'order_price_type={order_price_type}  \n'
+            #                   f'price={price}  \nvolume={volume}')
 
             self.gateway.logger.info(f'SellStrategy 下单:{instrument} '
                                      f'offset_flag={offset_flag} direction={direction} '

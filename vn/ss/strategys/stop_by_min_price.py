@@ -72,10 +72,11 @@ class StopByMinPrice:
 
                     # print('StopByMinPrice send:', close_flag, instrument, rise_rate,offset_flag, direction,
                     #       order_price_type, price, volume)
-                    Dingding.send_msg(f'StopByMinPrice 下单:   \n{close_flag} {instrument}  \n'
-                                      f'offset_flag={offset_flag}  \ndirection={direction}  \n'
-                                      f'order_price_type={order_price_type}  \n'
-                                      f'price={price}  \nvolume={volume}')
+
+                    # Dingding.send_msg(f'StopByMinPrice 下单:   \n{close_flag} {instrument}  \n'
+                    #                   f'offset_flag={offset_flag}  \ndirection={direction}  \n'
+                    #                   f'order_price_type={order_price_type}  \n'
+                    #                   f'price={price}  \nvolume={volume}')
 
                     self.gateway.logger.info(f'StopByMinPrice 下单:{instrument} {close_flag}'
                                              f'offset_flag={offset_flag} direction={direction} '
