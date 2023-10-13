@@ -1,6 +1,0 @@
-2023-07-28 14:42:56,495 - logging_demo - funcv - INFO - dfgdsfg
-2023-07-28 14:42:56,495 - logging_demo - funcv - ERROR - 出现错误：division by zero
-Traceback (most recent call last):
-  File "/Users/edy/byt_pub/a_songbo/logging_demo/logging_demo.py", line 13, in funcv
-    1 / 0
-ZeroDivisionError: division by zero
