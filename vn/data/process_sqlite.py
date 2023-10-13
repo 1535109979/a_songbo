@@ -104,7 +104,7 @@ if __name__ == '__main__':
     for user in users:
         # print(user)
         print(user.instrument, user.price, user.timestamp,)
-        # if user.instrument == 'ag2311P5500':
+        # if user.instrument == 'ru2311C13250':
         #     user.delete_instance()
         #     user.save()
 

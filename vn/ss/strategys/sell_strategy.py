@@ -16,7 +16,7 @@ class SellStrategy:
 
     def cal_signal(self, quote):
         instrument = quote['InstrumentID']
-        last_price = quote['LastPrice']
+        last_price = round(float(quote['LastPrice']), 2)
 
         variety = re.match(r'.+[A-Z]', instrument).group()
         now_timestamp = time.time()
