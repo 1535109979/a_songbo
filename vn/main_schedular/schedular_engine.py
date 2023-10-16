@@ -30,7 +30,7 @@ class EngineSchedular:
         # self.scheduler.add_job(self.stop_engine, 'cron', hour=13, minute=18, second=25)
         # self.scheduler.add_job(self.stop_engine, 'interval', seconds=10)
 
-        # self.run_engine()
+        self.run_engine()
 
         self.scheduler.start()
 

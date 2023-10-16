@@ -71,6 +71,6 @@ class SellStrategy:
                                      f'offset_flag={offset_flag} direction={direction} '
                                      f'order_price_type={order_price_type} '
                                      f'price={price} volume={volume}')
-            self.gateway.td_process.send_order(instrument, offset_flag, direction, order_price_type,
-                                           price, volume)
+            # self.gateway.td_process.send_order(instrument, offset_flag, direction, order_price_type,
+            #                                price, volume)
 
