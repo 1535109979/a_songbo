@@ -23,9 +23,9 @@ def common_exception(log_flag: bool = None):
             except Exception as e:
                 traceback.print_exc()
                 log_msg = "!!!error= %s !!! %s" % (e, kwargs)
+                logger.exception(log_msg)
                 if log_flag:
                     logger.info(log_msg)
-                    logging.info(traceback.format_exc())
                     Dingding.send_msg(log_msg, isatall=True)
 
         return wrapper
@@ -33,3 +33,10 @@ def common_exception(log_flag: bool = None):
     return decorator
 
 
+# try:
+#     # 执行可能引发异常的代码
+#     result = 1 / 0
+# except Exception as e:
+#     # 记录异常信息
+#     # logger.exception("An exception occurred")
+#     logger.info(e)

@@ -1,11 +1,8 @@
 import asyncio
 import re
 import sys
-import time
 from datetime import datetime
 from itertools import groupby
-
-import pandas as pd
 
 from a_songbo.vn.books.variety_book import VarietyBook
 from a_songbo.vn.ss.ss_grpc.ss_grpc_server import StrategyGrpcServer
@@ -83,7 +80,7 @@ class StrategyEngine:
                 quote[k] = 0
 
         # timestamp_diff = float(time.time()) - float(quote['timestamp'])
-        # print('---', quote['InstrumentID'], timestamp_diff, quote)
+        # print('---', quote['InstrumentID'], timestamp_diff*1000, quote)
         # return
         # print(self.ss_gateway.last_price.keys())
 

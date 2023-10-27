@@ -1,6 +1,7 @@
 import asyncio
 import logging
 import os
+import sys
 import time
 import traceback
 from asyncio import events
@@ -29,6 +30,9 @@ class VnMarketGateway():
         return ctp_setting
 
     def on_quote(self, quote):
+        for k, v in quote.items():
+            if v == sys.float_info.max:
+                quote[k] = 0
         symbol = quote["InstrumentID"]
         quote = {k: str(v) for k, v in quote.items() if v is not None}
         quote['timestamp'] = str(time.time())

@@ -1,0 +1,64 @@
+syntax = "proto3";
+package calculator;
+
+service Calculator {
+    rpc Add (AddRequest) returns (AddResponse) {}
+}
+
+// 定义加法器请求和响应消息格式
+message AddRequest {
+  int32 num1 = 1;
+  int32 num2 = 2;
+}
+
+message AddResponse {
+  int32 sum = 1;
+}
+
+
+syntax = "proto3";
+package tradeserver;
+
+service VnGrpcTradeServer {
+    rpc get_account_position (QueryPositionRequest) returns (QueryPositionResponse) {}
+}
+
+// 定义加法器请求和响应消息格式
+message QueryPositionRequest {
+  string account_id = 1;
+}
+
+message QueryPositionResponse {
+  map<string, string> quote = 1;
+}
+
+
+
+from concurrent import futures
+import grpc
+import tradeserver_pb2
+import tradeserver_pb2_grpc
+
+class VnGrpcTradeServer(tradeserver_pb2_grpc.VnGrpcTradeServer):
+    def query_position(self, request, context):
+        print(request.account_id)
+        return tradeserver_pb2.QueryPositionResponse(quote='')
+
+
+server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+tradeserver_pb2_grpc.add_VnGrpcTradeServerServicer_to_server(VnGrpcTradeServer(), server)
+server.add_insecure_port('[::]:8501')
+server.start()
+server.wait_for_termination()
+
+
+import grpc
+import tradeserver_pb2
+import tradeserver_pb2_grpc
+
+
+channel = grpc.insecure_channel("ipv4:127.0.0.1:8501")
+stub = tradeserver_pb2_grpc.VnGrpcTradeServerStub(channel)
+response = stub.get_account_position(tradeserver_pb2.QueryPositionRequest(account_id='testlink'))
+print(response)
+

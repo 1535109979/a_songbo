@@ -14,7 +14,6 @@ class StopByMinPrice:
 
         self.configs = StopByMinPrice_params
 
-    @common_exception(log_flag=True)
     def cal_signal(self, quote):
         instrument = quote['InstrumentID']
         now_timestamp = time.time()

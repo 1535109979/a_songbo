@@ -38,12 +38,12 @@ class VnMarketStub():
 
 
 def on_quote(quote):
-    print('get quote:', quote)
+    print('get quote:', quote['InstrumentID'], quote)
     # print('get quote:', quote['InstrumentID'])
 
 
 if __name__ == '__main__':
-    VnMarketStub().subscribe_stream_in_new_thread(instruments=['ru2311C13250'], on_quote=on_quote)
+    VnMarketStub().subscribe_stream_in_new_thread(instruments=['lc2311', 'si2311'], on_quote=on_quote)
     # print('----')
     # VnMarketStub().add_subscribe(instruments=['rb2311', 'rb2311C4000'])
     # try:

@@ -40,9 +40,9 @@ class StrategyGateway:
 
         self.left_day_map = {}
 
-        self.expire_options = pd.read_csv('../data/expire_options.csv')
-        self.expire_options.columns = ['idex', 'code', 'expire_day', 'exchange', 'left_day', 'datetime']
-        self.set_left_day_map()
+        # self.expire_options = pd.read_csv('../data/expire_options.csv')
+        # self.expire_options.columns = ['idex', 'code', 'expire_day', 'exchange', 'left_day', 'datetime']
+        # self.set_left_day_map()
 
         self.sub_instrument = set()
         self.in_tradinng_time = False

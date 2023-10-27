@@ -412,3 +412,137 @@
 2023-10-13 17:06:25,118 INFO 追加订阅 ipv4:127.0.0.1:55528：{'al2311P18900'}
 2023-10-13 17:06:25,118 INFO 添加订阅：al2311P18900
 2023-10-13 17:06:25,124 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'al2311P18900'},reqid:0,lastTrue
+2023-10-20 17:52:21,782 INFO 行情服务器,开始连接:tcp://180.168.146.187:10131
+2023-10-20 17:52:21,818 INFO 服务器连接成功，开始登陆
+2023-10-20 17:52:21,824 INFO 行情服务器登录成功
+2023-10-20 17:53:34,473 INFO 服务器接收到ipv4:127.0.0.1:57625的数据,['ag2311', 'al2311', 'au2311', 'cu2311', 'rb2311', 'ru2311', 'zn2311']
+2023-10-20 17:53:34,473 INFO 添加订阅：al2311
+2023-10-20 17:53:34,473 INFO 添加订阅：cu2311
+2023-10-20 17:53:34,473 INFO 添加订阅：au2311
+2023-10-20 17:53:34,473 INFO 添加订阅：ag2311
+2023-10-20 17:53:34,474 INFO 添加订阅：ru2311
+2023-10-20 17:53:34,474 INFO 添加订阅：rb2311
+2023-10-20 17:53:34,474 INFO 添加订阅：zn2311
+2023-10-20 17:53:34,631 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'al2311'},reqid:0,lastTrue
+2023-10-20 17:53:34,632 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'cu2311'},reqid:0,lastTrue
+2023-10-20 17:53:34,632 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'au2311'},reqid:0,lastTrue
+2023-10-20 17:53:34,633 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ag2311'},reqid:0,lastTrue
+2023-10-20 17:53:34,634 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ru2311'},reqid:0,lastTrue
+2023-10-20 17:53:34,635 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'rb2311'},reqid:0,lastTrue
+2023-10-20 17:53:34,635 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'zn2311'},reqid:0,lastTrue
+2023-10-20 17:54:30,080 INFO 服务器接收到ipv4:127.0.0.1:57702的数据,['ag2311', 'al2311', 'au2311', 'cu2311', 'rb2311', 'ru2311', 'zn2311']
+2023-10-20 17:54:30,081 INFO 添加订阅：al2311
+2023-10-20 17:54:30,081 INFO 添加订阅：cu2311
+2023-10-20 17:54:30,081 INFO 添加订阅：au2311
+2023-10-20 17:54:30,081 INFO 添加订阅：ag2311
+2023-10-20 17:54:30,081 INFO 添加订阅：ru2311
+2023-10-20 17:54:30,081 INFO 添加订阅：rb2311
+2023-10-20 17:54:30,081 INFO 添加订阅：zn2311
+2023-10-20 17:54:30,090 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'al2311'},reqid:0,lastTrue
+2023-10-20 17:54:30,090 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'cu2311'},reqid:0,lastTrue
+2023-10-20 17:54:30,090 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'au2311'},reqid:0,lastTrue
+2023-10-20 17:54:30,090 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ag2311'},reqid:0,lastTrue
+2023-10-20 17:54:30,090 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ru2311'},reqid:0,lastTrue
+2023-10-20 17:54:30,091 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'rb2311'},reqid:0,lastTrue
+2023-10-20 17:54:30,091 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'zn2311'},reqid:0,lastTrue
+2023-10-20 17:54:48,100 INFO 服务器接收到ipv4:127.0.0.1:57730的数据,['ag2311', 'al2311', 'au2311', 'cu2311', 'rb2311', 'ru2311', 'zn2311']
+2023-10-20 17:54:48,100 INFO 添加订阅：al2311
+2023-10-20 17:54:48,100 INFO 添加订阅：cu2311
+2023-10-20 17:54:48,100 INFO 添加订阅：au2311
+2023-10-20 17:54:48,100 INFO 添加订阅：ag2311
+2023-10-20 17:54:48,100 INFO 添加订阅：ru2311
+2023-10-20 17:54:48,100 INFO 添加订阅：rb2311
+2023-10-20 17:54:48,100 INFO 添加订阅：zn2311
+2023-10-20 17:54:48,295 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'al2311'},reqid:0,lastTrue
+2023-10-20 17:54:48,295 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'cu2311'},reqid:0,lastTrue
+2023-10-20 17:54:48,295 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'au2311'},reqid:0,lastTrue
+2023-10-20 17:54:48,295 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ag2311'},reqid:0,lastTrue
+2023-10-20 17:54:48,295 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ru2311'},reqid:0,lastTrue
+2023-10-20 17:54:48,295 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'rb2311'},reqid:0,lastTrue
+2023-10-20 17:54:48,296 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'zn2311'},reqid:0,lastTrue
+2023-10-20 17:55:29,926 INFO 服务器接收到ipv4:127.0.0.1:57790的数据,['ag2311', 'al2311', 'au2311', 'cu2311', 'rb2311', 'ru2311', 'zn2311']
+2023-10-20 17:55:29,926 INFO 添加订阅：al2311
+2023-10-20 17:55:29,926 INFO 添加订阅：cu2311
+2023-10-20 17:55:29,926 INFO 添加订阅：au2311
+2023-10-20 17:55:29,926 INFO 添加订阅：ag2311
+2023-10-20 17:55:29,926 INFO 添加订阅：ru2311
+2023-10-20 17:55:29,926 INFO 添加订阅：rb2311
+2023-10-20 17:55:29,926 INFO 添加订阅：zn2311
+2023-10-20 17:55:29,947 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'al2311'},reqid:0,lastTrue
+2023-10-20 17:55:29,947 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'cu2311'},reqid:0,lastTrue
+2023-10-20 17:55:29,954 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'au2311'},reqid:0,lastTrue
+2023-10-20 17:55:29,954 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ag2311'},reqid:0,lastTrue
+2023-10-20 17:55:29,954 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'ru2311'},reqid:0,lastTrue
+2023-10-20 17:55:29,954 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'rb2311'},reqid:0,lastTrue
+2023-10-20 17:55:29,954 INFO 成功添加订阅,data:{'reserve1': '嗑\x15调\x7f', 'InstrumentID': 'zn2311'},reqid:0,lastTrue
+2023-10-24 17:13:33,804 INFO 行情服务器,开始连接:tcp://180.168.146.187:10131
+2023-10-24 17:13:33,853 INFO 服务器连接成功，开始登陆
+2023-10-24 17:13:33,860 INFO 行情服务器登录成功
+2023-10-27 11:31:45,211 INFO 行情服务器,开始连接:tcp://180.168.146.187:10131
+2023-10-27 11:32:01,248 INFO 行情服务器,开始连接:tcp://180.168.146.187:10212
+2023-10-27 11:32:01,277 INFO 服务器连接成功，开始登陆
+2023-10-27 11:32:01,283 INFO 行情服务器登录成功
+2023-10-27 11:32:43,240 INFO 服务器接收到ipv4:127.0.0.1:56690的数据,['lc2311', 'si2311']
+2023-10-27 11:32:43,240 INFO 添加订阅：si2311
+2023-10-27 11:32:43,240 INFO 添加订阅：lc2311
+2023-10-27 11:32:43,247 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'si2311'},reqid:0,lastTrue
+2023-10-27 11:32:43,248 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'lc2311'},reqid:0,lastTrue
+2023-10-27 11:33:47,472 INFO 服务器接收到ipv4:127.0.0.1:56774的数据,['lc2311', 'si2311']
+2023-10-27 11:33:47,472 INFO 添加订阅：si2311
+2023-10-27 11:33:47,472 INFO 添加订阅：lc2311
+2023-10-27 11:33:47,479 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'si2311'},reqid:0,lastTrue
+2023-10-27 11:33:47,479 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'lc2311'},reqid:0,lastTrue
+2023-10-27 11:34:21,452 INFO 服务器接收到ipv4:127.0.0.1:56821的数据,['lc2311', 'si2311']
+2023-10-27 11:34:21,452 INFO 添加订阅：si2311
+2023-10-27 11:34:21,452 INFO 添加订阅：lc2311
+2023-10-27 11:34:21,463 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'si2311'},reqid:0,lastTrue
+2023-10-27 11:34:21,463 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'lc2311'},reqid:0,lastTrue
+2023-10-27 11:38:38,306 INFO 行情服务器,开始连接:tcp://180.168.146.187:10212
+2023-10-27 11:38:38,331 INFO 服务器连接成功，开始登陆
+2023-10-27 11:38:38,336 INFO 行情服务器登录成功
+2023-10-27 11:38:41,063 INFO 服务器接收到ipv4:127.0.0.1:57263的数据,['lc2311', 'si2311']
+2023-10-27 11:38:41,063 INFO 添加订阅：lc2311
+2023-10-27 11:38:41,064 INFO 添加订阅：si2311
+2023-10-27 11:38:41,067 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'lc2311'},reqid:0,lastTrue
+2023-10-27 11:38:41,067 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'si2311'},reqid:0,lastTrue
+2023-10-27 14:08:28,718 INFO 行情服务器,开始连接:tcp://180.168.146.187:10212
+2023-10-27 14:08:28,758 INFO 服务器连接成功，开始登陆
+2023-10-27 14:08:28,769 INFO 行情服务器登录成功
+2023-10-27 14:09:58,663 INFO 服务器接收到ipv4:127.0.0.1:53019的数据,['rb2403']
+2023-10-27 14:09:58,663 INFO 添加订阅：rb2403
+2023-10-27 14:09:58,669 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2403'},reqid:0,lastTrue
+2023-10-27 14:47:16,058 INFO 服务器接收到ipv4:127.0.0.1:56039的数据,['rb2403']
+2023-10-27 14:47:16,058 INFO 添加订阅：rb2403
+2023-10-27 14:47:16,069 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2403'},reqid:0,lastTrue
+2023-10-27 14:49:20,791 INFO 服务器接收到ipv4:127.0.0.1:56209的数据,['rb2403', 'rb2401', 'rb2402', 'pb2403', 'pb2402', 'pb2401']
+2023-10-27 14:49:20,791 INFO 添加订阅：rb2401
+2023-10-27 14:49:20,791 INFO 添加订阅：rb2402
+2023-10-27 14:49:20,791 INFO 添加订阅：pb2402
+2023-10-27 14:49:20,791 INFO 添加订阅：pb2403
+2023-10-27 14:49:20,791 INFO 添加订阅：pb2401
+2023-10-27 14:49:20,791 INFO 添加订阅：rb2403
+2023-10-27 14:49:20,795 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2401'},reqid:0,lastTrue
+2023-10-27 14:49:20,795 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2402'},reqid:0,lastTrue
+2023-10-27 14:49:20,798 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'pb2402'},reqid:0,lastTrue
+2023-10-27 14:49:20,799 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'pb2403'},reqid:0,lastTrue
+2023-10-27 14:49:20,799 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'pb2401'},reqid:0,lastTrue
+2023-10-27 14:49:20,799 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2403'},reqid:0,lastTrue
+2023-10-27 15:28:02,106 INFO 行情服务器,开始连接:tcp://180.168.146.187:10212
+2023-10-27 15:28:02,135 INFO 服务器连接成功，开始登陆
+2023-10-27 15:28:02,140 INFO 行情服务器登录成功
+2023-10-27 15:28:05,445 INFO 服务器接收到ipv4:127.0.0.1:59415的数据,['rb2403', 'rb2401', 'rb2402', 'pb2403', 'pb2402', 'pb2401']
+2023-10-27 15:28:05,445 INFO 添加订阅：pb2402
+2023-10-27 15:28:05,445 INFO 添加订阅：pb2401
+2023-10-27 15:28:05,445 INFO 添加订阅：rb2403
+2023-10-27 15:28:05,445 INFO 添加订阅：rb2402
+2023-10-27 15:28:05,445 INFO 添加订阅：pb2403
+2023-10-27 15:28:05,445 INFO 添加订阅：rb2401
+2023-10-27 15:28:05,450 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'pb2402'},reqid:0,lastTrue
+2023-10-27 15:28:05,451 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'pb2401'},reqid:0,lastTrue
+2023-10-27 15:28:05,451 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2403'},reqid:0,lastTrue
+2023-10-27 15:28:05,451 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2402'},reqid:0,lastTrue
+2023-10-27 15:28:05,451 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'pb2403'},reqid:0,lastTrue
+2023-10-27 15:28:05,452 INFO 成功添加订阅,data:{'reserve1': '', 'InstrumentID': 'rb2401'},reqid:0,lastTrue
+2023-10-27 16:15:15,736 INFO 行情服务器,开始连接:tcp://180.168.146.187:10131
+2023-10-27 16:15:15,769 INFO 服务器连接成功，开始登陆
+2023-10-27 16:15:15,777 INFO 行情服务器登录成功
