@@ -11,3 +11,5 @@ returns = np.diff(prices) / prices[:-1]
 volatility = np.std(returns) * np.sqrt(len(returns))
 
 print("历史波动率:", volatility)
+
+
