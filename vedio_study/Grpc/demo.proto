@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package grpc_demo;
+
+service DemoService {
+  rpc SendMessage (DemoRequest) returns (DemoResponse) {}
+}
+
+message DemoRequest {
+  string message = 1;
+}
+
+message DemoResponse {
+  string message = 1;
+}
