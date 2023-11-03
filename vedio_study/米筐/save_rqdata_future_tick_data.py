@@ -6,14 +6,15 @@ import rqdatac
 from sqlalchemy import create_engine, text
 
 rqdatac.init(username='15605173271', password='songbo1997')
-conn = create_engine('mysql+pymysql://app:6uRa&D$%ji66WuHp@sh-cdb-peeq202o.sql.tencentcdb.com:59964/app?charset=utf8mb4')
+conn = create_engine('mysql+pymysql://app:6uRa&D$%ji66WuHp@sh-cdb-peeq202o.sql.tencentcdb.com:59964/'
+                     'app?charset=utf8mb4')
 
 sql = (f'select trading_date, instrument, instrument_type, exchange_type  from daily_instrument '
        f'where dominant_flag = "1" and trading_date > "2023-06-30"')
 with conn.connect() as conn:
     data = pd.read_sql(text(sql), conn)
 
-data = data[data['exchange_type'] == 'SHFE'].reset_index(drop=True)
+data = data[data['exchange_type'] == 'DCE'].reset_index(drop=True)
 
 
 def save_to_sqlite(table_name, df):
@@ -36,8 +37,8 @@ def get_data(symbol, start_date, end_date, frequency='tick'):
 
 def process_variety(df):
     vari = list(set(df['instrument_type'].tolist()))[0]
-    if vari in ['ag']:
-        return
+    # if vari not in ['ag']:
+    #     return
     print(vari)
 
     def process_instrument(df_instrument):

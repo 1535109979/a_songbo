@@ -10,9 +10,10 @@ class ProcessSqlite():
     def process(self):
         tables = self.query_tables()
         print(tables)
-        print(len(tables))
+        # print(len(tables))
         # self.save_df('demo',df)
-        self.read_df('AL')
+        # df = self.read_df('dominant_data')
+        # print(df)
 
     def query_tables(self):
         with sqlite3.connect(self.fp) as conn:
@@ -27,7 +28,7 @@ class ProcessSqlite():
     def read_df(self, table_name):
         with sqlite3.connect(self.fp) as conn:
             df = pd.read_sql(f'SELECT * FROM {table_name}', conn)
-            print(df)
+        return df
 
 
 if __name__ == '__main__':
