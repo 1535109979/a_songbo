@@ -12,13 +12,14 @@ class Rqdata_future:
     def __init__(self):
         self.saved_variety = self.read_saved_variety()
         print(len(self.saved_variety))
+        self.variety = None
 
     def process(self):
         self.save_future_tick_data()
 
     def save_future_tick_data(self):
         df = self.read_varietys()
-        df = df[df['dominant_type'] == '88']
+        df = df[df['dominant_type'] == '88A2']
         df = df[df['date'] > '2023-06-30 00:00:00']
         df['variety'] = df['dominant'].apply(lambda x: re.match(r'[A-Z]+', x).group())
         print(df)
@@ -31,16 +32,18 @@ class Rqdata_future:
             start_date = df_instrument.loc[0].date
             end_date = df_instrument.loc[len(df_instrument) - 1].date
             print(symbol, start_date, end_date)
+            # quit()
             self.get_data(symbol, start_date, end_date)
             print('save success')
 
         def process_variety(df_variety):
-            variety = df_variety['variety'].unique().tolist()[0]
-            if variety in self.saved_variety:
+            self.variety = df_variety['variety'].unique().tolist()[0] + '_88A2'
+            print(self.variety)
+            if self.variety in self.saved_variety:
                 return
-            print(variety)
+            print(self.variety)
             df_variety.groupby('dominant').apply(process_instrument)
-            quit()
+            # quit()
 
         df.groupby('variety').apply(process_variety)
 
@@ -63,8 +66,6 @@ class Rqdata_future:
             df.to_sql(table_name, conn, if_exists='append', index=False)
 
     def get_data(self, symbol, start_date, end_date, frequency='tick'):
-        variety = re.match(r'[A-Z]+', symbol).group()
-
         data = rqdatac.get_price(symbol,
                                  start_date=start_date,
                                  end_date=end_date,
@@ -72,7 +73,7 @@ class Rqdata_future:
                                  )
         data = data.reset_index()
         # print(data)
-        self.save_to_sqlite(variety, data)
+        self.save_to_sqlite(self.variety, data)
 
 
 if __name__ == '__main__':
