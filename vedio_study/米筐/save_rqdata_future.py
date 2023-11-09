@@ -13,13 +13,14 @@ class Rqdata_future:
         self.saved_variety = self.read_saved_variety()
         print(len(self.saved_variety))
         self.variety = None
+        self.dominant_type = '88'
 
     def process(self):
         self.save_future_tick_data()
 
     def save_future_tick_data(self):
         df = self.read_varietys()
-        df = df[df['dominant_type'] == '88A2']
+        df = df[df['dominant_type'] == self.dominant_type]
         df = df[df['date'] > '2023-06-30 00:00:00']
         df['variety'] = df['dominant'].apply(lambda x: re.match(r'[A-Z]+', x).group())
         print(df)
@@ -27,23 +28,23 @@ class Rqdata_future:
         # print(varietys)
 
         def process_instrument(df_instrument):
+            print(df_instrument)
             df_instrument = df_instrument.reset_index(drop=True)
             symbol = df_instrument.loc[0].dominant.upper()
             start_date = df_instrument.loc[0].date
             end_date = df_instrument.loc[len(df_instrument) - 1].date
-            print(symbol, start_date, end_date)
+            # print(symbol, start_date, end_date)
             # quit()
             self.get_data(symbol, start_date, end_date)
             print('save success')
 
         def process_variety(df_variety):
-            self.variety = df_variety['variety'].unique().tolist()[0] + '_88A2'
-            print(self.variety)
+            self.variety = df_variety['variety'].unique().tolist()[0] + f'_{self.dominant_type}'
             if self.variety in self.saved_variety:
                 return
             print(self.variety)
             df_variety.groupby('dominant').apply(process_instrument)
-            # quit()
+            quit()
 
         df.groupby('variety').apply(process_variety)
 
@@ -62,6 +63,7 @@ class Rqdata_future:
         return [x[0] for x in result]
 
     def save_to_sqlite(self, table_name, df):
+        print(f'save to table: {table_name}')
         with sqlite3.connect('data/future_data_tick.db') as conn:
             df.to_sql(table_name, conn, if_exists='append', index=False)
 

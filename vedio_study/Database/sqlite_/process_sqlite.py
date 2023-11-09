@@ -5,19 +5,23 @@ import pandas as pd
 
 class ProcessSqlite():
     def __init__(self):
-        # fp = '/Users/edy/.vntrader/database.db'
-        fp = 'example.db'
+        fp = '/Users/edy/.vntrader/database.db'
+        # fp = 'example.db'
         self.connection = sqlite3.connect(fp)
         self.cursor = self.connection.cursor()
 
     def process(self):
         self.query_tables()
 
+        res = self.cursor.execute("SELECT * FROM dbtickdata ")
+        for data in res:
+            print(data)
+
     def query_tables(self):
         result = self.cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
         for row in result:
             print(row)
-        self.connection.close()
+        # self.connection.close()
 
     def query_tables_data(self):
         data = self.cursor.execute("SELECT * FROM dbtickdata")

@@ -4,7 +4,7 @@ from vnpy.event import EventEngine
 from vnpy.trader.engine import MainEngine
 from vnpy.trader.ui import MainWindow, create_qapp
 
-from vnpy_ctp import CtpGateway
+# from vnpy_ctp import CtpGateway
 # from vnpy_ctptest import CtptestGateway
 # from vnpy_mini import MiniGateway
 # from vnpy_femas import FemasGateway
@@ -24,11 +24,11 @@ from vnpy_ctp import CtpGateway
 # from vnpy_ost import OstGateway
 # from vnpy_hft import GtjaGateway
 
-from vnpy_ctastrategy import CtaStrategyApp
+# from vnpy_ctastrategy import CtaStrategyApp
 from vnpy_ctabacktester import CtaBacktesterApp
 # from vnpy_spreadtrading import SpreadTradingApp
 # from vnpy_algotrading import AlgoTradingApp
-from vnpy_optionmaster import OptionMasterApp
+# from vnpy_optionmaster import OptionMasterApp
 # from vnpy_portfoliostrategy import PortfolioStrategyApp
 # from vnpy_scripttrader import ScriptTraderApp
 # from vnpy_chartwizard import ChartWizardApp
@@ -83,7 +83,7 @@ def main():
     main_engine.add_app(CtaBacktesterApp)
     # main_engine.add_app(SpreadTradingApp)
     # main_engine.add_app(AlgoTradingApp)
-    main_engine.add_app(OptionMasterApp)
+    # main_engine.add_app(OptionMasterApp)
     # main_engine.add_app(PortfolioStrategyApp)
     # main_engine.add_app(ScriptTraderApp)
     # main_engine.add_app(ChartWizardApp)

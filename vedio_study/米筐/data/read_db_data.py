@@ -10,11 +10,11 @@ class ProcessSqlite:
 
     def process(self):
         tables = self.query_tables()
-        print(tables)
+        print(len(tables), tables)
         # print(len(tables))
         # self.save_df('demo',df)
 
-        # self.drop_table('T')
+        # self.drop_table('IH_88')
 
     def save_to_clickhouse(self, df):
         a = time.time()
