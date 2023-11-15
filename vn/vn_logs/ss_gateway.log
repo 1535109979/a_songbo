@@ -2515,3 +2515,536 @@ product_class: "FO"
 2023-10-27 14:49:20,761 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
 2023-10-27 15:28:05,394 INFO load min_price:{'ru2311C13750': {'price': 115.0, 'timestamp': 1697167631.003755}}
 2023-10-27 15:28:05,396 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
+2023-11-14 13:26:53,545 INFO load min_price:{'ru2311C13750': {'price': 115.0, 'timestamp': 1697167631.003755}}
+2023-11-14 13:26:53,546 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
+2023-11-14 13:27:50,361 INFO load min_price:{'ru2311C13750': {'price': 115.0, 'timestamp': 1697167631.003755}}
+2023-11-14 13:27:50,362 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
+2023-11-14 13:27:50,456 INFO <set_instrument_book> instrument: "rb2401"
+contract_multiplier: 10
+long_margin_ratio: 0.16
+short_margin_ratio: 0.16
+price_tick: 1
+product_class: "F"
+
+2023-11-14 13:27:50,462 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 13:30:10,619 INFO load min_price:{'ru2311C13750': {'price': 115.0, 'timestamp': 1697167631.003755}}
+2023-11-14 13:30:10,620 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
+2023-11-14 13:30:10,704 INFO <set_instrument_book> instrument: "rb2401"
+contract_multiplier: 10
+long_margin_ratio: 0.16
+short_margin_ratio: 0.16
+price_tick: 1
+product_class: "F"
+
+2023-11-14 13:30:10,705 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 13:30:26,125 INFO load min_price:{'ru2311C13750': {'price': 115.0, 'timestamp': 1697167631.003755}}
+2023-11-14 13:30:26,126 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
+2023-11-14 13:30:26,204 INFO <set_instrument_book> instrument: "rb2401"
+contract_multiplier: 10
+long_margin_ratio: 0.16
+short_margin_ratio: 0.16
+price_tick: 1
+product_class: "F"
+
+2023-11-14 13:30:26,211 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 13:30:56,227 INFO check_last_quote time_diff=0.08379220962524414
+2023-11-14 13:31:26,225 INFO check_last_quote time_diff=0.2434070110321045
+2023-11-14 13:31:56,225 INFO check_last_quote time_diff=0.5459573268890381
+2023-11-14 13:32:26,223 INFO check_last_quote time_diff=0.13761115074157715
+2023-11-14 13:32:56,225 INFO check_last_quote time_diff=0.061187028884887695
+2023-11-14 13:33:26,223 INFO check_last_quote time_diff=0.23680925369262695
+2023-11-14 13:33:56,225 INFO check_last_quote time_diff=0.19345521926879883
+2023-11-14 13:34:26,226 INFO check_last_quote time_diff=0.12907791137695312
+2023-11-14 13:34:56,226 INFO check_last_quote time_diff=0.10200023651123047
+2023-11-14 13:35:26,225 INFO check_last_quote time_diff=0.1852731704711914
+2023-11-14 13:35:55,538 INFO load min_price:{'ru2311C13750': {'price': 115.0, 'timestamp': 1697167631.003755}}
+2023-11-14 13:35:55,539 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
+2023-11-14 13:35:55,622 INFO <set_instrument_book> instrument: "rb2401"
+contract_multiplier: 10
+long_margin_ratio: 0.16
+short_margin_ratio: 0.16
+price_tick: 1
+product_class: "F"
+
+2023-11-14 13:35:55,630 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 13:37:21,782 INFO load min_price:{'ru2311C13750': {'price': 115.0, 'timestamp': 1697167631.003755}}
+2023-11-14 13:37:21,783 INFO load saved_price:{'ag2311': {'price': 5680.0, 'timestamp': 1697167735.5}, 'ag2311C5800': {'price': 27.5, 'timestamp': 1697167690.0}, 'ag2311P5500': {'price': 12.5, 'timestamp': 1697167333.0}, 'al2311': {'price': 18945.0, 'timestamp': 1697167737.5}, 'al2311C19000': {'price': 130.0, 'timestamp': 1697167737.5}, 'al2311C19100': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311C19200': {'price': 66.0, 'timestamp': 1697167737.5}, 'al2311P18700': {'price': 63.0, 'timestamp': 1697167737.5}, 'al2311P18800': {'price': 93.0, 'timestamp': 1697167730.5}, 'al2311P18900': {'price': 132.0, 'timestamp': 1697167737.5}, 'au2311': {'price': 454.42, 'timestamp': 1697167725.5}, 'au2311C464': {'price': 1.08, 'timestamp': 1697167094.5}, 'au2311P440': {'price': 0.24, 'timestamp': 1697164885.0}, 'cu2311': {'price': 66470.0, 'timestamp': 1697167737.0}, 'cu2311C68000': {'price': 142.0, 'timestamp': 1697167737.5}, 'cu2311P65000': {'price': 214.0, 'timestamp': 1697167730.5}, 'rb2311': {'price': 3580.0, 'timestamp': 1697167737.5}, 'rb2311C3650': {'price': 15.0, 'timestamp': 1697167733.5}, 'rb2311P3500': {'price': 12.0, 'timestamp': 1697167737.5}, 'ru2311': {'price': 13380.0, 'timestamp': 1697167735.5}, 'ru2311C13750': {'price': 120.0, 'timestamp': 1697167725.0}, 'ru2311P13000': {'price': 77.0, 'timestamp': 1697167731.0}, 'zn2311': {'price': 21140.0, 'timestamp': 1697167736.5}, 'zn2311C21200': {'price': 241.0, 'timestamp': 1697167730.5}, 'zn2311C21400': {'price': 154.0, 'timestamp': 1697167730.5}, 'zn2311P20600': {'price': 98.0, 'timestamp': 1697167735.5}, 'zn2311P20800': {'price': 145.0, 'timestamp': 1697167730.5}}
+2023-11-14 13:37:21,864 INFO <set_instrument_book> instrument: "rb2401"
+contract_multiplier: 10
+long_margin_ratio: 0.16
+short_margin_ratio: 0.16
+price_tick: 1
+product_class: "F"
+
+2023-11-14 13:37:21,871 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 13:37:51,888 INFO check_last_quote time_diff=0.18503189086914062
+2023-11-14 13:38:21,887 INFO check_last_quote time_diff=0.35698509216308594
+2023-11-14 13:38:51,882 INFO check_last_quote time_diff=0.3637537956237793
+2023-11-14 13:39:21,887 INFO check_last_quote time_diff=0.34195518493652344
+2023-11-14 13:39:51,887 INFO check_last_quote time_diff=0.09833693504333496
+2023-11-14 13:40:21,886 INFO check_last_quote time_diff=0.39613819122314453
+2023-11-14 13:40:51,884 INFO check_last_quote time_diff=0.11045098304748535
+2023-11-14 13:41:21,886 INFO check_last_quote time_diff=0.14874601364135742
+2023-11-14 13:41:51,886 INFO check_last_quote time_diff=0.2700068950653076
+2023-11-14 13:42:21,886 INFO check_last_quote time_diff=0.23124098777770996
+2023-11-14 13:42:51,887 INFO check_last_quote time_diff=0.20282220840454102
+2023-11-14 13:43:21,884 INFO check_last_quote time_diff=0.28299784660339355
+2023-11-14 13:43:51,887 INFO check_last_quote time_diff=0.35968494415283203
+2023-11-14 13:44:21,886 INFO check_last_quote time_diff=0.049291133880615234
+2023-11-14 13:44:51,886 INFO check_last_quote time_diff=0.14568805694580078
+2023-11-14 13:45:21,886 INFO check_last_quote time_diff=0.3793299198150635
+2023-11-14 13:45:51,885 INFO check_last_quote time_diff=0.14578676223754883
+2023-11-14 13:46:21,885 INFO check_last_quote time_diff=0.3775448799133301
+2023-11-14 13:46:51,886 INFO check_last_quote time_diff=0.046083927154541016
+2023-11-14 13:47:21,886 INFO check_last_quote time_diff=0.18578195571899414
+2023-11-14 13:47:51,887 INFO check_last_quote time_diff=0.3704049587249756
+2023-11-14 13:48:21,886 INFO check_last_quote time_diff=0.12534213066101074
+2023-11-14 13:48:51,887 INFO check_last_quote time_diff=0.3498201370239258
+2023-11-14 13:49:21,885 INFO check_last_quote time_diff=0.23937177658081055
+2023-11-14 13:49:51,884 INFO check_last_quote time_diff=0.25370287895202637
+2023-11-14 13:50:21,887 INFO check_last_quote time_diff=0.3046269416809082
+2023-11-14 13:50:51,884 INFO check_last_quote time_diff=0.3705730438232422
+2023-11-14 13:51:21,882 INFO check_last_quote time_diff=0.28435826301574707
+2023-11-14 13:51:51,885 INFO check_last_quote time_diff=0.012627840042114258
+2023-11-14 13:52:21,885 INFO check_last_quote time_diff=0.2600538730621338
+2023-11-14 13:52:51,887 INFO check_last_quote time_diff=0.1628563404083252
+2023-11-14 13:53:21,882 INFO check_last_quote time_diff=0.29245996475219727
+2023-11-14 13:53:51,883 INFO check_last_quote time_diff=0.38246583938598633
+2023-11-14 13:54:21,886 INFO check_last_quote time_diff=0.26036787033081055
+2023-11-14 13:54:51,886 INFO check_last_quote time_diff=0.4112889766693115
+2023-11-14 13:55:21,887 INFO check_last_quote time_diff=0.3499891757965088
+2023-11-14 13:55:51,886 INFO check_last_quote time_diff=0.37306904792785645
+2023-11-14 13:56:21,887 INFO check_last_quote time_diff=0.6532580852508545
+2023-11-14 13:56:51,885 INFO check_last_quote time_diff=0.22619318962097168
+2023-11-14 13:57:21,886 INFO check_last_quote time_diff=0.23692798614501953
+2023-11-14 13:57:51,886 INFO check_last_quote time_diff=0.4393951892852783
+2023-11-14 13:58:21,886 INFO check_last_quote time_diff=0.43824076652526855
+2023-11-14 13:58:51,884 INFO check_last_quote time_diff=0.228989839553833
+2023-11-14 13:59:21,887 INFO check_last_quote time_diff=0.39366602897644043
+2023-11-14 13:59:51,887 INFO check_last_quote time_diff=0.22433090209960938
+2023-11-14 14:00:21,887 INFO check_last_quote time_diff=0.012768745422363281
+2023-11-14 14:00:42,074 INFO SellStrategy 下单:sc2401C620 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=14.8 volume=1
+2023-11-14 14:00:42,074 INFO <trade_process send_order> instrument=sc2401C620 exchange_type=INE offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=14.8 volume=1
+2023-11-14 14:00:42,075 INFO 下单成功 instrument:sc2401C620 order_id:114030083583960000000001
+2023-11-14 14:00:42,077 INFO SellStrategy 下单:sc2401P590 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=13.2 volume=1
+2023-11-14 14:00:42,077 INFO <trade_process send_order> instrument=sc2401P590 exchange_type=INE offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=13.2 volume=1
+2023-11-14 14:00:42,078 INFO 下单成功 instrument:sc2401P590 order_id:114030083583960000000002
+2023-11-14 14:00:42,322 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:00:42,322 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 14800, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:00:42,322 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '1', 'offset': 'OPEN', 'exchange_type': 'INE', 'trade_time': '1699941639000000000', 'price': '14.8', 'client_id': '3', 'order_id': '114030083583960000000001', 'account_id': '210380', 'trade_id': '270458', 'parent_order_id': '470567', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '14800.0', 'instrument': 'sc2401C620', 'side': 'SHORT', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:00:51,886 INFO check_last_quote time_diff=0.3487973213195801
+2023-11-14 14:01:08,630 INFO SellStrategy 下单:lc2401-P-140000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=4690.0 volume=1
+2023-11-14 14:01:08,630 INFO <trade_process send_order> instrument=lc2401-P-140000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=4690.0 volume=1
+2023-11-14 14:01:08,631 INFO 下单成功 instrument:lc2401-P-140000 order_id:114030083583960000000003
+2023-11-14 14:01:08,670 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:01:08,670 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:01:08,671 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4690, volume: 1, margin: 4690, cost: 4690, open_avg: 4690, exchange: GFEX, sellable: 1, 
+2023-11-14 14:01:08,671 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '3', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1699941666000000000', 'price': '4690.0', 'client_id': '3', 'order_id': '114030083583960000000003', 'account_id': '210380', 'trade_id': '271140', 'parent_order_id': '471695', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '4690.0', 'instrument': 'lc2401-P-140000', 'side': 'SHORT', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:01:21,886 INFO check_last_quote time_diff=0.18500471115112305
+2023-11-14 14:01:51,886 INFO check_last_quote time_diff=0.17934703826904297
+2023-11-14 14:02:21,884 INFO check_last_quote time_diff=0.28683972358703613
+2023-11-14 14:02:51,885 INFO check_last_quote time_diff=0.2661318778991699
+2023-11-14 14:03:21,886 INFO check_last_quote time_diff=0.16094470024108887
+2023-11-14 14:03:51,887 INFO check_last_quote time_diff=0.22242212295532227
+2023-11-14 14:04:09,889 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:04:09,889 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:04:09,889 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 13200, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:04:09,889 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4690, volume: 1, margin: 14258, cost: 4690, open_avg: 4690, exchange: GFEX, sellable: 1, 
+2023-11-14 14:04:09,889 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '2', 'offset': 'OPEN', 'exchange_type': 'INE', 'trade_time': '1699941847000000000', 'price': '13.200000000000001', 'client_id': '3', 'order_id': '114030083583960000000002', 'account_id': '210380', 'trade_id': '274665', 'parent_order_id': '470568', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '13200.0', 'instrument': 'sc2401P590', 'side': 'SHORT', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:04:21,886 INFO check_last_quote time_diff=0.31574201583862305
+2023-11-14 14:04:51,886 INFO check_last_quote time_diff=0.2121570110321045
+2023-11-14 14:05:21,885 INFO check_last_quote time_diff=0.4181389808654785
+2023-11-14 14:05:51,885 INFO check_last_quote time_diff=0.25614213943481445
+2023-11-14 14:06:21,882 INFO check_last_quote time_diff=0.20573902130126953
+2023-11-14 14:06:51,883 INFO check_last_quote time_diff=0.3764970302581787
+2023-11-14 14:07:21,886 INFO check_last_quote time_diff=0.15881919860839844
+2023-11-14 14:07:51,885 INFO check_last_quote time_diff=0.11784911155700684
+2023-11-14 14:08:15,440 INFO StopByMinPrice 下单:lc2401-P-140000 profit_stop_rateoffset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT price=4610.0 volume=1
+2023-11-14 14:08:15,441 INFO <trade_process send_order> instrument=lc2401-P-140000 exchange_type=GFEX offset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT order_price_type=LIMIT price=4610.0 volume=1
+2023-11-14 14:08:15,446 INFO 下单成功 instrument:lc2401-P-140000 order_id:114030083583960000000004
+2023-11-14 14:08:21,442 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:08:21,442 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:08:21,442 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 115518, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:08:21,442 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '4', 'offset': 'CLOSE', 'exchange_type': 'GFEX', 'trade_time': '1699942099000000000', 'price': '4590.0', 'client_id': '3', 'order_id': '114030083583960000000004', 'account_id': '210380', 'trade_id': '280074', 'parent_order_id': '486009', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-4590.0', 'instrument': 'lc2401-P-140000', 'side': 'LONG', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:08:21,662 INFO SellStrategy 下单:lc2401-P-138000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=3840.0 volume=1
+2023-11-14 14:08:21,662 INFO <trade_process send_order> instrument=lc2401-P-138000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=3840.0 volume=1
+2023-11-14 14:08:21,664 INFO 下单成功 instrument:lc2401-P-138000 order_id:114030083583960000000005
+2023-11-14 14:08:21,887 INFO check_last_quote time_diff=0.22847723960876465
+2023-11-14 14:08:51,885 INFO check_last_quote time_diff=0.26189208030700684
+2023-11-14 14:09:21,885 INFO check_last_quote time_diff=0.5475258827209473
+2023-11-14 14:09:51,886 INFO check_last_quote time_diff=0.4823019504547119
+2023-11-14 14:10:21,885 INFO check_last_quote time_diff=0.44074511528015137
+2023-11-14 14:10:51,887 INFO check_last_quote time_diff=0.3122873306274414
+2023-11-14 14:11:21,884 INFO check_last_quote time_diff=0.3779599666595459
+2023-11-14 14:11:51,883 INFO check_last_quote time_diff=0.29111218452453613
+2023-11-14 14:12:21,887 INFO check_last_quote time_diff=0.03807377815246582
+2023-11-14 14:12:51,886 INFO check_last_quote time_diff=0.2512078285217285
+2023-11-14 14:13:21,886 INFO check_last_quote time_diff=0.218580961227417
+2023-11-14 14:13:51,886 INFO check_last_quote time_diff=0.017222881317138672
+2023-11-14 14:14:21,886 INFO check_last_quote time_diff=0.23523998260498047
+2023-11-14 14:14:51,886 INFO check_last_quote time_diff=0.46413731575012207
+2023-11-14 14:15:21,883 INFO check_last_quote time_diff=0.4414641857147217
+2023-11-14 14:15:51,884 INFO check_last_quote time_diff=0.32598400115966797
+2023-11-14 14:16:21,884 INFO check_last_quote time_diff=0.436953067779541
+2023-11-14 14:16:51,886 INFO check_last_quote time_diff=0.3522989749908447
+2023-11-14 14:17:21,886 INFO check_last_quote time_diff=0.44516992568969727
+2023-11-14 14:17:51,887 INFO check_last_quote time_diff=0.46373891830444336
+2023-11-14 14:18:21,885 INFO check_last_quote time_diff=0.3990139961242676
+2023-11-14 14:18:51,885 INFO check_last_quote time_diff=0.20839595794677734
+2023-11-14 14:19:21,884 INFO check_last_quote time_diff=0.013169050216674805
+2023-11-14 14:19:51,886 INFO check_last_quote time_diff=0.012068033218383789
+2023-11-14 14:20:21,886 INFO check_last_quote time_diff=0.41619300842285156
+2023-11-14 14:20:51,913 INFO check_last_quote time_diff=0.34090232849121094
+2023-11-14 14:21:21,906 INFO check_last_quote time_diff=0.2727649211883545
+2023-11-14 14:21:51,890 INFO check_last_quote time_diff=0.2408900260925293
+2023-11-14 14:22:21,884 INFO check_last_quote time_diff=0.20205998420715332
+2023-11-14 14:22:51,891 INFO check_last_quote time_diff=0.4149758815765381
+2023-11-14 14:23:21,890 INFO check_last_quote time_diff=0.4151918888092041
+2023-11-14 14:23:51,892 INFO check_last_quote time_diff=0.4250209331512451
+2023-11-14 14:24:21,892 INFO check_last_quote time_diff=0.016776084899902344
+2023-11-14 14:24:51,892 INFO check_last_quote time_diff=0.44151806831359863
+2023-11-14 14:25:21,890 INFO check_last_quote time_diff=0.22255420684814453
+2023-11-14 14:25:51,889 INFO check_last_quote time_diff=0.3681788444519043
+2023-11-14 14:26:21,890 INFO check_last_quote time_diff=0.4145200252532959
+2023-11-14 14:26:51,890 INFO check_last_quote time_diff=0.25255703926086426
+2023-11-14 14:27:21,891 INFO check_last_quote time_diff=0.41773414611816406
+2023-11-14 14:27:51,892 INFO check_last_quote time_diff=0.13503193855285645
+2023-11-14 14:28:21,892 INFO check_last_quote time_diff=0.4441087245941162
+2023-11-14 14:28:51,889 INFO check_last_quote time_diff=0.32763099670410156
+2023-11-14 14:29:21,891 INFO check_last_quote time_diff=0.46512699127197266
+2023-11-14 14:29:51,887 INFO check_last_quote time_diff=0.07258915901184082
+2023-11-14 14:30:21,889 INFO check_last_quote time_diff=0.39377284049987793
+2023-11-14 14:30:51,888 INFO check_last_quote time_diff=0.2186570167541504
+2023-11-14 14:31:21,891 INFO check_last_quote time_diff=0.3620460033416748
+2023-11-14 14:31:51,887 INFO check_last_quote time_diff=0.17471885681152344
+2023-11-14 14:32:21,886 INFO check_last_quote time_diff=0.31255602836608887
+2023-11-14 14:32:51,887 INFO check_last_quote time_diff=0.3988921642303467
+2023-11-14 14:33:21,884 INFO check_last_quote time_diff=0.1826162338256836
+2023-11-14 14:33:51,887 INFO check_last_quote time_diff=0.41979312896728516
+2023-11-14 14:34:21,887 INFO check_last_quote time_diff=0.3907957077026367
+2023-11-14 14:34:51,886 INFO check_last_quote time_diff=0.3789658546447754
+2023-11-14 14:35:21,886 INFO check_last_quote time_diff=0.4346921443939209
+2023-11-14 14:35:51,888 INFO check_last_quote time_diff=0.401350736618042
+2023-11-14 14:36:21,906 INFO check_last_quote time_diff=0.6189389228820801
+2023-11-14 14:36:51,886 INFO check_last_quote time_diff=0.37331676483154297
+2023-11-14 14:37:21,887 INFO check_last_quote time_diff=0.17133808135986328
+2023-11-14 14:37:51,886 INFO check_last_quote time_diff=0.23215627670288086
+2023-11-14 14:38:21,886 INFO check_last_quote time_diff=0.41493701934814453
+2023-11-14 14:38:51,886 INFO check_last_quote time_diff=0.21377301216125488
+2023-11-14 14:39:21,887 INFO check_last_quote time_diff=0.7392511367797852
+2023-11-14 14:39:51,887 INFO check_last_quote time_diff=0.3316316604614258
+2023-11-14 14:40:21,887 INFO check_last_quote time_diff=0.11786794662475586
+2023-11-14 14:40:51,887 INFO check_last_quote time_diff=0.19266605377197266
+2023-11-14 14:41:21,884 INFO check_last_quote time_diff=0.20661616325378418
+2023-11-14 14:41:51,884 INFO check_last_quote time_diff=0.19855999946594238
+2023-11-14 14:42:03,072 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:42:03,073 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:42:03,073 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 115518, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:42:03,073 INFO <set_instrument_position> lc2401-P-138000 SHORT direction: SHORT, instrument: lc2401-P-138000, avg: 3840, volume: 1, margin: 3840, cost: 3840, open_avg: 3840, exchange: GFEX, sellable: 1, 
+2023-11-14 14:42:03,073 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '5', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1699944120000000000', 'price': '3840.0', 'client_id': '3', 'order_id': '114030083583960000000005', 'account_id': '210380', 'trade_id': '318461', 'parent_order_id': '486225', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '3840.0', 'instrument': 'lc2401-P-138000', 'side': 'SHORT', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:42:05,519 INFO StopByMinPrice 下单:lc2401-P-138000 loss_stop_rateoffset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT price=3900.0 volume=1
+2023-11-14 14:42:05,520 INFO <trade_process send_order> instrument=lc2401-P-138000 exchange_type=GFEX offset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT order_price_type=LIMIT price=3900.0 volume=1
+2023-11-14 14:42:05,522 INFO 下单成功 instrument:lc2401-P-138000 order_id:114030083583960000000006
+2023-11-14 14:42:05,582 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:42:05,582 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:42:05,582 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 115518, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:42:05,582 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '6', 'offset': 'CLOSE', 'exchange_type': 'GFEX', 'trade_time': '1699944123000000000', 'price': '3900.0', 'client_id': '3', 'order_id': '114030083583960000000006', 'account_id': '210380', 'trade_id': '318532', 'parent_order_id': '549971', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-3900.0', 'instrument': 'lc2401-P-138000', 'side': 'LONG', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:42:17,080 INFO SellStrategy 下单:lc2401-C-146000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=4100.0 volume=1
+2023-11-14 14:42:17,081 INFO <trade_process send_order> instrument=lc2401-C-146000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=4100.0 volume=1
+2023-11-14 14:42:17,082 INFO 下单成功 instrument:lc2401-C-146000 order_id:114030083583960000000007
+2023-11-14 14:42:21,885 INFO check_last_quote time_diff=0.0643460750579834
+2023-11-14 14:42:30,031 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:42:30,031 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:42:30,032 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 115518, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:42:30,032 INFO <set_instrument_position> lc2401-C-146000 SHORT direction: SHORT, instrument: lc2401-C-146000, avg: 4100, volume: 1, margin: 4100, cost: 4100, open_avg: 4100, exchange: GFEX, sellable: 1, 
+2023-11-14 14:42:30,034 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '7', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1699944147000000000', 'price': '4100.0', 'client_id': '3', 'order_id': '114030083583960000000007', 'account_id': '210380', 'trade_id': '318993', 'parent_order_id': '550328', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '4100.0', 'instrument': 'lc2401-C-146000', 'side': 'SHORT', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:42:51,883 INFO check_last_quote time_diff=0.39989614486694336
+2023-11-14 14:43:21,884 INFO check_last_quote time_diff=0.21940398216247559
+2023-11-14 14:43:51,885 INFO check_last_quote time_diff=0.14556622505187988
+2023-11-14 14:44:21,887 INFO check_last_quote time_diff=0.20730280876159668
+2023-11-14 14:44:51,885 INFO check_last_quote time_diff=0.3540961742401123
+2023-11-14 14:45:21,887 INFO check_last_quote time_diff=0.3634979724884033
+2023-11-14 14:45:51,887 INFO check_last_quote time_diff=0.39341092109680176
+2023-11-14 14:46:21,887 INFO check_last_quote time_diff=0.36366915702819824
+2023-11-14 14:46:51,887 INFO check_last_quote time_diff=0.17257308959960938
+2023-11-14 14:47:21,884 INFO check_last_quote time_diff=0.1832730770111084
+2023-11-14 14:47:51,886 INFO check_last_quote time_diff=0.399914026260376
+2023-11-14 14:48:21,887 INFO check_last_quote time_diff=0.25993895530700684
+2023-11-14 14:48:51,884 INFO check_last_quote time_diff=0.22264695167541504
+2023-11-14 14:49:21,886 INFO check_last_quote time_diff=0.33548402786254883
+2023-11-14 14:49:51,886 INFO check_last_quote time_diff=0.34763503074645996
+2023-11-14 14:50:13,341 INFO StopByMinPrice 下单:lc2401-C-146000 loss_stop_rateoffset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT price=4410.0 volume=1
+2023-11-14 14:50:13,341 INFO <trade_process send_order> instrument=lc2401-C-146000 exchange_type=GFEX offset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT order_price_type=LIMIT price=4410.0 volume=1
+2023-11-14 14:50:13,342 INFO 下单成功 instrument:lc2401-C-146000 order_id:114030083583960000000008
+2023-11-14 14:50:21,886 INFO check_last_quote time_diff=0.25339388847351074
+2023-11-14 14:50:27,856 INFO SellStrategy 下单:lc2401-P-138000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=3650.0 volume=1
+2023-11-14 14:50:27,857 INFO <trade_process send_order> instrument=lc2401-P-138000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=3650.0 volume=1
+2023-11-14 14:50:27,859 INFO 下单成功 instrument:lc2401-P-138000 order_id:114030083583960000000009
+2023-11-14 14:50:27,871 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:50:27,871 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:50:27,872 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 115518, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:50:27,872 INFO <set_instrument_position> lc2401-P-138000 SHORT direction: SHORT, instrument: lc2401-P-138000, avg: 3650, volume: 1, margin: 3650, cost: 3650, open_avg: 3650, exchange: GFEX, sellable: 1, 
+2023-11-14 14:50:27,872 INFO <set_instrument_position> lc2401-C-146000 SHORT direction: SHORT, instrument: lc2401-C-146000, avg: 4100, volume: 1, locked: 1, margin: 20848, cost: 4100, open_avg: 4100, exchange: GFEX, 
+2023-11-14 14:50:27,872 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '9', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1699944625000000000', 'price': '3650.0', 'client_id': '3', 'order_id': '114030083583960000000009', 'account_id': '210380', 'trade_id': '328741', 'parent_order_id': '566614', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '3650.0', 'instrument': 'lc2401-P-138000', 'side': 'SHORT', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:50:51,886 INFO check_last_quote time_diff=0.19390416145324707
+2023-11-14 14:51:21,889 INFO check_last_quote time_diff=0.17391395568847656
+2023-11-14 14:51:51,886 INFO check_last_quote time_diff=0.1436629295349121
+2023-11-14 14:52:21,887 INFO check_last_quote time_diff=0.14365100860595703
+2023-11-14 14:52:51,885 INFO check_last_quote time_diff=0.24139690399169922
+2023-11-14 14:53:21,887 INFO check_last_quote time_diff=0.30950188636779785
+2023-11-14 14:53:51,884 INFO check_last_quote time_diff=0.4007241725921631
+2023-11-14 14:54:21,887 INFO check_last_quote time_diff=0.3531219959259033
+2023-11-14 14:54:51,887 INFO check_last_quote time_diff=0.30540013313293457
+2023-11-14 14:55:21,886 INFO check_last_quote time_diff=0.2862260341644287
+2023-11-14 14:55:51,885 INFO check_last_quote time_diff=0.3198251724243164
+2023-11-14 14:56:21,887 INFO check_last_quote time_diff=0.1125497817993164
+2023-11-14 14:56:51,887 INFO check_last_quote time_diff=0.2926599979400635
+2023-11-14 14:57:21,887 INFO check_last_quote time_diff=0.32816481590270996
+2023-11-14 14:57:51,887 INFO check_last_quote time_diff=0.3431367874145508
+2023-11-14 14:58:21,886 INFO check_last_quote time_diff=0.16489911079406738
+2023-11-14 14:58:45,548 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:58:45,548 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:58:45,548 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 115518, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:58:45,548 INFO <set_instrument_position> lc2401-P-138000 SHORT direction: SHORT, instrument: lc2401-P-138000, avg: 3650, volume: 1, margin: 12348, cost: 3650, open_avg: 3650, exchange: GFEX, sellable: 1, 
+2023-11-14 14:58:45,549 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '8', 'offset': 'CLOSE', 'exchange_type': 'GFEX', 'trade_time': '1699945123000000000', 'price': '4400.0', 'client_id': '3', 'order_id': '114030083583960000000008', 'account_id': '210380', 'trade_id': '340233', 'parent_order_id': '565957', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-4400.0', 'instrument': 'lc2401-C-146000', 'side': 'LONG', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:58:49,053 INFO StopByMinPrice 下单:lc2401-P-138000 loss_stop_rateoffset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT price=3990.0 volume=1
+2023-11-14 14:58:49,054 INFO <trade_process send_order> instrument=lc2401-P-138000 exchange_type=GFEX offset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT order_price_type=LIMIT price=3990.0 volume=1
+2023-11-14 14:58:49,055 INFO 下单成功 instrument:lc2401-P-138000 order_id:114030083583960000000010
+2023-11-14 14:58:51,887 INFO check_last_quote time_diff=0.37657999992370605
+2023-11-14 14:59:21,886 INFO check_last_quote time_diff=0.11627697944641113
+2023-11-14 14:59:26,066 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6204.8, cost: 3729, open_avg: 3878, exchange: SHFE, sellable: 1, 
+2023-11-14 14:59:26,066 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, margin: 107818, cost: 14.8, open_avg: 14.8, exchange: INE, sellable: 1, 
+2023-11-14 14:59:26,066 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, margin: 115518, cost: 13.2, open_avg: 13.2, exchange: INE, sellable: 1, 
+2023-11-14 14:59:26,066 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '10', 'offset': 'CLOSE', 'exchange_type': 'GFEX', 'trade_time': '1699945163000000000', 'price': '3970.0', 'client_id': '3', 'order_id': '114030083583960000000010', 'account_id': '210380', 'trade_id': '341569', 'parent_order_id': '585626', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-3970.0', 'instrument': 'lc2401-P-138000', 'side': 'LONG', 'trading_day': '20231114', 'instrument_type': 'future'}
+2023-11-14 14:59:51,886 INFO check_last_quote time_diff=0.3474917411804199
+2023-11-15 13:44:31,496 INFO load min_price:{'sc2401C620': {'price': 14.8, 'timestamp': 1699941642.619362}, 'sc2401P590': {'price': 13.2, 'timestamp': 1699941849.998708}}
+2023-11-15 13:44:31,497 INFO load saved_price:{'lc2401': {'price': 142600.0, 'timestamp': 1699945197.0}, 'lc2401-C-144000': {'price': 5240.0, 'timestamp': 1699945194.5}, 'lc2401-C-146000': {'price': 4400.0, 'timestamp': 1699945196.0}, 'lc2401-P-138000': {'price': 3850.0, 'timestamp': 1699945195.5}, 'lc2401-P-140000': {'price': 4650.0, 'timestamp': 1699945197.0}, 'rb2401': {'price': 3856.0, 'timestamp': 1699945197.0}, 'sc2401': {'price': 606.8, 'timestamp': 1699945197.5}, 'sc2401C620': {'price': 15.2, 'timestamp': 1699945197.0}, 'sc2401P590': {'price': 13.4, 'timestamp': 1699945193.5}, 'si2401': {'price': 14055.0, 'timestamp': 1699945197.0}, 'si2401-C-14400': {'price': 137.0, 'timestamp': 1699945181.0}, 'si2401-P-13800': {'price': 120.0, 'timestamp': 1699945189.5}}
+2023-11-15 13:44:31,654 INFO <set_instrument_book> instrument: "rb2401"
+contract_multiplier: 10
+long_margin_ratio: 0.16
+short_margin_ratio: 0.16
+price_tick: 1
+product_class: "F"
+
+2023-11-15 13:44:31,654 INFO <set_instrument_book> instrument: "sc2401C620"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-11-15 13:44:31,654 INFO <set_instrument_book> instrument: "sc2401P590"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-11-15 13:44:31,655 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6171.2, cost: 3729, open_avg: 3857, exchange: SHFE, sellable: 1, 
+2023-11-15 13:44:31,656 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 13:44:31,656 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 13:45:01,643 INFO check_last_quote time_diff=0.10126996040344238
+2023-11-15 13:45:10,079 INFO SellStrategy 下单:lc2401-C-146000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=4330.0 volume=1
+2023-11-15 13:45:10,091 INFO <trade_process send_order> instrument=lc2401-C-146000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=4330.0 volume=1
+2023-11-15 13:45:10,093 INFO 下单成功 instrument:lc2401-C-146000 order_id:115031520671644000000001
+2023-11-15 13:45:15,576 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6171.2, cost: 3729, open_avg: 3857, exchange: SHFE, sellable: 1, 
+2023-11-15 13:45:15,576 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 13:45:15,576 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 13:45:15,576 INFO <set_instrument_position> lc2401-C-146000 SHORT direction: SHORT, instrument: lc2401-C-146000, avg: 4330, volume: 1, margin: 4330, cost: 4330, open_avg: 4330, exchange: GFEX, sellable: 1, 
+2023-11-15 13:45:15,576 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '1', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1700027113000000000', 'price': '4330.0', 'client_id': '3', 'order_id': '115031520671644000000001', 'account_id': '210380', 'trade_id': '222341', 'parent_order_id': '418195', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '4330.0', 'instrument': 'lc2401-C-146000', 'side': 'SHORT', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 13:45:31,638 INFO check_last_quote time_diff=0.1796858310699463
+2023-11-15 13:46:01,637 INFO check_last_quote time_diff=0.45868897438049316
+2023-11-15 13:46:31,641 INFO check_last_quote time_diff=0.05762815475463867
+2023-11-15 13:47:01,641 INFO check_last_quote time_diff=0.0874018669128418
+2023-11-15 13:47:31,641 INFO check_last_quote time_diff=0.2363288402557373
+2023-11-15 13:48:01,640 INFO check_last_quote time_diff=0.6207950115203857
+2023-11-15 13:48:31,642 INFO check_last_quote time_diff=0.13459396362304688
+2023-11-15 13:49:01,641 INFO check_last_quote time_diff=0.1332559585571289
+2023-11-15 13:49:31,642 INFO check_last_quote time_diff=0.15035390853881836
+2023-11-15 13:50:01,641 INFO check_last_quote time_diff=0.03512716293334961
+2023-11-15 13:50:31,642 INFO check_last_quote time_diff=0.09810876846313477
+2023-11-15 13:51:01,640 INFO check_last_quote time_diff=0.0573878288269043
+2023-11-15 13:51:31,642 INFO check_last_quote time_diff=0.19934391975402832
+2023-11-15 13:52:01,640 INFO check_last_quote time_diff=0.5808060169219971
+2023-11-15 13:52:31,641 INFO check_last_quote time_diff=0.4711649417877197
+2023-11-15 13:53:01,639 INFO check_last_quote time_diff=0.0489349365234375
+2023-11-15 13:53:31,642 INFO check_last_quote time_diff=0.007280826568603516
+2023-11-15 13:54:01,639 INFO check_last_quote time_diff=0.553358793258667
+2023-11-15 13:54:31,642 INFO check_last_quote time_diff=0.08884668350219727
+2023-11-15 13:55:01,640 INFO check_last_quote time_diff=0.5606660842895508
+2023-11-15 13:55:31,641 INFO check_last_quote time_diff=0.0408170223236084
+2023-11-15 13:56:01,642 INFO check_last_quote time_diff=0.08040761947631836
+2023-11-15 13:56:31,642 INFO check_last_quote time_diff=0.19557404518127441
+2023-11-15 13:57:01,642 INFO check_last_quote time_diff=0.03152012825012207
+2023-11-15 13:57:31,641 INFO check_last_quote time_diff=0.6254658699035645
+2023-11-15 13:58:01,642 INFO check_last_quote time_diff=0.07724285125732422
+2023-11-15 13:58:31,642 INFO check_last_quote time_diff=0.11747097969055176
+2023-11-15 13:59:01,642 INFO check_last_quote time_diff=0.01385188102722168
+2023-11-15 13:59:31,642 INFO check_last_quote time_diff=0.023091793060302734
+2023-11-15 14:00:01,640 INFO check_last_quote time_diff=0.48974609375
+2023-11-15 14:00:28,577 INFO SellStrategy 下单:lc2401-P-140000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=4820.0 volume=1
+2023-11-15 14:00:28,577 INFO <trade_process send_order> instrument=lc2401-P-140000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=4820.0 volume=1
+2023-11-15 14:00:28,578 INFO 下单成功 instrument:lc2401-P-140000 order_id:115031520671644000000002
+2023-11-15 14:00:31,638 INFO check_last_quote time_diff=0.10364818572998047
+2023-11-15 14:00:48,074 INFO StopByMinPrice 下单:lc2401-C-146000 profit_stop_rateoffset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT price=4300.0 volume=1
+2023-11-15 14:00:48,074 INFO <trade_process send_order> instrument=lc2401-C-146000 exchange_type=GFEX offset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT order_price_type=LIMIT price=4300.0 volume=1
+2023-11-15 14:00:48,076 INFO 下单成功 instrument:lc2401-C-146000 order_id:115031520671644000000003
+2023-11-15 14:01:01,637 INFO check_last_quote time_diff=0.010712146759033203
+2023-11-15 14:01:31,641 INFO check_last_quote time_diff=0.12350893020629883
+2023-11-15 14:02:01,641 INFO check_last_quote time_diff=0.01777195930480957
+2023-11-15 14:02:21,966 INFO <set_instrument_position> rb2401 LONG direction: LONG, instrument: rb2401, avg: 3729, volume: 1, yd: 1, margin: 6171.2, cost: 3729, open_avg: 3857, exchange: SHFE, sellable: 1, 
+2023-11-15 14:02:21,966 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 14:02:21,966 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 14:02:21,966 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '3', 'offset': 'CLOSE', 'exchange_type': 'GFEX', 'trade_time': '1700028139000000000', 'price': '4290.0', 'client_id': '3', 'order_id': '115031520671644000000003', 'account_id': '210380', 'trade_id': '237870', 'parent_order_id': '442672', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-4290.0', 'instrument': 'lc2401-C-146000', 'side': 'LONG', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 14:02:31,642 INFO check_last_quote time_diff=0.013403892517089844
+2023-11-15 14:03:01,642 INFO check_last_quote time_diff=0.24389195442199707
+2023-11-15 14:03:31,642 INFO check_last_quote time_diff=0.20865917205810547
+2023-11-15 14:04:01,640 INFO check_last_quote time_diff=0.5959761142730713
+2023-11-15 14:04:31,638 INFO check_last_quote time_diff=0.11000800132751465
+2023-11-15 14:05:01,642 INFO check_last_quote time_diff=0.02838921546936035
+2023-11-15 14:05:23,473 INFO SellStrategy 下单:lc2401-C-144000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=4940.0 volume=1
+2023-11-15 14:05:23,474 INFO <trade_process send_order> instrument=lc2401-C-144000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=4940.0 volume=1
+2023-11-15 14:05:23,475 INFO 下单成功 instrument:lc2401-C-144000 order_id:115031520671644000000004
+2023-11-15 14:05:31,642 INFO check_last_quote time_diff=0.12350606918334961
+2023-11-15 14:06:01,639 INFO check_last_quote time_diff=0.5519561767578125
+2023-11-15 14:06:31,637 INFO check_last_quote time_diff=0.044277191162109375
+2023-11-15 14:07:01,642 INFO check_last_quote time_diff=0.0394589900970459
+2023-11-15 14:07:09,347 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 14:07:09,347 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 14:07:09,347 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '1', 'offset': 'CLOSE_YESTERDAY', 'exchange_type': 'SHFE', 'trade_time': '1700028426000000000', 'price': '3898.0000000000005', 'client_id': '3', 'order_id': '115031520671644000000001', 'account_id': '210380', 'trade_id': '244115', 'parent_order_id': '454859', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-6236.8', 'instrument': 'rb2401', 'side': 'SHORT', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 14:07:31,637 INFO check_last_quote time_diff=0.17532873153686523
+2023-11-15 14:08:01,642 INFO check_last_quote time_diff=0.1513509750366211
+2023-11-15 14:08:07,676 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 14:08:07,676 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 14:08:07,676 INFO <set_instrument_position> lc2401-C-144000 SHORT direction: SHORT, instrument: lc2401-C-144000, avg: 4940, volume: 1, margin: 4940, cost: 4940, open_avg: 4940, exchange: GFEX, sellable: 1, 
+2023-11-15 14:08:07,676 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '4', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1700028485000000000', 'price': '4940.0', 'client_id': '3', 'order_id': '115031520671644000000004', 'account_id': '210380', 'trade_id': '244816', 'parent_order_id': '450944', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '4940.0', 'instrument': 'lc2401-C-144000', 'side': 'SHORT', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 14:08:31,640 INFO check_last_quote time_diff=0.18411803245544434
+2023-11-15 14:09:01,638 INFO check_last_quote time_diff=0.5187559127807617
+2023-11-15 14:09:31,642 INFO check_last_quote time_diff=0.14075207710266113
+2023-11-15 14:09:32,488 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 14:09:32,488 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 14:09:32,488 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, margin: 4820, cost: 4820, open_avg: 4820, exchange: GFEX, sellable: 1, 
+2023-11-15 14:09:32,488 INFO <set_instrument_position> lc2401-C-144000 SHORT direction: SHORT, instrument: lc2401-C-144000, avg: 4940, volume: 1, margin: 18502, cost: 4940, open_avg: 4940, exchange: GFEX, sellable: 1, 
+2023-11-15 14:09:32,488 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '2', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1700028570000000000', 'price': '4820.0', 'client_id': '3', 'order_id': '115031520671644000000002', 'account_id': '210380', 'trade_id': '245795', 'parent_order_id': '442263', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '4820.0', 'instrument': 'lc2401-P-140000', 'side': 'SHORT', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 14:10:01,642 INFO check_last_quote time_diff=0.10506224632263184
+2023-11-15 14:10:31,642 INFO check_last_quote time_diff=0.4726099967956543
+2023-11-15 14:11:01,640 INFO check_last_quote time_diff=0.17040681838989258
+2023-11-15 14:11:31,640 INFO check_last_quote time_diff=0.14522719383239746
+2023-11-15 14:12:01,642 INFO check_last_quote time_diff=0.6529428958892822
+2023-11-15 14:12:31,641 INFO check_last_quote time_diff=0.16242003440856934
+2023-11-15 14:13:01,641 INFO check_last_quote time_diff=0.046597957611083984
+2023-11-15 14:13:31,642 INFO check_last_quote time_diff=0.04646778106689453
+2023-11-15 14:14:01,641 INFO check_last_quote time_diff=0.1639869213104248
+2023-11-15 14:14:31,641 INFO check_last_quote time_diff=0.5217790603637695
+2023-11-15 14:15:01,642 INFO check_last_quote time_diff=0.4369840621948242
+2023-11-15 14:15:31,637 INFO check_last_quote time_diff=0.012073993682861328
+2023-11-15 14:16:01,637 INFO check_last_quote time_diff=0.7296738624572754
+2023-11-15 14:16:31,638 INFO check_last_quote time_diff=0.7390358448028564
+2023-11-15 14:17:01,642 INFO check_last_quote time_diff=0.13701105117797852
+2023-11-15 14:17:31,640 INFO check_last_quote time_diff=0.5203282833099365
+2023-11-15 14:18:01,638 INFO check_last_quote time_diff=0.12022805213928223
+2023-11-15 14:18:31,638 INFO check_last_quote time_diff=0.17603206634521484
+2023-11-15 14:19:01,641 INFO check_last_quote time_diff=0.1311030387878418
+2023-11-15 14:19:31,639 INFO check_last_quote time_diff=0.14751195907592773
+2023-11-15 14:20:01,639 INFO check_last_quote time_diff=0.6643671989440918
+2023-11-15 14:20:31,641 INFO check_last_quote time_diff=0.12077593803405762
+2023-11-15 14:21:01,641 INFO check_last_quote time_diff=0.26915597915649414
+2023-11-15 14:21:31,641 INFO check_last_quote time_diff=0.6489589214324951
+2023-11-15 14:22:01,641 INFO check_last_quote time_diff=0.1022803783416748
+2023-11-15 14:22:31,640 INFO check_last_quote time_diff=0.16487979888916016
+2023-11-15 14:23:01,641 INFO check_last_quote time_diff=0.1426539421081543
+2023-11-15 14:23:31,641 INFO check_last_quote time_diff=0.2389209270477295
+2023-11-15 14:24:01,642 INFO check_last_quote time_diff=0.0027129650115966797
+2023-11-15 14:24:31,641 INFO check_last_quote time_diff=0.04135894775390625
+2023-11-15 14:25:01,642 INFO check_last_quote time_diff=0.18834781646728516
+2023-11-15 14:25:31,642 INFO check_last_quote time_diff=0.20270609855651855
+2023-11-15 14:26:01,642 INFO check_last_quote time_diff=0.23559284210205078
+2023-11-15 14:26:31,641 INFO check_last_quote time_diff=0.19044804573059082
+2023-11-15 14:27:01,642 INFO check_last_quote time_diff=0.24330615997314453
+2023-11-15 14:27:31,640 INFO check_last_quote time_diff=0.0945441722869873
+2023-11-15 14:28:01,638 INFO check_last_quote time_diff=0.1725630760192871
+2023-11-15 14:28:31,639 INFO check_last_quote time_diff=0.22940540313720703
+2023-11-15 14:29:01,642 INFO check_last_quote time_diff=0.16899681091308594
+2023-11-15 14:29:06,026 INFO StopByMinPrice 下单:lc2401-C-144000 loss_stop_rateoffset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT price=5100.0 volume=1
+2023-11-15 14:29:06,027 INFO <trade_process send_order> instrument=lc2401-C-144000 exchange_type=GFEX offset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT order_price_type=LIMIT price=5100.0 volume=1
+2023-11-15 14:29:06,028 INFO 下单成功 instrument:lc2401-C-144000 order_id:115031520671644000000005
+2023-11-15 14:29:31,642 INFO check_last_quote time_diff=0.20508980751037598
+2023-11-15 14:30:01,641 INFO check_last_quote time_diff=0.3998839855194092
+2023-11-15 14:30:31,638 INFO check_last_quote time_diff=0.5375182628631592
+2023-11-15 14:31:01,637 INFO check_last_quote time_diff=0.4141731262207031
+2023-11-15 14:31:31,640 INFO check_last_quote time_diff=0.12355899810791016
+2023-11-15 14:32:01,642 INFO check_last_quote time_diff=0.08875107765197754
+2023-11-15 14:32:31,642 INFO check_last_quote time_diff=0.4290487766265869
+2023-11-15 14:33:01,642 INFO check_last_quote time_diff=0.5077412128448486
+2023-11-15 14:33:31,652 INFO check_last_quote time_diff=0.05088996887207031
+2023-11-15 14:34:01,638 INFO check_last_quote time_diff=0.13707494735717773
+2023-11-15 14:34:31,642 INFO check_last_quote time_diff=0.22457003593444824
+2023-11-15 14:34:44,444 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 14:34:44,444 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 14:34:44,444 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, margin: 16892, cost: 4820, open_avg: 4820, exchange: GFEX, sellable: 1, 
+2023-11-15 14:34:44,444 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '5', 'offset': 'CLOSE', 'exchange_type': 'GFEX', 'trade_time': '1700030082000000000', 'price': '5100.0', 'client_id': '3', 'order_id': '115031520671644000000005', 'account_id': '210380', 'trade_id': '264897', 'parent_order_id': '483587', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-5100.0', 'instrument': 'lc2401-C-144000', 'side': 'LONG', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 14:34:44,693 INFO SellStrategy 下单:lc2401-C-146000 offset_flag=OPEN direction=SHORT order_price_type=LIMIT price=4290.0 volume=1
+2023-11-15 14:34:44,693 INFO <trade_process send_order> instrument=lc2401-C-146000 exchange_type=GFEX offset_flag=OPEN direction=SHORT order_price_type=LIMIT order_price_type=LIMIT price=4290.0 volume=1
+2023-11-15 14:34:44,695 INFO 下单成功 instrument:lc2401-C-146000 order_id:115031520671644000000006
+2023-11-15 14:35:01,640 INFO check_last_quote time_diff=0.17465496063232422
+2023-11-15 14:35:31,642 INFO check_last_quote time_diff=0.12250614166259766
+2023-11-15 14:36:01,640 INFO check_last_quote time_diff=0.08778095245361328
+2023-11-15 14:36:31,641 INFO check_last_quote time_diff=0.1796102523803711
+2023-11-15 14:37:01,642 INFO check_last_quote time_diff=0.13398504257202148
+2023-11-15 14:37:31,640 INFO check_last_quote time_diff=0.07507205009460449
+2023-11-15 14:37:35,659 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 14:37:35,659 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 14:37:35,659 INFO <set_instrument_position> lc2401-C-146000 SHORT direction: SHORT, instrument: lc2401-C-146000, avg: 4290, volume: 1, margin: 4290, cost: 4290, open_avg: 4290, exchange: GFEX, sellable: 1, 
+2023-11-15 14:37:35,659 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, margin: 16892, cost: 4820, open_avg: 4820, exchange: GFEX, sellable: 1, 
+2023-11-15 14:37:35,659 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '6', 'offset': 'OPEN', 'exchange_type': 'GFEX', 'trade_time': '1700030253000000000', 'price': '4290.0', 'client_id': '3', 'order_id': '115031520671644000000006', 'account_id': '210380', 'trade_id': '266662', 'parent_order_id': '491745', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '4290.0', 'instrument': 'lc2401-C-146000', 'side': 'SHORT', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 14:38:01,642 INFO check_last_quote time_diff=0.05575394630432129
+2023-11-15 14:38:31,642 INFO check_last_quote time_diff=0.1821889877319336
+2023-11-15 14:39:01,642 INFO check_last_quote time_diff=0.17170405387878418
+2023-11-15 14:39:31,642 INFO check_last_quote time_diff=0.02785515785217285
+2023-11-15 14:40:01,641 INFO check_last_quote time_diff=0.14946603775024414
+2023-11-15 14:40:31,641 INFO check_last_quote time_diff=0.2273406982421875
+2023-11-15 14:41:01,640 INFO check_last_quote time_diff=0.0835270881652832
+2023-11-15 14:41:31,642 INFO check_last_quote time_diff=0.01335287094116211
+2023-11-15 14:42:01,641 INFO check_last_quote time_diff=0.2064681053161621
+2023-11-15 14:42:31,641 INFO check_last_quote time_diff=0.49581480026245117
+2023-11-15 14:43:01,639 INFO check_last_quote time_diff=0.6535780429840088
+2023-11-15 14:43:31,640 INFO check_last_quote time_diff=0.1715528964996338
+2023-11-15 14:44:01,642 INFO check_last_quote time_diff=0.12136697769165039
+2023-11-15 14:44:31,641 INFO check_last_quote time_diff=0.17524290084838867
+2023-11-15 14:45:01,642 INFO check_last_quote time_diff=0.0026760101318359375
+2023-11-15 14:45:31,650 INFO check_last_quote time_diff=0.17396092414855957
+2023-11-15 14:45:36,420 INFO StopByMinPrice 下单:lc2401-C-146000 loss_stop_rateoffset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT price=4390.0 volume=1
+2023-11-15 14:45:36,420 INFO <trade_process send_order> instrument=lc2401-C-146000 exchange_type=GFEX offset_flag=CLOSE_TODAY direction=LONG order_price_type=LIMIT order_price_type=LIMIT price=4390.0 volume=1
+2023-11-15 14:45:36,421 INFO 下单成功 instrument:lc2401-C-146000 order_id:115031520671644000000007
+2023-11-15 14:46:01,658 INFO check_last_quote time_diff=0.05716419219970703
+2023-11-15 14:46:31,645 INFO check_last_quote time_diff=0.19646573066711426
+2023-11-15 14:47:01,640 INFO check_last_quote time_diff=0.07389307022094727
+2023-11-15 14:47:31,640 INFO check_last_quote time_diff=0.1294560432434082
+2023-11-15 14:48:01,641 INFO check_last_quote time_diff=0.11367321014404297
+2023-11-15 14:48:31,641 INFO check_last_quote time_diff=0.6229169368743896
+2023-11-15 14:49:01,642 INFO check_last_quote time_diff=0.11476016044616699
+2023-11-15 14:49:31,642 INFO check_last_quote time_diff=0.23816132545471191
+2023-11-15 14:50:01,642 INFO check_last_quote time_diff=0.6160180568695068
+2023-11-15 14:50:31,642 INFO check_last_quote time_diff=0.08064794540405273
+2023-11-15 14:51:01,641 INFO check_last_quote time_diff=0.2024087905883789
+2023-11-15 14:51:31,642 INFO check_last_quote time_diff=0.06686091423034668
+2023-11-15 14:52:01,640 INFO check_last_quote time_diff=0.11800503730773926
+2023-11-15 14:52:31,641 INFO check_last_quote time_diff=0.6511838436126709
+2023-11-15 14:53:01,641 INFO check_last_quote time_diff=0.21199822425842285
+2023-11-15 14:53:31,641 INFO check_last_quote time_diff=0.5088489055633545
+2023-11-15 14:54:01,641 INFO check_last_quote time_diff=0.5564069747924805
+2023-11-15 14:54:29,517 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 111398, cost: 13.2, open_avg: 15.85, exchange: INE, sellable: 1, 
+2023-11-15 14:54:29,517 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 110848, cost: 14.8, open_avg: 15.9, exchange: INE, sellable: 1, 
+2023-11-15 14:54:29,517 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, margin: 16892, cost: 4820, open_avg: 4820, exchange: GFEX, sellable: 1, 
+2023-11-15 14:54:29,517 INFO <updata_by_trade_rtn> data={'volume': '1', 'order_ref_id': '7', 'offset': 'CLOSE', 'exchange_type': 'GFEX', 'trade_time': '1700031267000000000', 'price': '4390.0', 'client_id': '3', 'order_id': '115031520671644000000007', 'account_id': '210380', 'trade_id': '278752', 'parent_order_id': '503553', 'instrument_category': 'FUTURES', 'hedge_flag': '1', 'margin': '-4390.0', 'instrument': 'lc2401-C-146000', 'side': 'LONG', 'trading_day': '20231115', 'instrument_type': 'future'}
+2023-11-15 14:54:31,642 INFO check_last_quote time_diff=0.061766862869262695
+2023-11-15 14:55:01,642 INFO check_last_quote time_diff=0.48467302322387695
+2023-11-15 14:55:31,641 INFO check_last_quote time_diff=0.06320905685424805
+2023-11-15 14:56:01,642 INFO check_last_quote time_diff=0.03311610221862793
+2023-11-15 14:56:31,643 INFO check_last_quote time_diff=0.49988794326782227
+2023-11-15 14:57:01,643 INFO check_last_quote time_diff=0.07405209541320801
+2023-11-15 14:57:31,643 INFO check_last_quote time_diff=0.11670398712158203
+2023-11-15 14:58:01,642 INFO check_last_quote time_diff=0.4365119934082031
+2023-11-15 14:58:31,641 INFO check_last_quote time_diff=0.3591020107269287
+2023-11-15 14:59:01,642 INFO check_last_quote time_diff=0.040766000747680664
+2023-11-15 14:59:31,642 INFO check_last_quote time_diff=0.19150090217590332

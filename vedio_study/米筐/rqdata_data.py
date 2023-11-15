@@ -31,5 +31,3 @@ data = rqdatac.futures.get_dominant('AP',
                                     rule=1,
                                     rank=2)
 print(data)
-
-
