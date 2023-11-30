@@ -25,6 +25,9 @@ class BondData:
             self.get_data(symbol)
             # quit()
 
+    def update_data(self):
+        pass
+
     def read_saved_symbols(self):
         symbols = []
         with sqlite3.connect('data/future_data_min.db') as connn:
@@ -55,6 +58,11 @@ class BondData:
             print(df_min)
             df_min = df_min.reset_index()
             self.save_to_sqlite(df_min, 'all_bond_stock_min')
+
+    def read_saved_date(self,  db='data/future_data_min.db', table_name='all_bond'):
+        with sqlite3.connect(db) as connn:
+            sql = f'SELECT order_book_id, stock_code FROM {table_name}'
+            df = pd.read_sql(sql=sql, con=connn)
 
 
 if __name__ == '__main__':
