@@ -18,10 +18,11 @@ class PositionalEmbedding(nn.Module):
         pe[:, 0::2] = torch.sin(position * div_term)
         pe[:, 1::2] = torch.cos(position * div_term)
 
-        pe = pe.unsqueeze(0)
+        pe = pe.unsqueeze(0)   # (5000, 512)
         self.register_buffer('pe', pe)
 
     def forward(self, x):
+        # (32,96,7)
         return self.pe[:, :x.size(1)]
 
 
@@ -37,7 +38,11 @@ class TokenEmbedding(nn.Module):
                 nn.init.kaiming_normal_(m.weight,mode='fan_in',nonlinearity='leaky_relu')
 
     def forward(self, x):
-        x = self.tokenConv(x.permute(0, 2, 1)).transpose(1,2)
+        # （32，96，7）
+        # 重新排列张量的维度顺序
+        x = x.permute(0, 2, 1)   # (32,7,96)
+        x = self.tokenConv(x)    # (32,512,96)
+        x = x.transpose(1, 2)     # (32,96,512)
         return x
 
 
@@ -112,6 +117,7 @@ class DataEmbedding(nn.Module):
         self.dropout = nn.Dropout(p=dropout)
 
     def forward(self, x, x_mark):
+        # （32，96，7）
         x = self.value_embedding(x) + self.position_embedding(x) + self.temporal_embedding(x_mark)
-        
+        # （32，96，512）
         return self.dropout(x)

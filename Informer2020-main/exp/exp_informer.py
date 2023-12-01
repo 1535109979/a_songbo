@@ -263,7 +263,7 @@ class Exp_Informer(Exp_Basic):
         batch_y = batch_y.float()
 
         batch_x_mark = batch_x_mark.float().to(self.device)   # （32，96，4）
-        batch_y_mark = batch_y_mark.float().to(self.device)   #  （32，72，4）
+        batch_y_mark = batch_y_mark.float().to(self.device)   # （32，72，4）
 
         # decoder input
         if self.args.padding==0:

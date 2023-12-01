@@ -7,6 +7,7 @@ import numpy as np
 from math import sqrt
 from utils.masking import TriangularCausalMask, ProbMask
 
+
 class FullAttention(nn.Module):
     def __init__(self, mask_flag=True, factor=5, scale=None, attention_dropout=0.1, output_attention=False):
         super(FullAttention, self).__init__()
@@ -45,14 +46,14 @@ class ProbAttention(nn.Module):
         self.output_attention = output_attention
         self.dropout = nn.Dropout(attention_dropout)
 
-    def _prob_QK(self, Q, K, sample_k, n_top): # n_top: c*ln(L_q)
+    def _prob_QK(self, Q, K, sample_k, n_top):    # n_top: c*ln(L_q)
         # Q [B, H, L, D] (32,8,96,64)
         B, H, L_K, E = K.shape
         _, _, L_Q, _ = Q.shape
 
         # calculate the sampled Q_K
         K_expand = K.unsqueeze(-3).expand(B, H, L_Q, L_K, E)  # (32,8,96,96,64)
-        index_sample = torch.randint(L_K, (L_Q, sample_k)) # real U = U_part(factor*ln(L_k))*L_q
+        index_sample = torch.randint(L_K, (L_Q, sample_k))    # real U = U_part(factor*ln(L_k))*L_q
         K_sample = K_expand[:, :, torch.arange(L_Q).unsqueeze(1), index_sample, :]
         Q_K_sample = torch.matmul(Q.unsqueeze(-2), K_sample.transpose(-2, -1)).squeeze(-2)
 
@@ -63,8 +64,8 @@ class ProbAttention(nn.Module):
         # use the reduced Q to calculate Q_K
         Q_reduce = Q[torch.arange(B)[:, None, None],
                      torch.arange(H)[None, :, None],
-                     M_top, :] # factor*ln(L_q)
-        Q_K = torch.matmul(Q_reduce, K.transpose(-2, -1)) # factor*ln(L_q)*L_k
+                     M_top, :]                                # factor*ln(L_q)
+        Q_K = torch.matmul(Q_reduce, K.transpose(-2, -1))     # factor*ln(L_q)*L_k
 
         return Q_K, M_top
 
