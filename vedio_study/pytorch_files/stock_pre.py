@@ -24,7 +24,7 @@ dataset = df["close"].values
 # quit()
 
 
-def data_set(dataset, lookback):#创建时间序列数据样本
+def data_set(dataset, lookback):    #创建时间序列数据样本
     dataX, dataY = [], []
     for i in range(len(dataset) - lookback - 1):
         a = dataset[i:(i + lookback)]
@@ -42,7 +42,7 @@ train_size = int(len(dataset_st)*0.7)
 test_size = len(dataset_st)-train_size
 train, test = dataset_st[0:train_size], dataset_st[train_size:len(dataset_st)]
 
-print(train.shape, test.shape)   #  (1166, 1) (501, 1)
+print(train.shape, test.shape)   # (1166, 1) (501, 1)
 
 lookback = 10
 trainX, trainY = data_set(train, lookback)

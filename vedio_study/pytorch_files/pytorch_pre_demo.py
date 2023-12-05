@@ -34,7 +34,7 @@ class MLPRegressor(torch.nn.Module):
 
 
 net = MLPRegressor(n_feature=1, n_hidden=10, n_output=1)
-quit()
+
 
 def count_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)

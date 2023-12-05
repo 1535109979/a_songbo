@@ -21,7 +21,7 @@ class ConvLayer(nn.Module):
         x = self.norm(x)
         x = self.activation(x)
         x = self.maxPool(x)
-        x = x.transpose(1,2)
+        x = x.transpose(1, 2)
         return x
 
 
@@ -46,7 +46,7 @@ class EncoderLayer(nn.Module):
         # ))
         new_x, attn = self.attention(
             x, x, x,
-            attn_mask = attn_mask
+            attn_mask=attn_mask
         )
         x = x + self.dropout(new_x)
 
