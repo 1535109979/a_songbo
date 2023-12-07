@@ -35,8 +35,7 @@ def data_set(dataset, lookback):    #创建时间序列数据样本
 
 st = StandardScaler()
 dataset_st = st.fit_transform(dataset.reshape(-1, 1))
-# print(dataset_st.shape)
-
+print(dataset_st.shape)
 
 train_size = int(len(dataset_st)*0.7)
 test_size = len(dataset_st)-train_size
@@ -53,6 +52,7 @@ print(trainX.shape, trainY.shape)    # (1155, 10, 1) (1155, 1)
 input_shape = Input(shape=(trainX.shape[1], trainX.shape[2]))
 lstm1 = layers.LSTM(32, return_sequences=1)(input_shape)
 lstm2 = layers.LSTM(64, return_sequences=0)(lstm1)
+
 dense1 = layers.Dense(64, activation="relu")(lstm2)
 dropout = layers.Dropout(rate=0.2)(dense1)
 ouput_shape = layers.Dense(1, activation="linear")(dropout)
@@ -61,10 +61,11 @@ lstm_model = Model(input_shape, ouput_shape)
 lstm_model.compile(loss="mean_squared_error", optimizer="Adam", metrics=["mse"])
 lstm_model.summary()
 
-history = lstm_model.fit(trainX, trainY, batch_size=8, epochs=50, validation_split=0.1, verbose=1)
+history = lstm_model.fit(trainX, trainY, batch_size=8, epochs=2, validation_split=0.1, verbose=1)
 
 redict_trainY = lstm_model.predict(trainX)
 predict_testY = lstm_model.predict(testX)
+print(predict_testY.shape)
 
 testY_real = st.inverse_transform(testY)
 testY_predict = st.inverse_transform(predict_testY)

@@ -21,9 +21,9 @@ class MLPRegressor(torch.nn.Module):
     def __init__(self, n_feature, n_hidden, n_output):
         super(MLPRegressor, self).__init__()
 
-        self.hidden = torch.nn.Linear(n_feature, n_hidden)
+        self.hidden = torch.nn.Linear(1, 10)
 
-        self.out = torch.nn.Linear(n_hidden, n_output)
+        self.out = torch.nn.Linear(10, 1)
         print(self.modules())
 
     def forward(self, x):
@@ -55,6 +55,7 @@ for t in range(200):
     prediction = net(x)
 
     loss = criteria(prediction, y)
+    print(loss)
 
     loss.backward()
     optimezer.step()

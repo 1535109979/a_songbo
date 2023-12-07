@@ -4000,3 +4000,76 @@ sellable: 1
 2023-11-15 15:05:34,605 INFO <position> reqid=235 sc2401P590 -1 open_avg=15.85 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=111398.0 cost_amount=13200.0 open_amount=15850.0 pnl=0.0 pos_days=2 otc=1
 2023-11-15 15:05:34,605 INFO <position> reqid=235 sc2401C620 -1 open_avg=15.9 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=110848.0 cost_amount=14800.0 open_amount=15900.0 pnl=0.0 pos_days=2 otc=1
 2023-11-15 15:05:34,605 INFO <position> reqid=235 lc2401-P-140000 -1 open_avg=4820.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=16892.0 cost_amount=4820.0 open_amount=4820.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:27:53,849 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2023-12-06 13:27:53,886 INFO 交易服务器连接成功
+2023-12-06 13:27:53,901 INFO 交易服务器授权验证成功
+2023-12-06 13:27:53,908 INFO 交易服务器登录成功
+2023-12-06 13:27:53,926 INFO 结算信息确认成功
+2023-12-06 13:27:54,999 INFO 合约信息查询成功
+2023-12-06 13:27:55,016 INFO <inited> instrument_books=4763
+2023-12-06 13:27:55,016 INFO <reqQryTradingAccount> reqid=5 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:27:55,031 INFO <reqQryInvestorPosition> reqid=6 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:27:55,041 INFO <position> reqid=6 lc2401-P-140000 -1 open_avg=45400.0 avg=0 cost=0 open_volume=0 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=0
+2023-12-06 13:27:55,041 INFO <position> reqid=6 sc2401P590 -1 open_avg=35.65 avg=0 cost=0 open_volume=0 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=0
+2023-12-06 13:27:55,041 INFO <position> reqid=6 sc2401C620 -1 open_avg=0.45 avg=0 cost=0 open_volume=0 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=0 open_amount=450.0 pnl=0.0 pos_days=2 otc=0
+2023-12-06 13:27:55,041 INFO <reqQryInvestorPositionDetail> reqid=7 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:27:55,050 INFO <position> reqid=7 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=53914.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:27:55,050 INFO <position> reqid=7 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=130391.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:27:55,050 INFO <position> reqid=7 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:27:55,050 INFO <ready> positions=3
+2023-12-06 13:28:23,851 INFO <reqQryInvestorPosition> reqid=8 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:28:23,867 INFO <position> reqid=8 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:28:23,867 INFO <position> reqid=8 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:28:23,867 INFO <position> reqid=8 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:28:53,852 INFO <reqQryInvestorPosition> reqid=9 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:28:53,862 INFO <position> reqid=9 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:28:53,862 INFO <position> reqid=9 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:28:53,862 INFO <position> reqid=9 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:29:23,853 INFO <reqQryInvestorPosition> reqid=10 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:29:23,863 INFO <position> reqid=10 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:29:23,863 INFO <position> reqid=10 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:29:23,863 INFO <position> reqid=10 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:29:30,851 INFO <reqQryTradingAccount> reqid=11 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:29:53,854 INFO <reqQryInvestorPosition> reqid=12 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:29:56,876 INFO <position> reqid=12 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:29:56,876 INFO <position> reqid=12 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:29:56,877 INFO <position> reqid=12 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:30:23,856 INFO <reqQryInvestorPosition> reqid=13 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:30:23,872 INFO <position> reqid=13 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:30:23,873 INFO <position> reqid=13 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:30:23,873 INFO <position> reqid=13 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:30:53,857 INFO <reqQryInvestorPosition> reqid=14 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:30:53,868 INFO <position> reqid=14 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:30:53,868 INFO <position> reqid=14 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:30:53,868 INFO <position> reqid=14 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:31:07,852 INFO <reqQryTradingAccount> reqid=15 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:31:23,858 INFO <reqQryInvestorPosition> reqid=16 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:31:24,078 INFO <position> reqid=16 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:31:24,078 INFO <position> reqid=16 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:31:24,078 INFO <position> reqid=16 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:31:53,859 INFO <reqQryInvestorPosition> reqid=17 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:31:53,870 INFO <position> reqid=17 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:31:53,870 INFO <position> reqid=17 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:31:53,870 INFO <position> reqid=17 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:32:23,861 INFO <reqQryInvestorPosition> reqid=18 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:32:23,876 INFO <position> reqid=18 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:32:23,876 INFO <position> reqid=18 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:32:23,876 INFO <position> reqid=18 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:32:44,854 INFO <reqQryTradingAccount> reqid=19 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:32:53,862 INFO <reqQryInvestorPosition> reqid=20 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:32:53,872 INFO <position> reqid=20 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:32:53,873 INFO <position> reqid=20 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:32:53,873 INFO <position> reqid=20 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:33:23,863 INFO <reqQryInvestorPosition> reqid=21 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:33:24,011 INFO <position> reqid=21 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:33:24,012 INFO <position> reqid=21 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:33:24,012 INFO <position> reqid=21 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:33:53,863 INFO <reqQryInvestorPosition> reqid=22 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:33:53,874 INFO <position> reqid=22 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:33:53,874 INFO <position> reqid=22 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:33:53,874 INFO <position> reqid=22 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:34:21,855 INFO <reqQryTradingAccount> reqid=23 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:34:23,865 INFO <reqQryInvestorPosition> reqid=24 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2023-12-06 13:34:23,876 INFO <position> reqid=24 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
+2023-12-06 13:34:23,876 INFO <position> reqid=24 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
+2023-12-06 13:34:23,876 INFO <position> reqid=24 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1

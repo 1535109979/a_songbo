@@ -25,7 +25,7 @@ strategy_config = {
 
 SellStrategy_params = {
     'sell_lot': 1,              # 每次下单 手
-    'sell_imp_limit': 0.2,      # 卖出策略，隐含波动率阈值
+    'sell_imp_limit': 0.1,      # 卖出策略，隐含波动率阈值
 }
 
 StopByMinPrice_params = {

@@ -3048,3 +3048,110 @@ product_class: "FO"
 2023-11-15 14:58:31,641 INFO check_last_quote time_diff=0.3591020107269287
 2023-11-15 14:59:01,642 INFO check_last_quote time_diff=0.040766000747680664
 2023-11-15 14:59:31,642 INFO check_last_quote time_diff=0.19150090217590332
+2023-12-06 13:28:21,188 INFO load min_price:{'lc2401-P-140000': {'price': 4290.0, 'timestamp': 1700031012.745645}, 'sc2401C620': {'price': 13.05, 'timestamp': 1700028499.0765939}, 'sc2401P590': {'price': 12.4, 'timestamp': 1700030482.5324328}}
+2023-12-06 13:28:21,189 INFO load saved_price:{'lc2401': {'price': 142600.0, 'timestamp': 1700031597.0}, 'lc2401-C-144000': {'price': 5190.0, 'timestamp': 1700031582.0}, 'lc2401-C-146000': {'price': 4500.0, 'timestamp': 1700031578.5}, 'lc2401-P-138000': {'price': 3600.0, 'timestamp': 1700031586.0}, 'lc2401-P-140000': {'price': 4420.0, 'timestamp': 1700031578.5}, 'rb2401': {'price': 3920.0, 'timestamp': 1700031597.0}, 'sc2401': {'price': 605.8, 'timestamp': 1700031597.0}, 'sc2401C620': {'price': 13.35, 'timestamp': 1700031590.5}, 'sc2401P590': {'price': 12.5, 'timestamp': 1700031590.5}, 'si2401': {'price': 14115.0, 'timestamp': 1700031590.5}, 'si2401-C-14400': {'price': 131.0, 'timestamp': 1700031565.0}, 'si2401-P-13800': {'price': 100.0, 'timestamp': 1700031544.0}}
+2023-12-06 13:28:21,316 INFO <set_instrument_book> instrument: "sc2401C620"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:28:21,320 INFO <set_instrument_book> instrument: "sc2401P590"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:28:21,320 INFO <set_instrument_book> instrument: "lc2401-P-140000"
+contract_multiplier: 1
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 10
+product_class: "FO"
+
+2023-12-06 13:28:21,321 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, yd: 1, margin: 53914, cost: 4820, open_avg: 45400, exchange: GFEX, sellable: 1, 
+2023-12-06 13:28:21,323 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 130391, cost: 13.2, open_avg: 35.65, exchange: INE, sellable: 1, 
+2023-12-06 13:28:21,324 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 63841, cost: 14.8, open_avg: 0.45, exchange: INE, sellable: 1, 
+2023-12-06 13:31:09,366 INFO load min_price:{'lc2401-P-140000': {'price': 4290.0, 'timestamp': 1700031012.745645}, 'sc2401C620': {'price': 13.05, 'timestamp': 1700028499.0765939}, 'sc2401P590': {'price': 12.4, 'timestamp': 1700030482.5324328}}
+2023-12-06 13:31:09,367 INFO load saved_price:{'lc2401': {'price': 142600.0, 'timestamp': 1700031597.0}, 'lc2401-C-144000': {'price': 5190.0, 'timestamp': 1700031582.0}, 'lc2401-C-146000': {'price': 4500.0, 'timestamp': 1700031578.5}, 'lc2401-P-138000': {'price': 3600.0, 'timestamp': 1700031586.0}, 'lc2401-P-140000': {'price': 4420.0, 'timestamp': 1700031578.5}, 'rb2401': {'price': 3920.0, 'timestamp': 1700031597.0}, 'sc2401': {'price': 605.8, 'timestamp': 1700031597.0}, 'sc2401C620': {'price': 13.35, 'timestamp': 1700031590.5}, 'sc2401P590': {'price': 12.5, 'timestamp': 1700031590.5}, 'si2401': {'price': 14115.0, 'timestamp': 1700031590.5}, 'si2401-C-14400': {'price': 131.0, 'timestamp': 1700031565.0}, 'si2401-P-13800': {'price': 100.0, 'timestamp': 1700031544.0}}
+2023-12-06 13:31:09,497 INFO <set_instrument_book> instrument: "sc2401C620"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:31:09,497 INFO <set_instrument_book> instrument: "sc2401P590"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:31:09,497 INFO <set_instrument_book> instrument: "lc2401-P-140000"
+contract_multiplier: 1
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 10
+product_class: "FO"
+
+2023-12-06 13:31:09,504 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, yd: 1, margin: 59304, cost: 4820, open_avg: 45400, exchange: GFEX, sellable: 1, 
+2023-12-06 13:31:09,507 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 134341, cost: 13.2, open_avg: 35.65, exchange: INE, sellable: 1, 
+2023-12-06 13:31:09,509 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 63841, cost: 14.8, open_avg: 0.45, exchange: INE, sellable: 1, 
+2023-12-06 13:31:41,902 INFO load min_price:{'lc2401-P-140000': {'price': 4290.0, 'timestamp': 1700031012.745645}, 'sc2401C620': {'price': 13.05, 'timestamp': 1700028499.0765939}, 'sc2401P590': {'price': 12.4, 'timestamp': 1700030482.5324328}}
+2023-12-06 13:31:41,903 INFO load saved_price:{'lc2401': {'price': 142600.0, 'timestamp': 1700031597.0}, 'lc2401-C-144000': {'price': 5190.0, 'timestamp': 1700031582.0}, 'lc2401-C-146000': {'price': 4500.0, 'timestamp': 1700031578.5}, 'lc2401-P-138000': {'price': 3600.0, 'timestamp': 1700031586.0}, 'lc2401-P-140000': {'price': 4420.0, 'timestamp': 1700031578.5}, 'rb2401': {'price': 3920.0, 'timestamp': 1700031597.0}, 'sc2401': {'price': 605.8, 'timestamp': 1700031597.0}, 'sc2401C620': {'price': 13.35, 'timestamp': 1700031590.5}, 'sc2401P590': {'price': 12.5, 'timestamp': 1700031590.5}, 'si2401': {'price': 14115.0, 'timestamp': 1700031590.5}, 'si2401-C-14400': {'price': 131.0, 'timestamp': 1700031565.0}, 'si2401-P-13800': {'price': 100.0, 'timestamp': 1700031544.0}}
+2023-12-06 13:31:42,014 INFO <set_instrument_book> instrument: "sc2401C620"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:31:42,014 INFO <set_instrument_book> instrument: "sc2401P590"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:31:42,014 INFO <set_instrument_book> instrument: "lc2401-P-140000"
+contract_multiplier: 1
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 10
+product_class: "FO"
+
+2023-12-06 13:31:42,023 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, yd: 1, margin: 59304, cost: 4820, open_avg: 45400, exchange: GFEX, sellable: 1, 
+2023-12-06 13:31:42,025 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 134341, cost: 13.2, open_avg: 35.65, exchange: INE, sellable: 1, 
+2023-12-06 13:31:42,026 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 63841, cost: 14.8, open_avg: 0.45, exchange: INE, sellable: 1, 
+2023-12-06 13:32:12,034 INFO check_last_quote time_diff=0.05278515815734863
+2023-12-06 13:33:26,247 INFO load min_price:{'lc2401-P-140000': {'price': 4290.0, 'timestamp': 1700031012.745645}, 'sc2401C620': {'price': 13.05, 'timestamp': 1700028499.0765939}, 'sc2401P590': {'price': 12.4, 'timestamp': 1700030482.5324328}}
+2023-12-06 13:33:26,247 INFO load saved_price:{'lc2401': {'price': 142600.0, 'timestamp': 1700031597.0}, 'lc2401-C-144000': {'price': 5190.0, 'timestamp': 1700031582.0}, 'lc2401-C-146000': {'price': 4500.0, 'timestamp': 1700031578.5}, 'lc2401-P-138000': {'price': 3600.0, 'timestamp': 1700031586.0}, 'lc2401-P-140000': {'price': 4420.0, 'timestamp': 1700031578.5}, 'rb2401': {'price': 3920.0, 'timestamp': 1700031597.0}, 'sc2401': {'price': 605.8, 'timestamp': 1700031597.0}, 'sc2401C620': {'price': 13.35, 'timestamp': 1700031590.5}, 'sc2401P590': {'price': 12.5, 'timestamp': 1700031590.5}, 'si2401': {'price': 14115.0, 'timestamp': 1700031590.5}, 'si2401-C-14400': {'price': 131.0, 'timestamp': 1700031565.0}, 'si2401-P-13800': {'price': 100.0, 'timestamp': 1700031544.0}}
+2023-12-06 13:33:26,365 INFO <set_instrument_book> instrument: "sc2401C620"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:33:26,365 INFO <set_instrument_book> instrument: "sc2401P590"
+contract_multiplier: 1000
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 0.05
+product_class: "FO"
+
+2023-12-06 13:33:26,365 INFO <set_instrument_book> instrument: "lc2401-P-140000"
+contract_multiplier: 1
+long_margin_ratio: 1
+short_margin_ratio: 1
+price_tick: 10
+product_class: "FO"
+
+2023-12-06 13:33:26,372 INFO <set_instrument_position> lc2401-P-140000 SHORT direction: SHORT, instrument: lc2401-P-140000, avg: 4820, volume: 1, yd: 1, margin: 59304, cost: 4820, open_avg: 45400, exchange: GFEX, sellable: 1, 
+2023-12-06 13:33:26,375 INFO <set_instrument_position> sc2401P590 SHORT direction: SHORT, instrument: sc2401P590, avg: 13.2, volume: 1, yd: 1, margin: 134341, cost: 13.2, open_avg: 35.65, exchange: INE, sellable: 1, 
+2023-12-06 13:33:26,376 INFO <set_instrument_position> sc2401C620 SHORT direction: SHORT, instrument: sc2401C620, avg: 14.8, volume: 1, yd: 1, margin: 63841, cost: 14.8, open_avg: 0.45, exchange: INE, sellable: 1, 
+2023-12-06 13:33:56,385 INFO check_last_quote time_diff=0.3664989471435547
+2023-12-06 13:34:26,386 INFO check_last_quote time_diff=0.2542431354522705
