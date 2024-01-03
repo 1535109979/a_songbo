@@ -1,8 +1,9 @@
 import sqlite3
-
+import tensorflow as tf
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
+from sklearn.metrics import r2_score
 from sklearn.preprocessing import StandardScaler
 from tensorflow.python.keras import Input, Model, layers
 
@@ -53,19 +54,22 @@ input_shape = Input(shape=(trainX.shape[1], trainX.shape[2]))
 lstm1 = layers.LSTM(32, return_sequences=1)(input_shape)
 lstm2 = layers.LSTM(64, return_sequences=0)(lstm1)
 
-dense1 = layers.Dense(64, activation="relu")(lstm2)
+dense1 = layers.Dense(64, activation="relu",
+                      kernel_regularizer=tf.keras.regularizers.L1L2())(lstm2)
 dropout = layers.Dropout(rate=0.2)(dense1)
-ouput_shape = layers.Dense(1, activation="linear")(dropout)
+ouput_shape = layers.Dense(1, activation="linear",
+                           kernel_regularizer=tf.keras.regularizers.L1L2())(dropout)
 
 lstm_model = Model(input_shape, ouput_shape)
-lstm_model.compile(loss="mean_squared_error", optimizer="Adam", metrics=["mse"])
-lstm_model.summary()
+lstm_model.compile(loss="mean_squared_error", optimizer="Adam")
+# lstm_model.summary()
 
-history = lstm_model.fit(trainX, trainY, batch_size=8, epochs=2, validation_split=0.1, verbose=1)
+history = lstm_model.fit(trainX, trainY, batch_size=16, epochs=20, validation_split=0.1, verbose=1)
 
 redict_trainY = lstm_model.predict(trainX)
 predict_testY = lstm_model.predict(testX)
 print(predict_testY.shape)
+
 
 testY_real = st.inverse_transform(testY)
 testY_predict = st.inverse_transform(predict_testY)
@@ -73,8 +77,8 @@ print("Y:", testY_predict.shape)
 print("Y222:", testY_real.shape)
 
 plt.figure(figsize=(12, 8))
-plt.plot(testY_predict.reshape(-1), "b", label="pre")
-plt.plot(testY_real.reshape(-1), "r", label="real")
+plt.plot(testY_predict.reshape(-1)[:100], "b", label="pre")
+plt.plot(testY_real.reshape(-1)[:100], "r", label="real")
 plt.legend()
 plt.show()
 

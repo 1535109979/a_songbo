@@ -3,7 +3,6 @@ import sqlite3
 import numpy as np
 import pandas as pd
 import torch
-from matplotlib import pyplot as plt
 import torch.nn.functional as F
 from sklearn.preprocessing import StandardScaler
 from torch.utils.data import Dataset, DataLoader
@@ -34,6 +33,7 @@ class Dataset_Future_Tick(Dataset):
         self.data_y = np.reshape(self.data[1:, 0], (len(self.data_x), 1)).astype(np.float32)
 
     def __getitem__(self, index):
+        print(index)
         s_begin = index
         s_end = s_begin + self.seq_len
 
@@ -76,9 +76,9 @@ if __name__ == '__main__':
 
     data_loader = DataLoader(
         data_set,
-        batch_size=32,
+        batch_size=10,
         shuffle=False,
-        num_workers=5,
+        # num_workers=5,
         drop_last=True)
 
     model = MLPRegressor()
@@ -91,6 +91,8 @@ if __name__ == '__main__':
     for epoch in range(50):
         epoch_loss = []
         for i, (seq_x, seq_y) in enumerate(data_loader):
+            print(seq_x.shape, seq_y.shape)
+            quit()
             optimezer.zero_grad()
             pre = model(seq_x)
             loss = criteria(pre, seq_y)

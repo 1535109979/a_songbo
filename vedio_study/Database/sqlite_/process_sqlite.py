@@ -12,7 +12,7 @@ class ProcessSqlite():
 
     def process(self):
         self.query_tables()
-
+        quit()
         res = self.cursor.execute("SELECT * FROM dbtickdata ")
         for data in res:
             print(data)

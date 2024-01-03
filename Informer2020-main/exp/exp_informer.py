@@ -157,6 +157,7 @@ class Exp_Informer(Exp_Basic):
                 model_optim.zero_grad()
                 pred, true = self._process_one_batch(
                     train_data, batch_x, batch_y, batch_x_mark, batch_y_mark)
+
                 loss = criterion(pred, true)
                 train_loss.append(loss.item())
                 
