@@ -28,7 +28,7 @@ class Exp_Informer(Exp_Basic):
             'informer':Informer,
             'informerstack':InformerStack,
         }
-        if self.args.model=='informer' or self.args.model=='informerstack':
+        if self.args.model == 'informer' or self.args.model=='informerstack':
             e_layers = self.args.e_layers if self.args.model=='informer' else self.args.s_layers
             model = model_dict[self.args.model](
                 self.args.enc_in,
@@ -40,7 +40,7 @@ class Exp_Informer(Exp_Basic):
                 self.args.factor,
                 self.args.d_model, 
                 self.args.n_heads, 
-                e_layers, # self.args.e_layers,
+                e_layers,  # self.args.e_layers,
                 self.args.d_layers, 
                 self.args.d_ff,
                 self.args.dropout, 

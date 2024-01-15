@@ -67,14 +67,14 @@ def get_data():
 
 def train_model(x_train, y_train, x_test, y_test):
     # model = mv.conv_lstm(60,6,128)
-    model = mv.lstm_model(60,6,128)
+    model = mv.lstm_model(60, 6, 128)
 
     model.compile(loss=tf.keras.losses.MeanSquaredError(),
                   optimizer=tf.keras.optimizers.Adam(1e-4))
 
     histroy = model.fit(x_train, y_train,
                         validation_data=(x_test, y_test),
-                        epochs=200,batch_size=128,
+                        epochs=200, batch_size=128,
                         callbacks=[tf.keras.callbacks.ModelCheckpoint(
                             filepath='./checkpoint_/model_lstm_model.ckpt',
                             save_weights_only=True,

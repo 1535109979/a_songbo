@@ -1,5 +1,8 @@
 import math
+from concurrent.futures import ProcessPoolExecutor
 
+import numpy as np
+import pandas as pd
 import torch
 
 
@@ -89,4 +92,14 @@ import pickle
 #     # 在这里进行每个批次的处理
 #     print("Batch shape:", batch.shape)
 #     break
+
+# cm = 6092.057
+# cmin = 1011.499
+
+a = [[12, 23], [34, 53]]
+
+b = np.array(a)
+print(b)
+
+
 

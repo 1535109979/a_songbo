@@ -69,7 +69,7 @@ args = parser.parse_args()
 args.use_gpu = True if torch.cuda.is_available() and args.use_gpu else False
 
 if args.use_gpu and args.use_multi_gpu:
-    args.devices = args.devices.replace(' ','')
+    args.devices = args.devices.replace(' ', '')
     device_ids = args.devices.split(',')
     args.device_ids = [int(id_) for id_ in device_ids]
     args.gpu = args.device_ids[0]
@@ -81,7 +81,7 @@ data_parser = {
     'ETTm2':{'data':'ETTm2.csv','T':'OT','M':[7,7,7],'S':[1,1,1],'MS':[7,7,1]},
     'WTH':{'data':'WTH.csv','T':'WetBulbCelsius','M':[12,12,12],'S':[1,1,1],'MS':[12,12,1]},
     'ECL':{'data':'ECL.csv','T':'MT_320','M':[321,321,321],'S':[1,1,1],'MS':[321,321,1]},
-    'Solar':{'data':'solar_AL.csv','T':'POWER_136','M':[137,137,137],'S':[1,1,1],'MS':[137,137,1]},
+    'Solar':{'data':'solar_AL.csv', 'T':'POWER_136', 'M':[137,137,137], 'S':[1,1,1], 'MS':[137,137,1]},
 }
 if args.data in data_parser.keys():
     data_info = data_parser[args.data]
@@ -89,7 +89,7 @@ if args.data in data_parser.keys():
     args.target = data_info['T']
     args.enc_in, args.dec_in, args.c_out = data_info[args.features]
 
-args.s_layers = [int(s_l) for s_l in args.s_layers.replace(' ','').split(',')]
+args.s_layers = [int(s_l) for s_l in args.s_layers.replace(' ', '').split(',')]
 args.detail_freq = args.freq
 args.freq = args.freq[-1:]
 

@@ -1,9 +1,9 @@
 import pandas as pd
 import sqlalchemy
-from sqlalchemy import text
+from sqlalchemy import text,inspect
 
-engine = sqlalchemy.create_engine('clickhouse://clickhouse:CK=clickhouse@49.235.94.80:8123/md_ck')
 
-df = pd.read_sql(text('SELECT * FROM tick_futures_shfe_ag88_ck limit 1000'), engine.connect())
+engine = sqlalchemy.create_engine('clickhouse://clickhouse:CK-clickhouse@49.235.94.80:8123/md')
 
-print(df.loc[0])
+df = pd.read_sql(text(sql), engine.connect())
+
