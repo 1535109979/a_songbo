@@ -1,11 +1,11 @@
 import redis
 
 redis_setting = {
-        "host":"localhost",
-        "port":6379,
-        "password":"123456",
+        "host": "localhost",
+        "port": 6379,
+        "password": "123456",
         "db": 1,
-        "max_connections":100
+        "max_connections": 100
     }
 
 

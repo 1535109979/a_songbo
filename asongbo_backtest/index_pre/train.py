@@ -8,11 +8,12 @@ from tensorflow.python.keras.models import load_model
 
 
 def train():
-    x, y, x_, y_ = StockIndexDataFlow().create_sequences()
+    sequences_len = 60
+    x, y, x_, y_ = StockIndexDataFlow(sequences_len).create_sequences()
     print(x.shape, y.shape, x_.shape, y_.shape)
 
     # model = build_lstm_model()
-    model = build_my_model()
+    model = build_my_model((sequences_len, 2))
 
     name = 'test.h5'
 

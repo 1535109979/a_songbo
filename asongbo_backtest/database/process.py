@@ -26,6 +26,6 @@ df = df.drop('序号', axis=1)
 #
 # df.groupby('股票代码').apply(process_stock)
 
-with sqlite3.connect('future_data.db') as conn:
-    df.to_sql('finance_data', conn, if_exists='append', index=False)
+# with sqlite3.connect('future_data.db') as conn:
+#     df.to_sql('finance_data', conn, if_exists='append', index=False)
 

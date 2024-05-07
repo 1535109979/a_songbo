@@ -1,4 +1,6 @@
 import math
+import signal
+import time
 from concurrent.futures import ProcessPoolExecutor
 
 import numpy as np
@@ -96,10 +98,106 @@ import pickle
 # cm = 6092.057
 # cmin = 1011.499
 
-a = [[12, 23], [34, 53]]
+# import torch
+#
+# a = np.array([[1, 2], [3, 4]])
+# b = np.array([[5, 6], [7, 8]])
+# print(a*b)
+#
+# A = torch.tensor([[1, 2], [3, 4]])
+# B = torch.tensor([[5, 6], [7, 8]])
+#
+# print(A)
+# print(B)
+# print(A * B)
+#
+# # 使用 einsum 进行矩阵乘法
+# result = torch.einsum('ij,ij->ij', A, B)
+#
+# print(result)
 
-b = np.array(a)
-print(b)
 
+# import signal
+# import time
+#
+# # 定义信号处理函数
+# def handle_signal(signal, frame):
+#     print("收到 SIGINT 信号，程序即将退出")
+#     # 执行清理操作或其他必要的逻辑
+#     # ...
+#
+#     # 退出程序
+#     # exit(0)
+#
+# # 注册信号处理函数
+# signal.signal(signal.SIGINT, handle_signal)
+#
+# # 模拟程序运行
+# print("按下 Ctrl+C 组合键可以触发 SIGINT 信号")
+# while True:
+#     # 程序持续运行
+#     time.sleep(1)
+
+
+# from apscheduler.schedulers.blocking import BlockingScheduler
+# import datetime
+# from apscheduler.executors import pool
+#
+#
+# def job():
+#     print('This is a scheduled job.')
+#     print('Current time:', datetime.datetime.now())
+#
+#
+# executor = pool.ThreadPoolExecutor(max_workers=1)
+# # 创建一个调度器
+# scheduler = BlockingScheduler(executors={'default': executor})
+#
+# # 添加一个定时任务，每隔5秒钟执行一次
+# scheduler.add_job(job, 'interval', seconds=1)
+# scheduler.print_jobs()
+# scheduler.start()
+#
+# print('---')
+#
+
+import requests
+
+
+# 获取当前 IP 地址
+def get_current_ip():
+    response = requests.get('https://api.ipify.org')
+    if response.status_code == 200:
+        return response.text
+    else:
+        return None
+
+
+# 查询 IP 地址对应的地址信息
+def get_ip_address_info(ip):
+    response = requests.get(f'http://ip-api.com/json/{ip}')
+    if response.status_code == 200:
+        data = response.json()
+        return data
+    else:
+        return None
+
+
+# 获取当前 IP 地址
+current_ip = get_current_ip()
+if current_ip:
+    print(f"当前 IP 地址是：{current_ip}")
+
+    # 查询当前 IP 地址对应的地址信息
+    address_info = get_ip_address_info(current_ip)
+    if address_info:
+        print("地址信息：")
+        print(f"国家：{address_info['country']}")
+        print(f"地区：{address_info['regionName']}")
+        print(f"城市：{address_info['city']}")
+    else:
+        print("无法获取地址信息")
+else:
+    print("无法获取当前 IP 地址")
 
 

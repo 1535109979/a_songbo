@@ -2,6 +2,7 @@ import os
 import torch
 import numpy as np
 
+
 class Exp_Basic(object):
     def __init__(self, args):
         self.args = args
@@ -11,10 +12,10 @@ class Exp_Basic(object):
         print(self.model)
         print('---')
 
-    def _build_model(self):
-        raise NotImplementedError
-        return None
-    
+    # def _build_model(self):
+    #     raise NotImplementedError
+    #     return None
+
     def _acquire_device(self):
         if self.args.use_gpu:
             os.environ["CUDA_VISIBLE_DEVICES"] = str(self.args.gpu) if not self.args.use_multi_gpu else self.args.devices
@@ -25,15 +26,15 @@ class Exp_Basic(object):
             print('Use CPU')
         return device
 
-    def _get_data(self):
-        pass
-
-    def vali(self):
-        pass
-
-    def train(self):
-        pass
-
-    def test(self):
-        pass
-    
+    # def _get_data(self):
+    #     pass
+    #
+    # def vali(self):
+    #     pass
+    #
+    # def train(self):
+    #     pass
+    #
+    # def test(self):
+    #     pass
+    #

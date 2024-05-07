@@ -16,13 +16,13 @@ def build_lstm_model(input_shape=(20, 2)):
     return lstm_model
 
 
-def build_my_model(input_shape=(20, 2)):
+def build_my_model(input_shape=(60, 2)):
     input = Input(shape=input_shape)
 
     x = LSTM(32, return_sequences=True)(input)  # 20,32
 
     a = Permute((2, 1))(x)                            # 32, 20
-    a = Dense(20, activation='softmax')(a)      # 32, 20
+    a = Dense(60, activation='softmax')(a)      # 32, 20
     a = Permute((2, 1))(a)
 
     x = Multiply()([x, a])
@@ -36,6 +36,10 @@ def build_my_model(input_shape=(20, 2)):
     lstm_model = Model(input, ouput)
     lstm_model.compile(loss="mean_squared_error", optimizer='adam')
     return lstm_model
+
+
+def cnn_transformer(input_shape=(60, 2)):
+    input = Input(shape=input_shape)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,3 @@
+# 启动
+supervisord -c /Users/edy/byt_pub/a_songbo/vedio_study/superciosor_demo/supervisord.conf
+

@@ -5,7 +5,7 @@ import pandas as pd
 
 
 class StockIndexDataFlow:
-    def __init__(self, sequences_len=20):
+    def __init__(self, sequences_len=60):
         self.df = self.read_db()
         self.close_min = self.df['close'].min()
         self.close_max = self.df['close'].max()
