@@ -59,6 +59,10 @@ class RtnTrade:
         return self.data.get("client_id", 0)
 
     @property
+    def profit(self):
+        return self.data.get("profit", 0)
+
+    @property
     def source_type(self):
         return self.data.get("source_id")
 
@@ -69,6 +73,10 @@ class RtnTrade:
     @property
     def exchange_type(self):
         return ExchangeType.get_by_value(self.data["exchange_type"])
+
+    @property
+    def trade_time(self):
+        return type_util.convert_to_int(self.data["trade_time"])
 
     @property
     def instrument_category(self):
@@ -89,6 +97,10 @@ class RtnTrade:
     @property
     def direction(self) -> Direction:
         return Direction.get_by_value(self.data["side"])
+
+    @property
+    def trading_day(self):
+        return self.data.get("trading_day")
 
     @property
     def hedge_flag(self):

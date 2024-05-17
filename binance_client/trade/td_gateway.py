@@ -1,8 +1,12 @@
 import logging
 import time
+from datetime import datetime
 
+from a_songbo.binance_client.database.bian_f_dbm import RtnTrade, AccountValue
 from a_songbo.binance_client.trade.future_api import BiFutureTd
 from a_songbo.binance_client.unit_test.sys_demo import divs
+from a_songbo.binance_client.utils.configs import Configs
+from a_songbo.binance_client.utils.dingding import Dingding
 from a_songbo.binance_client.utils.exchange_enum import OffsetFlag, Direction, OrderPriceType, ExchangeType
 
 
@@ -39,11 +43,27 @@ class BiFutureTdGateway:
             self.open_orders_map.remove(rtn_order.order_id)
             self.logger.info(f'open_orders_map: {self.open_orders_map}')
 
+    def on_trade(self, rtn_trade):
+        save_rtn_trade = RtnTrade(
+            instrument=rtn_trade.instrument,
+            client_id=rtn_trade.client_id,
+            offset=rtn_trade.offset_flag,
+            side=rtn_trade.direction,
+            volume=rtn_trade.volume,
+            price=rtn_trade.price,
+            trading_day=rtn_trade.trading_day,
+            trade_time=rtn_trade.trade_time,
+            commission=rtn_trade.commission,
+            update_time=datetime.now(),
+        )
+        save_rtn_trade.save()
+
     def cancel_cancel_all_order(self, instrument):
         self.client.cancel_all_order(instrument)
 
     def get_api_configs(self):
         return {
+            'recvWindow': '5000',
             'stream_url': 'wss://fstream.binance.com',
             'base_url': 'https://fapi.binance.com',
             # 'api_key': '8kHJ8xMwb8wZkrTy17IVOym4CDo5qS6JFP8suvpsDaWCqjuBuIAn29HFYKuQM1bE',
@@ -54,23 +74,35 @@ class BiFutureTdGateway:
 
     def send_position_error_msg(self, instrument, error):
         self.logger.error(f"<send_position_error_msg> {instrument} {error}")
+        self.send_msg(f"<send_position_error_msg> {instrument} {error}")
 
     def send_start_unsuccessful_msg(self, msg):
         self.logger.error(f"<send_start_unsuccessful_msg> {msg}")
+        self.send_msg(f"<send_start_unsuccessful_msg> {msg}")
 
     def send_start_msg(self, login_reqid):
         self.logger.info(f"<send_start_msg> {login_reqid}")
+        self.send_msg(f"<send_start_msg> {login_reqid}")
 
     def on_account_update(self):
-        self.logger.info(f"<on_account_update>")
+        account_value = AccountValue(
+            balance=self.account_book.balance,
+            update_time=datetime.now(),
+        )
+        account_value.save()
+        self.logger.info(f"<on_account_update> balance={self.account_book.balance}")
+
+    def on_front_disconnected(self, msg):
+        self.logger.info(f"<on_front_disconnected> {msg}")
+        self.send_msg(msg)
 
     def gen_error_order_id(self, err_msg):
-        print(err_msg)
+        self.send_msg(err_msg)
 
     def create_logger(self):
         self.logger = logging.getLogger('bi_future_ts')
         self.logger.setLevel(logging.DEBUG)
-        file_handler = logging.FileHandler('/Users/edy/byt_pub/a_songbo/binance_client/logs/bi_future_ts.log')
+        file_handler = logging.FileHandler(Configs.root_fp + 'a_songbo/binance_client/logs/bi_future_ts.log')
         formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
         file_handler.setFormatter(formatter)
         self.logger.addHandler(file_handler)
@@ -78,6 +110,9 @@ class BiFutureTdGateway:
     @property
     def exchange_type(self):
         return ExchangeType.BINANCE_F
+
+    def send_msg(self, msg):
+        Dingding.send_msg(msg)
 
 
 if __name__ == '__main__':

@@ -2,7 +2,7 @@ import functools
 import logging
 import traceback
 
-from a_songbo.vn.util.dingding import Dingding
+from a_songbo.binance_client.utils.dingding import Dingding
 
 logger = logging.getLogger('bi_future_ts')
 
@@ -21,7 +21,7 @@ def common_exception(log_flag: bool = None):
                 logger.exception(log_msg)
                 if log_flag:
                     logger.info(log_msg)
-                    # Dingding.send_msg(log_msg, isatall=True)
+                    Dingding.send_msg(log_msg, isatall=True)
 
         return wrapper
 

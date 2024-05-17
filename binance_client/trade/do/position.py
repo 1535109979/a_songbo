@@ -84,7 +84,8 @@ class InstrumentPosition:
                     number=self.open_amount / self.volume, precision=8)
 
             # 计算持仓均价
-            self.cost_amount += (rtn.commission + rtn.turnover * offset_side)
+            self.cost_amount += rtn.turnover * offset_side
+            self.cost_amount += rtn.commission * rtn.direction.value
             self.cost = type_util.get_precision_number(
                 number=self.cost_amount / self.volume, precision=8)
         else:

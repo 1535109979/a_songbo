@@ -54,7 +54,7 @@ class RtnOrder:
             self.volume_traded * self.avg_price, precision=8))
 
         self.data.setdefault("update_time", self.insert_time)
-        self.data.setdefault("trading_day", datetime.fromtimestamp(self.insert_time / 1000000).strftime('%Y%m%d'))
+        self.data.setdefault("trading_day", datetime.fromtimestamp(self.insert_time / 1000000000).strftime('%Y%m%d'))
 
         self.data.setdefault("error_id", 0)
         self.data.setdefault("error_msg", "")
@@ -318,4 +318,7 @@ class RtnOrder:
     def direction(self) -> Direction:
         return Direction.get_by_value(self.data["side"])
 
+
+if __name__ == '__main__':
+    pass
 

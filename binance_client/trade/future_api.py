@@ -61,6 +61,8 @@ class BiFutureTd:
         self._listen_last_ping_ts: Optional[float] = 0
 
         self._add_restart_listen_timer()
+        # query account   check ping
+        self._add_query_account_timer(interval=120)
 
     def connect(self):
         if self.client:
@@ -138,6 +140,33 @@ class BiFutureTd:
         self._listen_last_ping_ts = time.time()
         self.logger.info(f"<on_listen_ping> {self._listen_last_ping_ts} {data}")
 
+    @common_exception(log_flag=True)
+    def _check_listen_ping(self):
+        """ 检测监听的数据流连接是否断开, 超过3分钟没有收到on_ping回调说明出现了问题, 连续两次没收到时重启 """
+        ts = time.time() - self._listen_last_ping_ts
+        self.logger.info(f'<_check_listen_ping>_listen_last_ping_ts={self._listen_last_ping_ts} ts={ts}')
+        if not self._listen_last_ping_ts or ts < 60 * 6:
+            return
+        self.logger.warning("!! check_listen_ping !! %s", ts)
+
+        if ts < 60 * 9:
+            self.gateway.on_front_disconnected(
+                "连续{}分钟没有收到on_ping回调".format(round(ts / 60, 1)))
+            self.close()
+            self._start_listen()
+        else:
+            self.gateway.stop()
+
+    @common_exception(log_flag=True)
+    def close(self):
+        """ 关闭连接 """
+        self.ready = False
+        self.logger.info('ts api close')
+
+        if self._listen_client:
+            self._listen_client.stop()
+            self._listen_client = None
+
     def _on_listen_error(self, _, data):
         self.ready = False
         self.logger.error(f"<on_listen_error> {self.reqUserLoginId} {self._listen_key} "
@@ -157,12 +186,13 @@ class BiFutureTd:
         self._listen_client = None
         self._restart_listen()
 
+    @common_exception(log_flag=True)
     def query_account(self):
         if not self.client:
             self.logger.warning("当前状态不能发起请求! ready:%s client:%s", self.ready, self.client)
             return
         data: dict = self.client.account(**self._get_req_data())
-        self.logger.debug("<query_account> data.keys=%s", data.keys())
+        # self.logger.debug("<query_account> data.keys=%s", data.keys())
         # self.account_book.update_data(data)
         self._on_assets_data(data=data.get("assets"))
 
@@ -198,9 +228,10 @@ class BiFutureTd:
             old_cost = position.cost
 
             if position.update_by_datas(d):
-                self.logger.info("<position> %s", position)
+                self.logger.info("<position update_by_datas> %s", position)
                 if self.ready:
                     self._check_position_consistency(position, old_volume, old_cost)
+
     def _check_position_consistency(self, position, volume, cost):
         inconsistency = volume != position.volume
         # 忽略万分之二以内的价格误差
@@ -315,6 +346,8 @@ class BiFutureTd:
                 # 计算持仓信息
                 position = self.account_book.update_by_trade_rtn(rtn_trade)
                 self.logger.info("<position> %s", position)
+                self.gateway.on_trade(rtn_trade)
+
             self.gateway.on_order(rtn_order)
 
     def _on_user_data_listenKeyExpired(self, data: dict):
@@ -336,13 +369,6 @@ class BiFutureTd:
                 'iw': '1.3289702', 'mp': '70260.8', 'up': '-0.63', 'mm': '0.562086'}]}
         """
         pass
-
-    def _add_restart_listen_timer(self, interval: float = 60 * 60 - 0.5):
-        def _check():
-            self._restart_listen()
-            self._add_restart_listen_timer(interval)
-
-        AioTimer.new_timer(_delay=interval, _func=_check)
 
     def _get_req_data(self, **kwargs) -> dict:
         """
@@ -460,6 +486,24 @@ class BiFutureTd:
     def _cancel_all_order(self, instrument):
         result: List[dict] = self.client.cancel_open_orders(instrument)
         self.logger.info(f"<cancel_open_orders> result={result}")
+
+    def _add_restart_listen_timer(self, interval: float = 60 * 60 - 0.5):
+        def _check():
+            self._restart_listen()
+            self._add_restart_listen_timer(interval)
+
+        AioTimer.new_timer(_delay=interval, _func=_check)
+
+    def _add_query_account_timer(self, interval):
+        def _func():
+            self._add_query_account_timer(interval)
+
+            if self.ready:
+                self.query_account()
+
+            self._check_listen_ping()
+
+        AioTimer.new_timer(_delay=interval, _func=_func)
 
     @property
     def logger(self):

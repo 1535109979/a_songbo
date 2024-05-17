@@ -2,6 +2,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from a_songbo.binance_client.market.md_gateway import BiFutureMdGateway
 from a_songbo.binance_client.strategy_server.strategys.breakout import BreakoutStrategy
+from a_songbo.binance_client.strategy_server.strategys.stop_cover import StopLoss
 from a_songbo.binance_client.trade.td_gateway import BiFutureTdGateway
 from a_songbo.binance_client.utils.thread import submit
 
@@ -14,12 +15,15 @@ class BiFutureSsGateway:
         self.td_gateway = BiFutureTdGateway()
         self.td_gateway.connect()
         self.logger = self.td_gateway.logger
+        self.can_cover = True
 
+        self.stop_loss_flag = None
         self.strategy_list = []
         self.load_strategy()
 
     def load_strategy(self):
         self.strategy_list.append(BreakoutStrategy(self))
+        self.strategy_list.append(StopLoss(self))
 
     def start(self):
         submit(_executor=self.ms_thread_pool, _fn=self.ms_gateway.subscribe,
