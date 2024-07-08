@@ -3,50 +3,42 @@ from a_songbo.binance_client.utils.exchange_enum import Direction, OffsetFlag, O
 
 
 class StopLoss:
-    def __init__(self, gateway):
-        self.gateway = gateway
-        self.td_gateway = gateway.td_gateway
-        self.stop_loss_rate = 0.05
-        self.cover_rate = 0.005
-        self.can_cover = self.gateway.can_cover
+    def __init__(self, strategy_process, params):
+        self.strategy_process = strategy_process
+        self.stop_loss_rate = params['stop_loss_rate']
 
     def cal_indicator(self, quote):
         pass
 
     def cal_singal(self, quote):
+        if not quote.get('is_closed', 0):
+            return
         last_price = float(quote['last_price'])
         instrument = quote['symbol']
 
-        long_position: InstrumentPosition = self.td_gateway.account_book.get_instrument_position(
-            f'{instrument}.{self.td_gateway.exchange_type}', Direction.LONG)
+        long_position: InstrumentPosition = self.strategy_process.td_gateway.account_book.get_instrument_position(
+            f'{instrument}.{self.strategy_process.td_gateway.exchange_type}', Direction.LONG)
 
-        short_position: InstrumentPosition = self.td_gateway.account_book.get_instrument_position(
-            f'{instrument}.{self.td_gateway.exchange_type}', Direction.SHORT)
+        short_position: InstrumentPosition = self.strategy_process.td_gateway.account_book.get_instrument_position(
+            f'{instrument}.{self.strategy_process.td_gateway.exchange_type}', Direction.SHORT)
 
         if long_position.cost:
-            fall_rate = last_price / long_position.cost - 1
-            if fall_rate < - self.cover_rate and self.can_cover:
-                self.td_gateway.insert_order(instrument, OffsetFlag.OPEN, Direction.LONG,
-                                             OrderPriceType.LIMIT, str(float(last_price)), long_position.volume)
-                self.can_cover = False
+            decline_rate = last_price / long_position.cost - 1
+            self.strategy_process.logger.info(f'last_price={last_price} decline_rate={decline_rate} stop_loss_rate={self.stop_loss_rate}')
 
-            elif fall_rate < -self.stop_loss_rate:
-                self.td_gateway.insert_order(instrument, OffsetFlag.CLOSE, Direction.LONG,
+            if decline_rate < -self.stop_loss_rate:
+                self.strategy_process.td_gateway.insert_order(instrument, OffsetFlag.CLOSE, Direction.LONG,
                                              OrderPriceType.LIMIT, str(float(last_price)), long_position.volume)
 
-                self.gateway.stop_loss_flag = True
-                self.gateway.logger.info(f'stop_loss=LONG')
+                self.strategy_process.stop_loss_flag = True
+                self.strategy_process.logger.info(f'stop_loss=LONG')
 
         if short_position.cost:
-            fall_rate = 1 - last_price / short_position.cost
-            if fall_rate < - self.cover_rate and self.can_cover:
-                self.td_gateway.insert_order(instrument, OffsetFlag.OPEN, Direction.SHORT,
+            decline_rate = 1 - last_price / short_position.cost
+            self.strategy_process.logger.info(f'last_price={last_price} decline_rate={decline_rate} stop_loss_rate={self.stop_loss_rate}')
+
+            if decline_rate < -self.stop_loss_rate:
+                self.strategy_process.td_gateway.insert_order(instrument, OffsetFlag.CLOSE, Direction.SHORT,
                                              OrderPriceType.LIMIT, str(float(last_price)), short_position.volume)
-                self.can_cover = False
-                self.gateway.logger.info(f'cover short: l={last_price} cost={short_position.cost} '
-                                         f'v={short_position.volume}')
-            if fall_rate < -self.stop_loss_rate:
-                self.td_gateway.insert_order(instrument, OffsetFlag.CLOSE, Direction.SHORT,
-                                             OrderPriceType.LIMIT, str(float(last_price)), short_position.volume)
-                self.gateway.stop_loss_flag = True
-                self.gateway.logger.info(f'stop_loss=short')
+                self.strategy_process.stop_loss_flag = True
+                self.strategy_process.logger.info(f'stop_loss=short')

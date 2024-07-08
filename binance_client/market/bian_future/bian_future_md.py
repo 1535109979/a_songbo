@@ -75,9 +75,11 @@ class BiFutureMd:
         self._resubscribe()
 
     def _resubscribe(self):
+        self.logger.info(f"<_resubscribe> {self.sub_instrument}")
         if self.sub_instrument:
             for i in self.sub_instrument:
                 self.subscribe(i)
+                time.sleep(0.5)
 
     def _on_open(self, _):
         self.logger.info("<on_open> %s %s", self.reqUserLoginId, _)
@@ -155,7 +157,7 @@ class BiFutureMd:
         for symbol in instrument:
             self.client.kline(symbol=symbol, interval=interval)
             self.logger.info("<subscribe_kline> %s %s", interval, symbol)
-
+            self.sub_instrument.append(symbol)
             # 订阅过快会导致连接被服务端断开
             time.sleep(0.5)
         return True

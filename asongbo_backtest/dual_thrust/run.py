@@ -5,13 +5,15 @@ from dataclasses import dataclass
 import matplotlib.pyplot as plt
 import pandas as pd
 
+# 计算前N天的最高价－收盘价的最小值和收盘价的最大值－最低价。然后取其中的较大值，乘以k值。
+# 当价格超过上轨（开盘＋触发值）时买入，或者价格低于下轨（开盘－触发值）时卖空。此策略没有止损，为正反手策略。
 
 n = 5
 k1 = 0.1
 k2 = 0.1
 
 with sqlite3.connect('../database/future_data.db') as conn:
-    df_daily = pd.read_sql('select * from future_daily_data where date > "2020-01-01 00:00:00" '
+    df_daily = pd.read_sql('select * from future_daily_data where date > "2023-01-01 00:00:00" '
                            'and date < "2023-05-01 00:00:00" and variety_name="螺纹钢连续"', conn)
 
 # print(df_daily)

@@ -1,13 +1,15 @@
 import logging
 import time
+from copy import copy
 from datetime import datetime
 
 from a_songbo.binance_client.database.bian_f_dbm import RtnTrade, AccountValue
 from a_songbo.binance_client.trade.future_api import BiFutureTd
-from a_songbo.binance_client.unit_test.sys_demo import divs
+from a_songbo.binance_client.utils.aio_timer import AioTimer
 from a_songbo.binance_client.utils.configs import Configs
 from a_songbo.binance_client.utils.dingding import Dingding
 from a_songbo.binance_client.utils.exchange_enum import OffsetFlag, Direction, OrderPriceType, ExchangeType
+from a_songbo.binance_client.utils.sys_exception import common_exception
 
 
 class BiFutureTdGateway:
@@ -15,7 +17,8 @@ class BiFutureTdGateway:
         self.create_logger()
         self.client = BiFutureTd(self)
         self.account_book = self.client.account_book
-        self.open_orders_map = []
+        self.open_orders_map = {}
+        self.trade_order_timer = None
 
     def connect(self):
         self.client.connect()
@@ -27,21 +30,55 @@ class BiFutureTdGateway:
         做多开仓=OPEN:LONG    做空开仓=OPEN:SHORT
         做多平仓=CLOSE:LONG   做空平仓=CLOSE:SHORT
         """
-        client_order_id = self.client.insert_order(
-            instrument=instrument, offset_flag=offset_flag, direction=direction,
-            order_price_type=order_price_type, price=price, volume=volume,
-            cancel_delay_seconds=cancel_delay_seconds, **kwargs)
 
-        self.open_orders_map.append(client_order_id)
+        req = {
+            'instrument': instrument,
+            'offset_flag': offset_flag,
+            'direction': direction,
+            'order_price_type': order_price_type,
+            'price': price,
+            'volume': volume,
+            'cancel_delay_seconds': cancel_delay_seconds,
+        }
+
+        client_order_id = self.client.insert_order(
+            **req, **kwargs)
+
+        # self.open_orders_map[client_order_id] = req
+
+        # if not self.trade_order_timer:
+        #     self.trade_order_timer = AioTimer.new_timer(_delay=60, _func=self.trade_order)
 
         return client_order_id
 
-    def on_order(self, rtn_order):
+    @common_exception(log_flag=True)
+    def trade_order(self):
+        # 扫单
+        self.trade_order_timer = None
+        self.logger.info(f'<trade_order> open_orders_map={self.open_orders_map}')
 
-        if (len(self.open_orders_map) and rtn_order.order_id in self.open_orders_map
+        if self.open_orders_map:
+            for k, v in copy(self.open_orders_map).items():
+                if v['direction'] == Direction.LONG:
+                    if v['offset_flag'] == OffsetFlag.OPEN:
+                        price = str(round(float(v['price']) + 0.01, 3))
+                    else:
+                        price = str(round(float(v['price']) - 0.01, 3))
+                else:
+                    if v['offset_flag'] == OffsetFlag.OPEN:
+                        price = str(round(float(v['price']) - 0.01, 3))
+                    else:
+                        price = str(round(float(v['price']) + 0.01, 3))
+
+                v['price'] = price
+                self.cancel_cancel_all_order(v['instrument'])
+                self.insert_order(**v)
+
+    def on_order(self, rtn_order):
+        if (len(self.open_orders_map.keys()) and rtn_order.order_id in self.open_orders_map
                 and rtn_order.order_status.is_completed()):
-            self.open_orders_map.remove(rtn_order.order_id)
-            self.logger.info(f'open_orders_map: {self.open_orders_map}')
+            self.open_orders_map.pop(rtn_order.order_id)
+            self.logger.info(f'<>open_orders_map: {self.open_orders_map}')
 
     def on_trade(self, rtn_trade):
         save_rtn_trade = RtnTrade(
@@ -66,10 +103,10 @@ class BiFutureTdGateway:
             'recvWindow': '5000',
             'stream_url': 'wss://fstream.binance.com',
             'base_url': 'https://fapi.binance.com',
-            # 'api_key': '8kHJ8xMwb8wZkrTy17IVOym4CDo5qS6JFP8suvpsDaWCqjuBuIAn29HFYKuQM1bE',
-            # 'secret_key': 'uUH1X2sz5jnMVhL44zxHiphnxhoQ5swPs62gFg4JFLCRayWwFr2MZJm9dJlaM2WK',
-            'api_key': 'lfFQPMO2aNVuq6RI8h4PzPObfLQjWsvPcJ8zpfbYb0TJZV3zFmuxTTN7z0aj7lnc',
-            'secret_key': '9x0h75LjgFw7QwAa7yYFOvDOpN4VKPx4i6iRiicTadZpTLMrTqW4uetm1GSg8srk',
+            'api_key': '8kHJ8xMwb8wZkrTy17IVOym4CDo5qS6JFP8suvpsDaWCqjuBuIAn29HFYKuQM1bE',
+            'secret_key': 'uUH1X2sz5jnMVhL44zxHiphnxhoQ5swPs62gFg4JFLCRayWwFr2MZJm9dJlaM2WK',
+            # 'api_key': 'lfFQPMO2aNVuq6RI8h4PzPObfLQjWsvPcJ8zpfbYb0TJZV3zFmuxTTN7z0aj7lnc',
+            # 'secret_key': '9x0h75LjgFw7QwAa7yYFOvDOpN4VKPx4i6iRiicTadZpTLMrTqW4uetm1GSg8srk',
             }
 
     def send_position_error_msg(self, instrument, error):

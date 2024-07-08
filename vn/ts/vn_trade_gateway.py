@@ -49,6 +49,7 @@ class VnTdGateway():
     def send_msg(self, text: str, isatall=False):
         Dingding.send_msg(text, isatall=isatall)
 
+    @common_exception(log_flag=True)
     def insert_order(self, instrument: str, exchange_type: str,
                        volume: int, price: float,
                       order_price_type: OrderPriceType,
@@ -222,15 +223,15 @@ class VnTdGateway():
 
 if __name__ == '__main__':
     gateway = VnTdGateway()
+    gateway.client.connect()
+    # time.sleep(180)
 
-    time.sleep(35)
-
-    gateway.insert_order(instrument='rb2311',exchange_type=ExchangeType.SHFE,volume=1,price=3798,
+    gateway.insert_order(instrument='rb2410',exchange_type=ExchangeType.SHFE,volume=1,price=3668,
                           order_price_type=OrderPriceType.LIMIT,offset_flag=OffsetFlag.OPEN,direction=Direction.LONG)
     # gateway.query_account()
     # gateway.cancel_order()
 
     while 1:
-        pass
+        time.sleep(30)
 
 

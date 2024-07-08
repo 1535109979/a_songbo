@@ -6,3 +6,23 @@ Traceback (most recent call last):
     print(1/0)
 ZeroDivisionError: division by zero
 2023-10-18 13:33:32,774 sys_exception wrapper INFO !!!error= division by zero !!! {}
+2024-06-07 14:18:00,668 sys_exception wrapper ERROR !!!error= 'rb2410' !!! {}
+Traceback (most recent call last):
+  File "/Users/edy/byt_pub/a_songbo/vn/util/sys_exception.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/edy/byt_pub/a_songbo/vn/util/lock.py", line 25, in lock_func
+    return func(self, *args, **kwargs)
+  File "/Users/edy/byt_pub/a_songbo/vn/ss/trade_process.py", line 24, in send_order
+    exchange_type = ExchangeType.get_by_value(self.gateway.left_day_map[instrument]['exchange'])
+KeyError: 'rb2410'
+2024-06-07 14:18:00,669 sys_exception wrapper INFO !!!error= 'rb2410' !!! {}
+2024-06-07 14:18:59,703 sys_exception wrapper ERROR !!!error= 'rb2410' !!! {}
+Traceback (most recent call last):
+  File "/Users/edy/byt_pub/a_songbo/vn/util/sys_exception.py", line 22, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/edy/byt_pub/a_songbo/vn/util/lock.py", line 25, in lock_func
+    return func(self, *args, **kwargs)
+  File "/Users/edy/byt_pub/a_songbo/vn/ss/trade_process.py", line 24, in send_order
+    exchange_type = ExchangeType.get_by_value(self.gateway.left_day_map[instrument]['exchange'])
+KeyError: 'rb2410'
+2024-06-07 14:18:59,705 sys_exception wrapper INFO !!!error= 'rb2410' !!! {}

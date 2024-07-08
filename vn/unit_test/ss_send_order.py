@@ -8,11 +8,11 @@ class StrategyGatewaytest:
         self.gateway = StrategyGateway()
 
     def send_order(self):
-        instrument = 'sc2311P690'
+        instrument = 'rb2410'
         offset_flag = OffsetFlag.OPEN
         direction = Direction.LONG
         order_price_type = OrderPriceType.LIMIT
-        price = str(8.8)
+        price = str(3660)
         volume = str(1)
 
         self.gateway.td_process.send_order(instrument, offset_flag, direction, order_price_type,
@@ -21,3 +21,6 @@ class StrategyGatewaytest:
 
 if __name__ == '__main__':
     StrategyGatewaytest().send_order()
+
+    while 1:
+        pass

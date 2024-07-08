@@ -8,13 +8,13 @@ pandas.set_option("expand_frame_repr", False)
 
 # 当前价格 低于 前n小时最小值，做多
 # 当前价格 高于 前n小时最大值，做空
-n = 5
-stop_loss_rate = 0.05
+n = 10
+stop_loss_rate = 0.01
 commision = 0.00035
 symbol = 'eosusdt'
 direction = 'LONG'
 direction_rever = 'SHORT'
-start_time = '2023-01-01 00:00:00'
+start_time = '2024-05-20 00:00:00'
 
 with sqlite3.connect('binance_quote_data.db') as conn:
     df = pd.read_sql(f'select * from future_{symbol} where start_time >= "{start_time}" order by start_time DESC', conn)

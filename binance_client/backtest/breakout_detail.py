@@ -7,13 +7,21 @@ import pandas as pd
 pandas.set_option("expand_frame_repr", False)
 pandas.set_option("display.max_rows", 2000)
 
-# 当前价格 低于 前n小时最小值，做多
-# 当前价格 高于 前n小时最大值，做空
-n = 10
-stop_loss_rate = 0.05
-commision = 0.00035
-symbol = 'eosusdt'
-start_time = '2024-01-16 16:44:00'
+# 当前价格 低于 前n分钟最小值，做多
+# 当前价格 高于 前n分钟最大值，做空
+n = 400
+stop_loss_rate = 0.1
+commision = 0.0005
+trade_first = True
+period = 120
+roll_mean_period = 200
+if_trend = False
+if not if_trend:
+    period = 0
+    roll_mean_period = 0
+
+symbol = 'ltcusdt'
+start_time = '2023-01-01 00:00:00'
 
 with sqlite3.connect('binance_quote_data.db') as conn:
     df = pd.read_sql(f'select * from future_{symbol} where start_time >= "{start_time}" order by start_time DESC', conn)
@@ -21,7 +29,6 @@ with sqlite3.connect('binance_quote_data.db') as conn:
 df = df.sort_values(by='start_time').reset_index(drop=True)
 start_time = df.loc[0].start_time
 end_time = df.loc[len(df)-1].start_time
-
 df['close'] = df['close'].astype(float)
 
 position = None
@@ -32,6 +39,8 @@ short_rate = []
 
 time_list = df['start_time'].tolist()
 close_list = df['close'].tolist()
+df['roll_mean'] = df['close'].rolling(roll_mean_period).mean()
+close_roll_mean_list = df['roll_mean'].tolist()
 
 df_trade = pd.DataFrame(columns=['time', 'offset', 'dir', 'close', 'account_value'])
 
@@ -53,9 +62,17 @@ for i, close in enumerate(close_list):
         if position[0] == 'long':
             rate = close / position[1] - 1
             flag = 'long'
+            if if_trend:
+                if close > close_roll_mean_list[i-period] > close_roll_mean_list[i-2*period]:
+                    continue
+
         elif position[0] == 'short':
             rate = 1 - close / position[1]
             flag = 'short'
+
+            if if_trend:
+                if close < close_roll_mean_list[i-period] < close_roll_mean_list[i-2*period]:
+                    continue
 
         if rate < -stop_loss_rate:
             position = None
@@ -73,7 +90,10 @@ for i, close in enumerate(close_list):
             df_trade.loc[len(df_trade)] = [time, 'open', 'long', close, account_value]
         else:
             if position[0] == 'short':
-                account_value += 1 - close / position[1] - commision
+                if trade_first:
+                    account_value += 1 - (close + 0.001) / (position[1]) - commision
+                else:
+                    account_value += 1 - close / position[1] - commision
                 df_trade.loc[len(df_trade)] = [time, 'close', 'short', close, account_value]
 
                 short_rate.append(1 - close / position[1])
@@ -90,7 +110,10 @@ for i, close in enumerate(close_list):
             df_trade.loc[len(df_trade)] = [time, 'open', 'short', close, account_value]
         else:
             if position[0] == 'long':
-                account_value += close / position[1] - 1 - commision
+                if trade_first:
+                    account_value += (close - 0.001) / (position[1]) - 1 - commision
+                else:
+                    account_value += close / position[1] - 1 - commision
                 df_trade.loc[len(df_trade)] = [time, 'close', 'long', close, account_value]
 
                 long_rate.append(close / position[1] - 1)
@@ -111,6 +134,6 @@ print(df_trade)
 plt.plot(account_value_list)
 
 plt.title(f'{start_time}-->{end_time}    {len(df)}min\n '
-          f'{symbol}  n={n}   trade times={len(account_value_list)} c={commision} sl={stop_loss_rate}')
+          f'{symbol}  n={n}   trade times={len(account_value_list)} c={commision} sl={stop_loss_rate} p={period} rp={roll_mean_period}')
 plt.show()
 

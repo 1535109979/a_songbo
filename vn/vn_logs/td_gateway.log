@@ -4073,3 +4073,219 @@ sellable: 1
 2023-12-06 13:34:23,876 INFO <position> reqid=24 lc2401-P-140000 -1 open_avg=45400.0 avg=4820.0 cost=4820.0 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=59304.0 cost_amount=4820.0 open_amount=45400.0 pnl=0.0 pos_days=1 otc=1
 2023-12-06 13:34:23,876 INFO <position> reqid=24 sc2401P590 -1 open_avg=35.65 avg=13.2 cost=13.2 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=134341.0 cost_amount=13200.0 open_amount=35650.0 pnl=0.0 pos_days=2 otc=1
 2023-12-06 13:34:23,876 INFO <position> reqid=24 sc2401C620 -1 open_avg=0.45 avg=14.8 cost=14.8 open_volume=1 volume=1 yd=1 td=0 locked=0 margin=63841.0 cost_amount=14800.0 open_amount=450.0 pnl=0.0 pos_days=2 otc=1
+2024-06-07 13:38:58,004 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 13:43:22,662 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 13:43:52,664 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:44:22,665 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:44:50,459 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 13:45:20,461 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:45:50,461 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:46:20,462 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:46:27,459 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:46:50,462 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:47:20,787 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:47:50,788 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:48:04,784 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:48:20,791 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:48:50,793 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:49:20,794 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:49:41,788 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:49:50,796 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:50:20,798 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:50:50,800 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:51:18,791 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:51:20,802 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:51:50,803 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:52:20,804 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:52:50,807 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:52:55,795 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:53:20,809 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:53:50,812 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:54:20,814 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:54:32,798 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:54:50,817 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:55:20,818 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:55:50,821 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:56:09,808 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:56:20,823 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:56:50,824 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:57:20,827 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:57:46,814 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:57:50,829 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:58:20,830 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:58:50,833 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:59:20,835 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 13:59:23,818 INFO 当前状态不能发起请求! connect:False login:False inited:False
+2024-06-07 14:12:20,837 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 14:12:20,901 INFO 交易服务器连接成功
+2024-06-07 14:12:20,938 INFO 交易服务器授权验证成功
+2024-06-07 14:12:20,959 INFO 交易服务器登录成功
+2024-06-07 14:12:22,004 INFO 结算信息确认成功
+2024-06-07 14:12:50,839 INFO 当前状态不能发起请求! connect:True login:True inited:False
+2024-06-07 14:13:07,714 INFO 合约信息查询成功
+2024-06-07 14:13:07,740 INFO <inited> instrument_books=8056
+2024-06-07 14:13:07,740 INFO <reqQryTradingAccount> reqid=5 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:13:07,752 INFO <reqQryInvestorPosition> reqid=6 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:13:07,984 INFO <position> reqid=6 rb2410 1 open_avg=3652.0 avg=0 cost=0 open_volume=0 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=0 open_amount=36520.0 pnl=-40.0 pos_days=1 otc=0
+2024-06-07 14:13:07,984 INFO <reqQryInvestorPositionDetail> reqid=7 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:13:07,997 INFO <position> reqid=7 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-40.0 pos_days=1 otc=1
+2024-06-07 14:13:07,997 INFO <ready> positions=1
+2024-06-07 14:13:20,842 INFO <reqQryInvestorPosition> reqid=8 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:13:20,851 INFO <position> reqid=8 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-40.0 pos_days=1 otc=1
+2024-06-07 14:13:50,844 INFO <reqQryInvestorPosition> reqid=9 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:13:50,857 INFO <position> reqid=9 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-20.0 pos_days=1 otc=1
+2024-06-07 14:13:57,841 INFO <reqQryTradingAccount> reqid=10 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:14:20,846 INFO <reqQryInvestorPosition> reqid=11 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:14:20,859 INFO <position> reqid=11 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-20.0 pos_days=1 otc=1
+2024-06-07 14:14:50,848 INFO <reqQryInvestorPosition> reqid=12 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:14:50,861 INFO <position> reqid=12 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-10.0 pos_days=1 otc=1
+2024-06-07 14:15:20,849 INFO <reqQryInvestorPosition> reqid=13 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:15:20,862 INFO <position> reqid=13 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-20.0 pos_days=1 otc=1
+2024-06-07 14:15:29,939 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 14:15:29,990 INFO 交易服务器连接成功
+2024-06-07 14:15:30,225 INFO 交易服务器授权验证成功
+2024-06-07 14:15:30,356 INFO 交易服务器登录成功
+2024-06-07 14:15:33,081 INFO 结算信息确认成功
+2024-06-07 14:15:59,942 INFO 当前状态不能发起请求! connect:True login:True inited:False
+2024-06-07 14:16:14,439 INFO 合约信息查询成功
+2024-06-07 14:16:14,456 INFO <inited> instrument_books=8056
+2024-06-07 14:16:14,456 INFO <reqQryTradingAccount> reqid=5 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:16:14,467 INFO <reqQryInvestorPosition> reqid=6 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:16:14,477 INFO <position> reqid=6 rb2410 1 open_avg=3652.0 avg=0 cost=0 open_volume=0 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=0 open_amount=36520.0 pnl=-30.0 pos_days=1 otc=0
+2024-06-07 14:16:14,477 INFO <reqQryInvestorPositionDetail> reqid=7 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:16:14,485 INFO <position> reqid=7 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-30.0 pos_days=1 otc=1
+2024-06-07 14:16:14,485 INFO <ready> positions=1
+2024-06-07 14:16:52,725 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 14:16:52,772 INFO 交易服务器连接成功
+2024-06-07 14:16:53,009 INFO 交易服务器授权验证成功
+2024-06-07 14:16:53,031 INFO 交易服务器登录成功
+2024-06-07 14:16:57,419 INFO 结算信息确认成功
+2024-06-07 14:17:22,718 INFO 当前状态不能发起请求! connect:True login:True inited:False
+2024-06-07 14:17:48,753 INFO 合约信息查询成功
+2024-06-07 14:17:48,765 INFO <inited> instrument_books=8056
+2024-06-07 14:17:48,765 INFO <reqQryTradingAccount> reqid=5 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:17:48,778 INFO <reqQryInvestorPosition> reqid=6 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:17:48,791 INFO <position> reqid=6 rb2410 1 open_avg=3652.0 avg=0 cost=0 open_volume=0 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=0 open_amount=36520.0 pnl=-30.0 pos_days=1 otc=0
+2024-06-07 14:17:48,791 INFO <reqQryInvestorPositionDetail> reqid=7 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:17:48,802 INFO <position> reqid=7 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-30.0 pos_days=1 otc=1
+2024-06-07 14:17:48,802 INFO <ready> positions=1
+2024-06-07 14:17:52,715 INFO <reqQryInvestorPosition> reqid=8 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:17:52,959 INFO <position> reqid=8 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-20.0 pos_days=1 otc=1
+2024-06-07 14:18:22,716 INFO <reqQryInvestorPosition> reqid=9 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:18:22,728 INFO <position> reqid=9 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-30.0 pos_days=1 otc=1
+2024-06-07 14:18:29,713 INFO <reqQryTradingAccount> reqid=10 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:18:52,719 INFO <reqQryInvestorPosition> reqid=11 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:18:52,731 INFO <position> reqid=11 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-20.0 pos_days=1 otc=1
+2024-06-07 14:19:22,720 INFO <reqQryInvestorPosition> reqid=12 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:19:22,732 INFO <position> reqid=12 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-20.0 pos_days=1 otc=1
+2024-06-07 14:19:52,722 INFO <reqQryInvestorPosition> reqid=13 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:19:52,732 INFO <position> reqid=13 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-10.0 pos_days=1 otc=1
+2024-06-07 14:20:06,716 INFO <reqQryTradingAccount> reqid=14 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:20:22,723 INFO <reqQryInvestorPosition> reqid=15 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:20:22,735 INFO <position> reqid=15 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-10.0 pos_days=1 otc=1
+2024-06-07 14:20:52,725 INFO <reqQryInvestorPosition> reqid=16 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:20:52,734 INFO <position> reqid=16 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-10.0 pos_days=1 otc=1
+2024-06-07 14:21:22,727 INFO <reqQryInvestorPosition> reqid=17 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:21:22,738 INFO <position> reqid=17 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=0.0 pos_days=1 otc=1
+2024-06-07 14:21:30,073 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 14:21:30,116 INFO 交易服务器连接成功
+2024-06-07 14:21:30,134 INFO 交易服务器授权验证成功
+2024-06-07 14:21:30,143 INFO 交易服务器登录成功
+2024-06-07 14:21:31,410 INFO 结算信息确认成功
+2024-06-07 14:22:00,076 INFO 当前状态不能发起请求! connect:True login:True inited:False
+2024-06-07 14:22:36,318 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 14:22:36,362 INFO 交易服务器连接成功
+2024-06-07 14:22:36,379 INFO 交易服务器授权验证成功
+2024-06-07 14:22:36,388 INFO 交易服务器登录成功
+2024-06-07 14:22:37,019 INFO 结算信息确认成功
+2024-06-07 14:22:58,683 INFO 合约信息查询成功
+2024-06-07 14:22:58,695 INFO <inited> instrument_books=8056
+2024-06-07 14:22:58,695 INFO <reqQryTradingAccount> reqid=5 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:22:58,703 INFO <reqQryInvestorPosition> reqid=6 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:22:58,713 INFO <position> reqid=6 rb2410 1 open_avg=3652.0 avg=0 cost=0 open_volume=0 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=0 open_amount=36520.0 pnl=-10.0 pos_days=1 otc=0
+2024-06-07 14:22:58,713 INFO <reqQryInvestorPositionDetail> reqid=7 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:22:58,722 INFO <position> reqid=7 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-10.0 pos_days=1 otc=1
+2024-06-07 14:22:58,722 INFO <ready> positions=1
+2024-06-07 14:23:06,320 INFO <reqQryInvestorPosition> reqid=8 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:23:06,332 INFO <position> reqid=8 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-20.0 pos_days=1 otc=1
+2024-06-07 14:23:36,322 INFO <reqQryInvestorPosition> reqid=9 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:23:36,332 INFO <position> reqid=9 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-30.0 pos_days=1 otc=1
+2024-06-07 14:24:06,324 INFO <reqQryInvestorPosition> reqid=10 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:24:06,335 INFO <position> reqid=10 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-40.0 pos_days=1 otc=1
+2024-06-07 14:24:13,321 INFO <reqQryTradingAccount> reqid=11 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:24:36,325 INFO <reqQryInvestorPosition> reqid=12 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:24:36,339 INFO <position> reqid=12 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:25:06,328 INFO <reqQryInvestorPosition> reqid=13 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:25:06,339 INFO <position> reqid=13 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-90.0 pos_days=1 otc=1
+2024-06-07 14:25:36,329 INFO <reqQryInvestorPosition> reqid=14 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:25:36,338 INFO <position> reqid=14 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-110.0 pos_days=1 otc=1
+2024-06-07 14:25:50,325 INFO <reqQryTradingAccount> reqid=15 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:26:06,331 INFO <reqQryInvestorPosition> reqid=16 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:26:06,341 INFO <position> reqid=16 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-80.0 pos_days=1 otc=1
+2024-06-07 14:26:36,333 INFO <reqQryInvestorPosition> reqid=17 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:26:36,343 INFO <position> reqid=17 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-100.0 pos_days=1 otc=1
+2024-06-07 14:27:06,335 INFO <reqQryInvestorPosition> reqid=18 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:27:06,367 INFO <position> reqid=18 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-100.0 pos_days=1 otc=1
+2024-06-07 14:27:27,328 INFO <reqQryTradingAccount> reqid=19 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:27:36,337 INFO <reqQryInvestorPosition> reqid=20 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:27:36,348 INFO <position> reqid=20 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-120.0 pos_days=1 otc=1
+2024-06-07 14:28:06,339 INFO <reqQryInvestorPosition> reqid=21 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:28:06,348 INFO <position> reqid=21 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-110.0 pos_days=1 otc=1
+2024-06-07 14:28:36,340 INFO <reqQryInvestorPosition> reqid=22 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:28:36,350 INFO <position> reqid=22 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-80.0 pos_days=1 otc=1
+2024-06-07 14:29:04,332 INFO <reqQryTradingAccount> reqid=23 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:29:06,343 INFO <reqQryInvestorPosition> reqid=24 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:29:06,357 INFO <position> reqid=24 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:29:36,345 INFO <reqQryInvestorPosition> reqid=25 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:29:36,357 INFO <position> reqid=25 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-50.0 pos_days=1 otc=1
+2024-06-07 14:30:06,346 INFO <reqQryInvestorPosition> reqid=26 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:30:06,357 INFO <position> reqid=26 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:30:36,349 INFO <reqQryInvestorPosition> reqid=27 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:30:36,369 INFO <position> reqid=27 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-50.0 pos_days=1 otc=1
+2024-06-07 14:30:41,336 INFO <reqQryTradingAccount> reqid=28 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:31:06,350 INFO <reqQryInvestorPosition> reqid=29 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:31:06,360 INFO <position> reqid=29 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:31:36,352 INFO <reqQryInvestorPosition> reqid=30 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:31:36,364 INFO <position> reqid=30 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:32:06,354 INFO <reqQryInvestorPosition> reqid=31 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:32:06,365 INFO <position> reqid=31 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:32:18,339 INFO <reqQryTradingAccount> reqid=32 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:32:36,357 INFO <reqQryInvestorPosition> reqid=33 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:32:36,367 INFO <position> reqid=33 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-70.0 pos_days=1 otc=1
+2024-06-07 14:33:06,361 INFO <reqQryInvestorPosition> reqid=34 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:33:06,373 INFO <position> reqid=34 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-50.0 pos_days=1 otc=1
+2024-06-07 14:33:29,643 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 14:33:29,668 INFO 交易服务器连接成功
+2024-06-07 14:33:29,686 INFO 交易服务器授权验证成功
+2024-06-07 14:33:29,696 INFO 交易服务器登录成功
+2024-06-07 14:33:30,081 INFO 结算信息确认成功
+2024-06-07 14:33:44,700 INFO 合约信息查询成功
+2024-06-07 14:33:44,713 INFO <inited> instrument_books=8056
+2024-06-07 14:33:44,713 INFO <reqQryTradingAccount> reqid=5 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:33:44,720 INFO <reqQryInvestorPosition> reqid=6 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:33:44,728 INFO <position> reqid=6 rb2410 1 open_avg=3652.0 avg=0 cost=0 open_volume=0 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=0
+2024-06-07 14:33:44,728 INFO <reqQryInvestorPositionDetail> reqid=7 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:33:44,736 INFO <position> reqid=7 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:33:44,736 INFO <ready> positions=1
+2024-06-07 14:33:59,647 INFO <reqQryInvestorPosition> reqid=8 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:33:59,656 INFO <position> reqid=8 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-70.0 pos_days=1 otc=1
+2024-06-07 14:34:29,649 INFO <reqQryInvestorPosition> reqid=9 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:34:29,659 INFO <position> reqid=9 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:34:59,652 INFO <reqQryInvestorPosition> reqid=10 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:34:59,661 INFO <position> reqid=10 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-70.0 pos_days=1 otc=1
+2024-06-07 14:35:10,433 INFO <start> <_UnixSelectorEventLoop running=False closed=False debug=False>
+2024-06-07 14:35:10,459 INFO 交易服务器连接成功
+2024-06-07 14:35:10,475 INFO 交易服务器授权验证成功
+2024-06-07 14:35:10,482 INFO 交易服务器登录成功
+2024-06-07 14:35:10,583 INFO 结算信息确认成功
+2024-06-07 14:35:26,751 INFO 合约信息查询成功
+2024-06-07 14:35:26,766 INFO <inited> instrument_books=8056
+2024-06-07 14:35:26,766 INFO <reqQryTradingAccount> reqid=5 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:35:26,784 INFO <reqQryInvestorPosition> reqid=6 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:35:26,810 INFO <position> reqid=6 rb2410 1 open_avg=3652.0 avg=0 cost=0 open_volume=0 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=0 open_amount=36520.0 pnl=-70.0 pos_days=1 otc=0
+2024-06-07 14:35:26,810 INFO <reqQryInvestorPositionDetail> reqid=7 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:35:26,825 INFO <position> reqid=7 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-70.0 pos_days=1 otc=1
+2024-06-07 14:35:26,825 INFO <ready> positions=1
+2024-06-07 14:35:40,436 INFO <reqQryInvestorPosition> reqid=8 req={'BrokerID': '9999', 'InvestorID': '210380'}
+2024-06-07 14:35:40,452 INFO <position> reqid=8 rb2410 1 open_avg=3652.0 avg=3652.0 cost=3652.0 open_volume=1 volume=1 yd=0 td=1 locked=0 margin=5843.2 cost_amount=36520.0 open_amount=36520.0 pnl=-60.0 pos_days=1 otc=1
+2024-06-07 14:36:10,440 INFO <reqQryInvestorPosition> reqid=9 req={'BrokerID': '9999', 'InvestorID': '210380'}

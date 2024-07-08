@@ -11,9 +11,9 @@ import pandas as pd
 class ProcessDbTables():
 
     def __init__(self):
-        # self.conn = create_engine('mysql+pymysql://app:6uRa&D$%ji66WuHp@sh-cdb-peeq202o.sql.tencentcdb.com:59964/md?charset=utf8mb4')
-        self.conn = create_engine('mysql+pymysql://root:dnNMFwYj6^8c@sh-cdb-peeq202o.sql.tencentcdb.com:59964/md?charset=utf8mb4',
-                                  pool_size=6, max_overflow=10)
+        self.conn = create_engine('mysql+pymysql://app:6uRa&D$%ji66WuHp@sh-cdb-peeq202o.sql.tencentcdb.com:59964/app?charset=utf8mb4')
+        # self.conn = create_engine('mysql+pymysql://root:dnNMFwYj6^8c@sh-cdb-peeq202o.sql.tencentcdb.com:59964/app?charset=utf8mb4',
+        #                           pool_size=6, max_overflow=10)
 
     def process_table(self):
 

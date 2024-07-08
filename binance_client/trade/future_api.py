@@ -350,6 +350,11 @@ class BiFutureTd:
 
             self.gateway.on_order(rtn_order)
 
+            if rtn_order.order_status.is_completed():
+                self.rtn_order_map.pop(order_id)
+                if self.cancel_order_map.__contains__(order_id):
+                    self.cancel_order_map.pop(order_id)
+
     def _on_user_data_listenKeyExpired(self, data: dict):
         """
         {"e": "listenKeyExpired",   // event type

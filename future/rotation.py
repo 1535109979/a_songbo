@@ -9,6 +9,9 @@ with sqlite3.connect('./database/future_data.db') as conn:
 
 data = df[['date', 'close_price', 'variety_name']]
 
+# 当前价格 - min（n天） / （max（n天） - min（n天））
+# 买入最近 n 天排名前五，掉出前 k 名平仓
+
 n = 60
 k = 10
 
