@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>股票价格折线图</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 2rem;
+            color: #343a40;
+        }
+
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 80px); /* 页面高度减去标题和页边距 */
+        }
+
+        img {
+            border: 1px solid #ced4da;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <h1>虚拟股票收盘价走势</h1>
+    <div class="chart-container">
+        <img src="data:image/png;base64,{{ plot_url }}" alt="股票价格折线图">
+    </div>
+</body>
+</html>

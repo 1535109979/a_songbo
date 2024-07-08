@@ -1,55 +1,43 @@
-from flask import Flask, request
+from flask import Flask, render_template
+import pandas as pd
+import matplotlib.pyplot as plt
+import io
+import base64
+import random
+import seaborn as sns
 
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
-    print(request)
-    if request.method == 'POST':
-        input_text = request.form['input_text']
-        response_text = get_response(input_text)
-        return '''
-            <p><b>你说：</b>{}</p>
-            <p><b>我回答：</b>{}</p>
-            <form method="post">
-                <input type="text" name="input_text">
-                <button type="submit">再聊一次</button>
-            </form>
-        '''.format(input_text, response_text)
-    else:
-        return '''
-            <p><b>你说：</b></p>
-            <p><b>我回答：</b></p>
-            <form method="post">
-                <input type="text" name="input_text">
-                <button type="submit">开始聊天</button>
-            </form>
-        '''
+    # 创建虚拟数据
+    date_range = pd.date_range(start='2023-01-01', periods=100)
+    close_prices = [random.uniform(100, 150) for _ in range(100)]
+    df = pd.DataFrame({'Close': close_prices}, index=date_range)
 
+    # 应用 Seaborn 样式
+    sns.set_style('darkgrid')
 
-def get_response(text):
-    print('text:', text)
-    # 这里可以使用任何对话机器人的 API 或自己编写的算法来生成回答
-    # 下面是一个简单的示例
-    if text == '你好':
-        return '你好呀！'
-    elif text.endswith('吗'):
-        return text[:-2] + '！'
-    else:
-        return '我不知道该怎么回答。'
+    # 创建图表
+    plt.figure(figsize=(12, 6))
+    plt.plot(df.index, df['Close'], label='收盘价', color='#007bff', linewidth=2)
+    plt.title('虚拟股票收盘价折线图', fontsize=16)
+    plt.xlabel('日期', fontsize=12)
+    plt.ylabel('收盘价', fontsize=12)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend(fontsize=12)
+    plt.tight_layout()
+
+    # 将图表保存为 PNG 图片
+    img = io.BytesIO()
+    plt.savefig(img, format='png')
+    img.seek(0)
+    plot_url = base64.b64encode(img.getvalue()).decode('utf8')
+
+    # 渲染 HTML 模板 并返回
+    return render_template('index.html', plot_url=plot_url) # 这里增加了 return
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
-
-
-
-
-
-
-
-
-
-
-
+    app.run(debug=True)
