@@ -1,7 +1,11 @@
+import numpy
+
+a = range(1, 400)
+
+rolling_window = 200
 
 
-a = [1, 23, 4, 5]
+ma = numpy.convolve(a, numpy.ones(rolling_window) / rolling_window, mode="valid")
 
-a = a[-4:]
-
+print(len(ma))
 

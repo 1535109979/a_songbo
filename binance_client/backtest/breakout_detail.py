@@ -15,13 +15,13 @@ commision = 0.0005
 trade_first = True
 period = 120
 roll_mean_period = 200
-if_trend = False
+if_trend = True
 if not if_trend:
     period = 0
     roll_mean_period = 0
 
-symbol = 'ltcusdt'
-start_time = '2023-01-01 00:00:00'
+symbol = 'eosusdt'
+start_time = '2024-01-01 00:00:00'
 
 with sqlite3.connect('binance_quote_data.db') as conn:
     df = pd.read_sql(f'select * from future_{symbol} where start_time >= "{start_time}" order by start_time DESC', conn)

@@ -52,5 +52,5 @@ class BinanceData:
 
 
 if __name__ == '__main__':
-    BinanceData().download_data('2024-07-04 11:39:00', '2024-07-08 12:00:00', symbol='LTCUSDT')
+    BinanceData().download_data('2023-01-01 00:00:00', '2024-07-10 17:00:00', symbol='EOSUSDT')
 
