@@ -26,7 +26,7 @@ async def funcb(x):
 
 
 def callbackfunc(task):
-    print('callback',task.result())
+    print('callback', task.result())
 
 
 async def main():
@@ -34,7 +34,7 @@ async def main():
 
     # resulta = await tesa(1)    # 串行
     # resultb = await tesb(2)
-    resulta , resultb = await asyncio.gather(funca(1),funcb(2))    # 并行
+    resulta , resultb = await asyncio.gather(funca(1), funcb(2))    # 并行
 
     print('test a result :',resulta)
     print('test b result :',resultb)
@@ -55,7 +55,6 @@ async def main2():   # 并行
     # await asyncio.wait([taska,taskb])
     resulta, resultb = await asyncio.gather(taska,taskb)
 
-
     print('test a result :',taska.result())
     print('test b result :',taskb.result())
     print('use time:',time.time() - start)
@@ -64,7 +63,7 @@ async def main2():   # 并行
 if __name__ == '__main__':
 
     loop = asyncio.get_event_loop()
-    result = loop.run_until_complete(main2())
+    result = loop.run_until_complete(main())
 
 
 

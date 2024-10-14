@@ -164,7 +164,7 @@ class SaveDominantTick():
             traceback.print_exc()
             logging.info(f'{self.get_now_time()} consume queue fail {e}')
 
-    def upload_data(self,data,conn):
+    def upload_data(self, data, conn):
         try:
             df = pd.read_csv(data[0])
             df.to_sql(data[1],con=conn,index=False,if_exists='append')

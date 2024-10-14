@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template Links</title>
+</head>
+<body>
+    <h1>Available Templates</h1>
+    <ul>
+        {% for link in links %}
+            <li><a href="{{ link.link }}">{{ link.filename }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

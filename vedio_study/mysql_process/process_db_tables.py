@@ -11,9 +11,7 @@ import pandas as pd
 class ProcessDbTables():
 
     def __init__(self):
-        # self.conn = create_engine('mysql+pymysql://app:6uRa&D$%ji66WuHp@sh-cdb-peeq202o.sql.tencentcdb.com:59964/md?charset=utf8mb4')
-        self.conn = create_engine('mysql+pymysql://root:dnNMFwYj6^8c@sh-cdb-peeq202o.sql.tencentcdb.com:59964/md?charset=utf8mb4',
-                                  pool_size=6, max_overflow=10)
+        self.conn = create_engine('mysql+pymysql://app:6urA&D$%ji66WuHp@sh-cdb-peeq202o.sql.tencentcdb.com:59964/app?charset=utf8mb4')
 
     def process_table(self):
 
@@ -27,31 +25,10 @@ class ProcessDbTables():
         # self.alter_table_name('asongbo2','asongbo11')
         # quit()
 
-        drop_list = ['ao', 'br', 'ec', 'lc', 'TS', 'TL', 'TF', 'T', 'IM', 'IH', 'IF', 'IC', 'si', 'ZC',
-                               'PM', 'WH', 'RI', 'LR', 'JR', 'bb', 'RS', 'wr', 'bc', 'fb', 'CY', 'rr']
-        drop_list = [x.lower() for x in drop_list]
-
         tabels_name = self.get_table_names()
         tabels_name = sorted(tabels_name)
-
+        print(tabels_name)
         start_date = []
-
-        for table in tabels_name:
-            if table.startswith('tick_futures_'):
-                variety = re.search(r'_([a-z]+)8', table).group(1)
-                if variety in drop_list:
-                    continue
-                drop_list.append(variety)
-                print(table, datetime.datetime.now())
-                # sql = f'SELECT DISTINCT trading_day FROM {table} where datetime>"2020-01-01 01:16:54.000" and datetime<"2021-01-01 01:16:54.000"'
-                sql = f'SELECT min(trading_day) FROM {table}'
-                with self.conn.connect() as conn:
-                    data = pd.read_sql(text(sql), conn)
-                print((variety,data.loc[0]['min(trading_day)']))
-                start_date.append((variety, data.loc[0]['min(trading_day)']))
-        start_date.sort(key=lambda x: x[1])
-        print(start_date)
-        print(start_date[int(len(start_date)/2)])
 
     def check_variety_date(self):
         use_variety = [('rm', 20150105), ('cf', 20150105), ('fg', 20150105), ('ma', 20150105), ('oi', 20150105),

@@ -23,7 +23,7 @@ class AsyncStreamServer(stream_data_pb2_grpc.StreamRpcServicer):
         # while not context.done():
         #     pass
 
-    async def on_quote(self,data):
+    async def on_quote(self, data):
         for context in self.context_list:
             await context.write(stream_data_pb2.Reply(result="{}".format('sdf')))
 
