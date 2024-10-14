@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service StreamRpc{
+  rpc GetServerResult(Requests) returns (Reply);
+  rpc GetServerStream(Requests) returns (stream Reply);
+  rpc ClientSendStream(stream Requests) returns (Reply);
+  rpc ServerClientStream(stream Requests) returns (stream Reply);
+}
+
+message Requests {
+  string data = 1;
+}
+
+message Reply{
+  string result = 1;
+}
