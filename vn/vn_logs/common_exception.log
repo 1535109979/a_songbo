@@ -1,8 +1,0 @@
-2023-10-18 13:33:32,774 sys_exception wrapper ERROR !!!error= division by zero !!! {}
-Traceback (most recent call last):
-  File "/Users/edy/byt_pub/a_songbo/vn/util/sys_exception.py", line 22, in wrapper
-    return func(*args, **kwargs)
-  File "/Users/edy/byt_pub/a_songbo/strthdfg.py", line 9, in cla
-    print(1/0)
-ZeroDivisionError: division by zero
-2023-10-18 13:33:32,774 sys_exception wrapper INFO !!!error= division by zero !!! {}
