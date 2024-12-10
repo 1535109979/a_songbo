@@ -3,6 +3,6 @@
 class MyClass {
 public:
     MyClass();
-    int add();
+    void add();
 };
 

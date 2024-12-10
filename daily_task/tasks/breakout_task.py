@@ -18,11 +18,13 @@ class BreakOutTask:
         df = df.set_index('instrument')
         self.min_price_step_map = df['min_price_step'].to_dict()
 
-        self.stop_loss_rate = 0.15
+        self.stop_loss_rate = 0.9
         self.commision = 0.0006
         self.trade_first = True
         self.if_trend = True
         self.start_time = '2024-01-01 00:00:00'
+        self.short_window = 60
+        self.trend_muti = 0.8
 
     def update_breakout(self):
         df_instrument_config = self.read_instrument_config()
@@ -48,7 +50,7 @@ class BreakOutTask:
     def read_instrument_config(self):
         with self.engine.connect() as conn:
             sql = ("select instrument, param_json from user_instrument_config where account_id = "
-                   "'binance_f_226_1234567890' and strategy_name = 'breakout' and status='ENABLE'")
+                   "'binance_f_226_1234567890' and strategy_name = 'breakout' ")
 
             df = pd.read_sql(text(sql), con=conn)
         return df
@@ -140,6 +142,7 @@ class BreakOutTask:
                         short_rate.append(1 - close / position[1])
                         account_value_list.append(account_value)
                         position = ('long', close)
+                        account_value += -self.commision
                         df_trade.loc[len(df_trade)] = [symbol, time, 'open', 'long', close, account_value]
 
             elif close > last_n_max:
@@ -161,6 +164,7 @@ class BreakOutTask:
                         account_value_list.append(account_value)
 
                         position = ('short', close)
+                        account_value += - self.commision
                         df_trade.loc[len(df_trade)] = [symbol, time, 'open', 'short', close, account_value]
 
         plt.figure(figsize=(15, 6))

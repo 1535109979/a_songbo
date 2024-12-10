@@ -1,19 +1,11 @@
-from datetime import datetime
+from collections import Counter
+
+cover_count = Counter([1,2,3,4,5,3,4])
+
+co = ''
+for k,v in cover_count.items():
+    co += str(k) + ':' + str(v) + ','
+
+print(co)
 
 
-def pro():
-    t = 1.6988215675e+18 / 1e9
-
-    print(t)
-    print(type(t))
-
-    dt = datetime.fromtimestamp(t)
-
-    print(dt)
-
-
-def prorce(func):
-    print(func.__name__)
-
-
-prorce(pro)

@@ -80,7 +80,7 @@ def saved_symbols():
 if __name__ == '__main__':
     saved_list = saved_symbols()
 
-    BinanceData().download_data('2024-01-01 00:00:00', '2024-08-19 12:53:00', symbol='SOLUSDT')
+    BinanceData().download_data('2024-01-01 00:00:00', '2024-11-18 12:53:00', symbol='DEFIUSDT')
     quit()
 
     df = read_db()

@@ -31,6 +31,8 @@ with engine.connect() as conn:
 
 df_226.loc[0:824, 'equity'] = df_226.loc[0:824, 'equity'].apply(lambda x: (x-500) / 5000)
 va = df_226.loc[824].equity
+df_226.loc[1531:,'equity'] = df_226.loc[1531:, 'equity'].apply(lambda x: x-710)
+
 df_226.loc[825:, 'equity'] = df_226.loc[825:, 'equity'].apply(lambda x: (x-2400) / 15000 + va)
 
 

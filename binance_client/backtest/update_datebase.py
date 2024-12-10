@@ -25,7 +25,6 @@ class BinanceData:
                     df = self.get_spot_data(st_time, symbol, interval)
                 elif self.mode == 'future':
                     df = self.get_future_data(st_time, symbol, interval)
-                # print(df)
                 self.save_data(df, table_name=self.mode+'_'+symbol.lower())
                 st_time = st_time + 1000 * 60
         except:
@@ -61,7 +60,7 @@ def update_data():
         tables = cursor.fetchall()
 
         # for table in tables:
-        # table_name = table[0]
+        #     table_name = table[0]
         for table in ['LTCUSDT', 'EOSUSDT', 'AEVOUSDT', 'APEUSDT', 'BANDUSDT', 'CELRUSDT', 'ONDOUSDT', 'NFPUSDT',
                       'PORTALUSDT', 'ETHUSDT', 'RLCUSDT', 'MOVRUSDT']:
             table_name = 'future_' + table.lower()

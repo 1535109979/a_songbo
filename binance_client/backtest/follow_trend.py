@@ -41,7 +41,7 @@ df = read_db()
 df = df.set_index('instrument')
 min_price_step_map = df['min_price_step'].to_dict()
 
-n = 400
+n = 390
 change_rate = 0.07
 cover_rate = -0.02
 cover_muti = 1
@@ -52,7 +52,7 @@ trade_first = True
 
 min_price_window = n
 
-symbol = 'ethusdt'
+symbol = 'eosusdt'
 step_price = float(min_price_step_map[symbol.upper()])
 start_time = '2024-01-01 00:00:00'
 

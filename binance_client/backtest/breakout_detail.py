@@ -34,18 +34,20 @@ df = df.set_index('instrument')
 min_price_step_map = df['min_price_step'].to_dict()
 
 
-n = 420
-stop_loss_rate = 0.1
+
+stop_loss_rate = 0.9
 commision = 0.0006
 trade_first = True
-roll_mean_period = 600
-period = 700
+n = 400
+roll_mean_period = 120
+period = 860
+
 if_trend = True
 if not if_trend:
     period = 0
     roll_mean_period = 0
 
-symbol = 'ethusdt'
+symbol = 'rlcusdt'
 step_price = float(min_price_step_map[symbol.upper()])
 start_time = '2024-01-01 00:00:00'
 
@@ -92,18 +94,17 @@ for i, close in enumerate(close_list):
         elif position[0] == 'short':
             rate = 1 - close / position[1]
             flag = 'short'
-
             if if_trend:
                 if close < close_roll_mean_list[i-period] < close_roll_mean_list[i-2*period]:
                     continue
 
-        # if rate < -stop_loss_rate:
-        #     position = None
-        #     account_value += rate - 0.0002
-        #
-        #     df_trade.loc[len(df_trade)] = [time, 'stop_close', flag, close, account_value]
-        #     account_value_list.append(account_value)
-        #     continue
+        if rate < - stop_loss_rate:
+            position = None
+            account_value += rate - 0.0002
+
+            df_trade.loc[len(df_trade)] = [symbol, time, 'stop_close', flag, close, account_value]
+            account_value_list.append(account_value)
+            continue
 
     if close < last_n_min:
         if not position:
@@ -181,6 +182,11 @@ def cal_loss(account_list):
 
 sharpe_ratio = cal_sharpe(account_value_list)
 loss = cal_loss(account_value_list)
+
+loss_rate = [x for x in long_rate + short_rate if x<0]
+plt.plot(loss_rate)
+plt.savefig('loss_rate' + f'/{symbol}.jpg')
+plt.clf()
 
 plt.plot(account_value_list)
 

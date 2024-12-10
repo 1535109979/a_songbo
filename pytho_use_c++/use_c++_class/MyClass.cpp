@@ -13,11 +13,11 @@ void MyClass::add() {
 
 
 extern "C"{
-MyClass obj;
+    MyClass obj;
 
-void add(){
-obj.add();
-};
+        void add(){
+            obj.add();
+        };
 
 }
 

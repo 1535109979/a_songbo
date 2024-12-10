@@ -187,7 +187,7 @@ class BreakOutPortfilo:
         self.symbol_process_map = {}
         self.account_value = 1
         self.account_value_list = []
-        self.start_time = '2024-08-01 00:00:00'
+        self.start_time = '2024-01-01 00:00:00'
         self.df_trade = pd.DataFrame(columns=['time', 'symbol', 'offset', 'dir', 'close', 'account_value'])
 
         self.min_price_step_map = self.read_step_price()
@@ -199,31 +199,31 @@ class BreakOutPortfilo:
             self.add_symbol = AddSymbol(self)
 
     def load_symbols_configs(self):
-        self.symbol_configs_data={
-            'EOSUSDT': {"symbol": "EOSUSDT", "window": 400, "rolling_window": 200, "period": 120},
-            'LTCUSDT': {"symbol": "LTCUSDT", "window": 550, "rolling_window": 550, "period": 100},
-            'AEVOUSDT': {"symbol": "AEVOUSDT", "window": 600, "rolling_window": 350, "period": 320},
-            'APEUSDT': {"symbol": "APEUSDT", "window": 700, "rolling_window": 600, "period": 600},
-            'BANDUSDT': {"symbol": "BANDUSDT", "window": 700, "rolling_window": 600, "period": 500},
-            'CELRUSDT': {"symbol": "CELRUSDT", "window": 700, "rolling_window": 600, "period": 400},
-            'ONDOUSDT': {"symbol": "ONDOUSDT", "window": 400, "rolling_window": 200, "period": 700},
-            'NFPUSDT': {"symbol": "NFPUSDT", "window": 400, "rolling_window": 200, "period": 300},
-            'PORTALUSDT': {"symbol": "PORTALUSDT", "window": 600, "rolling_window": 500, "period": 600},
-            'RLCUSDT': {"symbol": "RLCUSDT", "window": 400, "rolling_window": 200, "period": 800},
-        }
-
         # self.symbol_configs_data={
-        #     'EOSUSDT': {"symbol": "EOSUSDT", "window": 390, "rolling_window": 100, "period": 100},
-        #     'LTCUSDT': {"symbol": "LTCUSDT", "window": 550, "rolling_window": 630, "period": 60},
+        #     'EOSUSDT': {"symbol": "EOSUSDT", "window": 400, "rolling_window": 200, "period": 120},
+        #     'LTCUSDT': {"symbol": "LTCUSDT", "window": 550, "rolling_window": 550, "period": 100},
         #     'AEVOUSDT': {"symbol": "AEVOUSDT", "window": 600, "rolling_window": 350, "period": 320},
-        #     'APEUSDT': {"symbol": "APEUSDT", "window": 720, "rolling_window": 540, "period": 660},
-        #     'BANDUSDT': {"symbol": "BANDUSDT", "window": 730, "rolling_window": 520, "period": 545},
-        #     'CELRUSDT': {"symbol": "CELRUSDT", "window": 720, "rolling_window": 610, "period": 400},
-        #     'ONDOUSDT': {"symbol": "ONDOUSDT", "window": 430, "rolling_window": 200, "period": 710},
-        #     'NFPUSDT': {"symbol": "NFPUSDT", "window": 390, "rolling_window": 100, "period": 320},
+        #     'APEUSDT': {"symbol": "APEUSDT", "window": 700, "rolling_window": 600, "period": 600},
+        #     'BANDUSDT': {"symbol": "BANDUSDT", "window": 700, "rolling_window": 600, "period": 500},
+        #     'CELRUSDT': {"symbol": "CELRUSDT", "window": 700, "rolling_window": 600, "period": 400},
+        #     'ONDOUSDT': {"symbol": "ONDOUSDT", "window": 400, "rolling_window": 200, "period": 700},
+        #     'NFPUSDT': {"symbol": "NFPUSDT", "window": 400, "rolling_window": 200, "period": 300},
         #     'PORTALUSDT': {"symbol": "PORTALUSDT", "window": 600, "rolling_window": 500, "period": 600},
-        #     'RLCUSDT': {"symbol": "RLCUSDT", "window": 400, "rolling_window": 120, "period": 860},
+        #     'RLCUSDT': {"symbol": "RLCUSDT", "window": 400, "rolling_window": 200, "period": 800},
         # }
+
+        self.symbol_configs_data={
+            'EOSUSDT': {"symbol": "EOSUSDT", "window": 390, "rolling_window": 100, "period": 100},
+            'LTCUSDT': {"symbol": "LTCUSDT", "window": 550, "rolling_window": 630, "period": 60},
+            'AEVOUSDT': {"symbol": "AEVOUSDT", "window": 600, "rolling_window": 350, "period": 320},
+            'APEUSDT': {"symbol": "APEUSDT", "window": 720, "rolling_window": 540, "period": 660},
+            'BANDUSDT': {"symbol": "BANDUSDT", "window": 730, "rolling_window": 520, "period": 545},
+            'CELRUSDT': {"symbol": "CELRUSDT", "window": 720, "rolling_window": 610, "period": 400},
+            'ONDOUSDT': {"symbol": "ONDOUSDT", "window": 430, "rolling_window": 200, "period": 710},
+            'NFPUSDT': {"symbol": "NFPUSDT", "window": 390, "rolling_window": 100, "period": 320},
+            'PORTALUSDT': {"symbol": "PORTALUSDT", "window": 600, "rolling_window": 500, "period": 600},
+            'RLCUSDT': {"symbol": "RLCUSDT", "window": 400, "rolling_window": 120, "period": 860},
+        }
 
         if not self.choose_symbol:
             self.symbol_configs = self.symbol_configs_data
@@ -304,6 +304,15 @@ class BreakOutPortfilo:
             line=dict(color="red", width=1, dash="dash")  # 线的颜色、宽度和样式
         )
 
+        specific_date = pd.to_datetime('2024-11-05 09:09:00')
+        # 添加一个点和一条垂直线
+        fig.add_shape(
+            type="line",  # 线类型
+            x0=specific_date, y0=min(self.account_value_list),  # 线的起点
+            x1=specific_date, y1=max(self.account_value_list),  # 线的终点
+            xref="x", yref="y",
+            line=dict(color="red", width=1, dash="dash")  # 线的颜色、宽度和样式
+        )
         # fig.write_html(f'./result/{title}.html')
         fig.show()
 

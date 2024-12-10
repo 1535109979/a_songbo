@@ -192,12 +192,12 @@ if __name__ == '__main__':
 
     with ProcessPoolExecutor(max_workers=6) as executor:
         # for symbol in saved_symbol_list[200:]:
-        for symbol in ['movrusdt']:
+        for symbol in ['defiusdt']:
             print(symbol)
             step_price = float(min_price_step_map[symbol.upper()])
-            for n in range(400, 600, 50):
-                for roll_mean_period in range(600, 800, 30):
-                    for period in range(600, 800, 30):
+            for n in range(100, 800, 200):
+                for roll_mean_period in range(100, 800, 200):
+                    for period in range(100, 800, 200):
                         executor.submit(plt_account, symbol, n, period, roll_mean_period, step_price)
 
                     # plt_account(symbol, n, period, roll_mean_period, start_time, step_price)
