@@ -1,0 +1,51 @@
+fetchUsers() {
+      wx.request({
+          url: 'http://127.0.0.1:5000/api/users',
+          method: 'GET',
+          success: (res) => {
+              if (res.statusCode === 200) {
+                  this.setData({ users: res.data });
+              } else {
+                  wx.showToast({
+                      title: '加载失败',
+                      icon: 'none'
+                  });
+              }
+          },
+          fail: () => {
+              wx.showToast({
+                  title: '网络请求失败',
+                  icon: 'none'
+              });
+          }
+      });
+  },
+
+query_instrument_config() {
+    wx.request({
+        url: 'http://127.0.0.1:63217/user_instrument_config/v2/query',
+        method: 'post',
+        data : {
+          account_id: 'binance_f_226_1234567890',
+          user_id: '226',
+          exchange_type: 'BINANCE_F'
+        },
+        success: (res) => {
+            if (res.statusCode === 200) {
+                console.log(res.data)
+                this.setData({ stocks: res.data });
+            } else {
+                wx.showToast({
+                    title: '加载失败',
+                    icon: 'none'
+                });
+            }
+        },
+        fail: () => {
+            wx.showToast({
+                title: '网络请求失败',
+                icon: 'none'
+            });
+        }
+    });
+

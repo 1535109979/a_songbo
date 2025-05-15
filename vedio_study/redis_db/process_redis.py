@@ -1,10 +1,10 @@
 import redis
 
 redis_setting = {
-        "host": "localhost",
+        "host": "192.168.15.30",
+        "password": "8URXPL2x3HZMi7xoGTdk3Upj",
+        "db": 12,
         "port": 6379,
-        "password": "123456",
-        "db": 1,
         "max_connections": 100
     }
 
@@ -14,10 +14,10 @@ with redis.Redis(**redis_setting) as r:
     for key in keys:
         print(key, r.get(key))
 
-    r.set('test', '{"a":1,"b":2,"c":7}', xx=True)
+    # r.set('test', '{"a":1,"b":2,"c":7}', xx=True)
 
-    for key in keys:
-        print(key, r.get(key))
+    # for key in keys:
+    #     print(key, r.get(key))
 
     # r.delete(key)
 

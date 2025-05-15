@@ -37,7 +37,7 @@ class ProcessSqlite():
         self.cursor.execute("INSERT INTO stocks VALUES ('2020-01-05', 'BUY', 'APPL', 100, 50.5)")
         self.connection.commit()
 
-    def save_by_data_frame(self):
+    def save_by_data_frame(self,df):
         with sqlite3.connect('example.db') as conn:
             df.to_sql('people', conn, if_exists='replace')
 

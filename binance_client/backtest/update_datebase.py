@@ -64,6 +64,7 @@ def update_data():
         for table in ['LTCUSDT', 'EOSUSDT', 'AEVOUSDT', 'APEUSDT', 'BANDUSDT', 'CELRUSDT', 'ONDOUSDT', 'NFPUSDT',
                       'PORTALUSDT', 'ETHUSDT', 'RLCUSDT', 'MOVRUSDT']:
             table_name = 'future_' + table.lower()
+
             cursor.execute(f"SELECT MAX(start_time) FROM {table_name};")
             max_time = cursor.fetchone()[0]
             symbol = table_name.split('_')[1]

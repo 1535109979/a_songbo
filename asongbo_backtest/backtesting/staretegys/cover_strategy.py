@@ -24,14 +24,14 @@ class CoverStrategy:
                 decline_rate = (last_price / self.position.last_trade_price - 1) * 100
                 profit_rate = (last_price / self.position.cost - 1) * 100
 
-                if profit_rate > self.stop_profit_rate and self.cover_count:
+                if profit_rate > self.stop_profit_rate:
                     self.trade_process.stop_profit(quote_time, last_price, profit_rate / 100)
                     return
 
                 if self.cover_count == len(self.cover_decline_list):
                     return
 
-                if decline_rate < - self.cover_decline_list[self.cover_count] and self.cover_count != len(self.cover_decline_list):
+                if decline_rate < - self.cover_decline_list[self.cover_count] and self.cover_count < len(self.cover_decline_list):
                     self.trade_process.cover_order(quote_time, 'LONG', last_price, self.cover_multi_list[self.cover_count])
 
             if self.position.direction == 'SHORT':
